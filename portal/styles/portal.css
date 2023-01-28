@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+    padding: 2em;
+    background-color:aqua;
+    box-shadow: 0 0 50px black;
+    }
+    header .container {
+    justify-content: space-between;
+    }
+    header img {
+    margin-right: 1em;
+    }
+    main .container p {
+    margin-left: 1em;
+    text-decoration: underline;
+    }
+    
+    
+    u:hover {
+        color:rgb(0, 247, 255);
+        text-decoration: underline;
+    }
+
+    footer .container {
+    display:block;
+    justify-content: center;
+    align-items:center;
+    }
+    body {
+    background-color: white;
+    }
+
+
+
+
+
+
+
+
