@@ -25,11 +25,13 @@
 
     footer .container {
     display:block;
-    justify-content: center;
-    align-items:center;
+    text-align: center;
     }
+    
     body {
     background-color: white;
+    max-width:  900px;
+    margin: auto;
     }
 
 
