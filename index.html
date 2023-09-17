@@ -4,44 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assignment Portal Page wdd 230</title>
-  <meta name="description" content="Personal website for John Doe, showcasing my skills and experiences in web development.">
-  <link rel="stylesheet" href="styles/portal.css">
+  <meta name="description" content="WDD230 Assignment Portal.">
+  <link rel="stylesheet" href="styles/base.css">
   <script src="scripts/main.js"></script>
 </head>
 <body>
   <header>
     <div class="container">
-      <img src="images/me.jpeg"  width="150" height="150" alt="pic of me">
+      <img src="images/me.jpeg"  width="150" height="150" alt="Profile Image of Me">
       <h1>Marco Quintero</h1>
-    </div>
-    <h2>WDD 230: Assignment Portal</h2>
-    <hr>
   </header>
+
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="chamber/siteplan.html">Site Plan</a>
+    <a href="chamber/">Chamber</a>
+    <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
+    <a href="https://www.churchofjesuschrist.org/study/scriptures/book-of-mormon/moroni/10.5" target="_blank">Scripture</a>
+  </nav>
+
   <main>
-    
+    <h2>WDD 230: Web Fronted Development</h2>
+    <hr>
 
-      <p>Lesson 02: <u style="color:blue;">Design Principles Document</u></p>
-      <p>Lesson 03:  <u style="color:blue;">Website Planning Document</u></p>
-      <p>Lesson 04:  <u style="color:blue;">Chamber Home Page Build</u></p>
-      <p>Lesson 05:  <u style="color:blue;">Chamber Home Page Continued</u></p>
-      <p>Lesson 06:  <u style="color:blue;">Responsive Design</u></p>
-      <p>Lesson 07:  <u style="color:blue;">The Discover Page - Image Section</u></p>
-      <p>Lesson 08:  <u style="color:blue;">Join Page</u></p>
-      <p>Lesson 09:  <u style="color:blue;">Business Directory</u></p>
-      <p>Lesson 10:  <u style="color:blue;">Using the Weather API</u></p>
-      <p>Lesson 11:  <u style="color:blue;">The Chamber of Commerce Site</u></p>
-      <hr>
-      <p>Some lessons may need more than one activity/assignment link.</p>
-
+    <section class="card">
+      <h3>Learning Activities</h3>
       <ul>
+        <li>Lesson 02: <u style="color:blue;">Design Principles Document</u></li>
+        <li>Lesson 03:  <u style="color:blue;">Website Planning Document</u></li>
+        <li>Lesson 04:  <u style="color:blue;">Chamber Home Page Build</u></li>
+        <li>Lesson 05:  <u style="color:blue;">Chamber Home Page Continued</u></li>
+        <li>Lesson 06:  <u style="color:blue;">Responsive Design</u></li>
+        <li>Lesson 07:  <u style="color:blue;">The Discover Page - Image Section</u></li>
+        <li>Lesson 08:  <u style="color:blue;">Join Page</u></li>
+        <li>Lesson 09:  <u style="color:blue;">Business Directory</u></li>
+        <li>Lesson 10:  <u style="color:blue;">Using the Weather API</u></li>
+        <li>Lesson 11:  <u style="color:blue;">The Chamber of Commerce Site</u></li>
       </ul>
+    </section>
 
+    <section class="card2">
+      <h3>Information</h3>
+        <p>Florida, USA</p>
+        <!-- Placeholder for weather and visits -->
+        <p>Weather: TBD</p>
+        <p>Number of Visits: TBD</p>
+  </section>
+     
+   
   </main>
   <footer>
     <div class="container">
-      <p>Copyright ©  2021 .:|:. Marco Quintero .:|:. Florida<script>document.querySelector("footer p").innerHTML += new Date().getFullYear();</script></p>
+      <p>Copyright ©  2023 .:|:. Marco Quintero .:|:. USA<script>document.querySelector("footer p").innerHTML += new Date().getFullYear();</script></p>
       <p style="color:rgb(211, 0, 244);">Last Updated: <script>document.querySelector("footer p:nth-of-type(2)").innerHTML += document.lastModified;</script></p>
     </div>
+    <script src="getdates.js"></script>
   </footer>
 </body>
 </html>

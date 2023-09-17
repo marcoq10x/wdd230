@@ -1,0 +1,100 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif; /* This is a placeholder, you'll use Google Fonts */
+    color: #333;
+}
+
+/* Google Fonts - Example */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+nav {
+    background-color: black;
+    text-align: center;
+    padding: 60px 5;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: 30px;
+    line-height: 1.8;
+}
+
+h2 {
+    text-align: center;
+    line-height: 1;
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    display: flex;
+    align-items: center ;
+    justify-content:space-evenly;
+    padding: 1em;
+    background-color:aqua;
+    box-shadow: 0 0 50px black;
+    }
+
+    header .container {
+    justify-content: space-between;
+    }
+    header img {
+    margin-right: 1em;
+    }
+    
+
+    
+    li {
+        font-size: 1.2em;
+        line-height: 1.2em;
+        list-style-type: none;
+    }
+
+
+    .card h3 {
+        background-color: aqua;
+        color: rgb(0, 0, 0);
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    
+    .card2 h3{
+        background-color: aqua;
+        color: rgb(0, 0, 0);
+        padding: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .card2 p {
+        text-align: center;
+    }
+    u:hover {
+        color:rgb(0, 247, 255);
+        text-decoration: underline;
+    }
+
+    footer .container {
+    display:block;
+    text-align: center;
+    }
+    
+    body {
+    background-color: white;
+    max-width:  900px;
+    margin: auto;
+    }
+
+
+
+
+
+
+
