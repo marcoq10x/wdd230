@@ -1,23 +1,22 @@
-/* Base styles */
-body {
-    font-family: 'Arial', sans-serif; /* This is a placeholder, you'll use Google Fonts */
-    color: #333;
-}
 
-/* Google Fonts - Example */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Marcellus', serif;
 }
 
 
+img {
+    margin-left: 25%;
+}
 
-
+h1 {
+    margin-right: 20%;
+}
 
 nav {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     text-align: center;
-    padding: 60px 5;
+    padding: 0px 5px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -25,10 +24,17 @@ nav {
     line-height: 1.8;
 }
 
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
 h2 {
     text-align: center;
     line-height: 1;
     color: rgb(0, 0, 0);
+    margin-bottom: 0px;
 }
 
 .container {
@@ -49,6 +55,7 @@ h2 {
     
 
     
+    
     li {
         font-size: 1.2em;
         line-height: 1.2em;
@@ -68,7 +75,6 @@ h2 {
         background-color: aqua;
         color: rgb(0, 0, 0);
         padding: 10px;
-        padding: 10px;
         border-radius: 5px;
         text-align: center;
     }
@@ -76,7 +82,7 @@ h2 {
     .card2 p {
         text-align: center;
     }
-    u:hover {
+    u :hover {
         color:rgb(0, 247, 255);
         text-decoration: underline;
     }
@@ -84,6 +90,7 @@ h2 {
     footer .container {
     display:block;
     text-align: center;
+    
     }
     
     body {
@@ -93,8 +100,57 @@ h2 {
     }
 
 
+/* Base styles for mobile */
+#mainNav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
 
+#mainNav a {
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: rgb(0, 0, 0); /* Just an example background for links */
+    color: rgb(255, 255, 255);
+}
 
+main {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 20px; /* Margin below cards */
+    margin-top: 20px;
+    
+}
+
+section {
+    padding: 1rem;
+    background-color: rgb(255, 255, 255); /* Just an example background for sections */
+    border-radius: 10px;
+}
+
+.card {
+    flex: 0.7; /* Takes up 70% of container width */
+  }
+  
+.card2 {
+    padding: 1rem;
+    border: 1px solid black; 
+    border-radius: 10px;
+    flex: 0.3; /* Takes up 30% width */
+  }
+
+  hr {
+    display: block;
+    margin: 0px 0;
+  }
 
 
 
