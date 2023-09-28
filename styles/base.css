@@ -90,7 +90,6 @@ h2 {
     footer .container {
     display:block;
     text-align: center;
-    
     }
     
     body {
@@ -117,7 +116,6 @@ h2 {
 main {
     display: flex;
     flex-direction: column;
-    
 }
 
 .cards-container {
@@ -138,6 +136,7 @@ section {
 
 .card {
     flex: 0.7; /* Takes up 70% of container width */
+    border: 1px solid black; 
   }
   
 .card2 {
