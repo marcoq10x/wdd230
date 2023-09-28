@@ -15,10 +15,10 @@ header {
     padding: 15px;
 }
 
-/* ... (more default CSS rules for mobile screens) ... */
+
 
 /* Media query for larger screens */
-@media (min-width: 768px) { /* This width can be adjusted as per your design's breakpoints */
+@media (min-width: 768px) { /* width can be adjusted as per design's breakpoints */
     #mainNav {
         flex-direction: row;
         justify-content: space-between;
