@@ -1,0 +1,64 @@
+/* Medium view: 481px to 1200px */
+@media (min-width: 481px) and (max-width: 1200px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .columns {
+        flex-direction: column;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .column:not(:last-child) {
+        flex: 1;
+        margin: 10px;
+        width: calc(50% - 20px);
+        float: left; 
+    }
+
+    .column:last-child {
+        clear: both;
+        flex-basis: 100%;
+        width: 100%;
+        margin: 10px 0;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        margin-top: 10px;
+    }
+}
+
+/* Large view: 1201px and beyond */
+@media (min-width: 1201px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .columns {
+        flex-direction: row;
+    }
+
+    .column {
+        flex: 1;
+        margin: 0 5px;
+    }
+
+    .columns p {
+        font-size: 1.2rem;
+    }
+    footer {
+        font-size: 1.5rem;
+        background-size: 100%;
+    }
+
+    img  {
+        width: 100%;
+        height: auto;
+    }
+
+}
