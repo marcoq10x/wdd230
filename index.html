@@ -21,7 +21,6 @@
 <link rel="stylesheet" href="styles/base.css">
 <link rel="stylesheet" href="styles/larger.css">
 
-<script src="scripts/main.js"></script>
 </head>
 <body>
   <header>
@@ -33,6 +32,7 @@
 
 
   <nav id="mainNav">
+    <button id="hamburger" onclick="toggleMenu()">≡</button>
     <a href="#">Home</a>
     <a href="chamber/siteplan.html">Site Plan</a>
     <a href="chamber/">Chamber</a>
@@ -48,9 +48,9 @@
       <section class="card">
         <h3>Learning Activities</h3>
         <ul>
-          <li>Lesson 01: <span style="color:blue;"><a href="lesson01/holygrail.html" style="text-decoration:underline;">Holy Layout</a> | <a href="https://codepen.io/marcoq10x/pen/XWoEyEp" style="text-decoration:underline;" target="_blank" rel="noopener noreferrer">JS Pen</a></span></li>
-          <li>Lesson 02: <span style="color:blue;"><a href="lesson01/media-query.html" style="text-decoration:underline;">Media Query</a> | <a href="lesson02/design-principles.html" style="text-decoration:underline;">Design Principles web page</a></span></li>
-          <li>Lesson 03:  <u style="color:blue;">Website Planning Document</u></li>
+          <li>Lesson 01: <u style="color:blue;"><a href="lesson01/holygrail.html" style="text-decoration:underline;">Holy Layout</a> | <a href="https://codepen.io/marcoq10x/pen/XWoEyEp" style="text-decoration:underline;" target="_blank" rel="noopener noreferrer">JS Pen</a></u></li>
+          <li>Lesson 02: <u style="color:blue;"><a href="lesson01/media-query.html" style="text-decoration:underline;">Media Query</a> | <a href="lesson02/design-principles.html" style="text-decoration:underline;">Design Principles web page</a></u></li>
+          <li>Lesson 03:  <u style="color:blue;"><a href="https://drive.google.com/file/d/1M8wWS2KL2GmFe4u3i5bkOADnOjQcKlLR/view?usp=drive_link" target="_blank"> css combinator </a> | <a href="https://codepen.io/marcoq10x/pen/ExGdPax">Pseudo Elements </a> |<a href="https://codepen.io/marcoq10x/pen/WNLarPB">Hamburger Menu </a> | <a>Website Planning Document</a></u></li>
           <li>Lesson 04:  <u style="color:blue;">Chamber Home Page Build</u></li>
           <li>Lesson 05:  <u style="color:blue;">Chamber Home Page Continued</u></li>
           <li>Lesson 06:  <u style="color:blue;">Responsive Design</u></li>
@@ -72,12 +72,14 @@
     </div>
    
   </main>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d148625.1102548131!2d-80.36605039307598!3d26.7108109020872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d8d6f618523787%3A0x3ba092c7d7a6471a!2sPalm%20Beach%2C%20FL!5e0!3m2!1sen!2sus!4v1696485087433!5m2!1sen!2sus" width="900" height="393" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
   <footer>
     <div class="container">
-      <p>Copyright ©  2023 .:|:. Marco Quintero .:|:. USA<script>document.querySelector("footer p").innerHTML += new Date().getFullYear();</script></p>
-      <p style="color:rgb(0, 0, 0);">Last Updated: <script>document.querySelector("footer p:nth-of-type(2)").innerHTML += document.lastModified;</script></p>
+      <p>Copyright © <span id="currentYear"></span> .:|:. Marco Quintero .:|:. USA</p>
+        <p style="color:rgb(0, 0, 0);">Last Updated: <span id="lastModified"></span></p>
     </div>
-    <script src="getdates.js"></script>
+    <script src="scripts/getdates.js"></script>
   </footer>
 </body>
 </html>

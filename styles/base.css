@@ -7,10 +7,13 @@ body {
 
 img {
     margin-left: 25%;
+    max-width: 100%;
+    height: auto;
 }
 
 h1 {
     margin-right: 20%;
+    color: black;
 }
 
 nav {
@@ -27,8 +30,34 @@ nav {
 nav a {
     color: rgb(255, 255, 255);
     text-decoration: none;
+    display: inline-block;
 }
 
+/* in base.css */
+li {
+    position: relative;
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+li::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    background-color: rgb(0, 0, 0); /* Change to desired circle color */
+    border-radius: 50%;
+}
+
+/*pseudo-element  adds Musical Note before each navigation link for better UX*/
+nav a::before {
+    content: "\1F3B5";
+    display: inline-block;
+    margin-right: 5px;
+}
 
 h2 {
     text-align: center;
@@ -49,12 +78,12 @@ h2 {
     header .container {
     justify-content: space-between;
     }
+
     header img {
     margin-right: 1em;
+    width: 80px; /* Adjust profile image size for mobile */
+    height: 80px;
     }
-    
-
-    
     
     li {
         font-size: 1.2em;
@@ -83,7 +112,7 @@ h2 {
         text-align: center;
     }
     u :hover {
-        color:rgb(0, 247, 255);
+        color: rgb(255, 0, 225);
         text-decoration: underline;
     }
 
@@ -95,7 +124,7 @@ h2 {
     body {
     background-color: white;
     max-width:  900px;
-    margin: auto;
+    margin: auto; 
     }
 
 
@@ -106,9 +135,13 @@ h2 {
     gap: 0.5rem;
 }
 
+#hamburger {
+    display: block;
+}
+
 #mainNav a {
     text-decoration: none;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     background-color: rgb(0, 0, 0); /* Just an example background for links */
     color: rgb(255, 255, 255);
 }
@@ -116,6 +149,7 @@ h2 {
 main {
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0 50px black;
 }
 
 .cards-container {
@@ -140,7 +174,6 @@ section {
   }
   
 .card2 {
-    padding: 1rem;
     border: 1px solid black; 
     border-radius: 10px;
     flex: 0.3; /* Takes up 30% width */
@@ -150,6 +183,17 @@ section {
     display: block;
     margin: 0px 0;
   }
+
+  iframe {
+    box-shadow: 0 0 50px black;
+  }
+
+  .card, .card2 {
+    border: none; /* Remove border for mobile to keep it simple */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* A subtle shadow instead */
+}
+
+
 
 
 
