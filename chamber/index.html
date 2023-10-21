@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--open Graph Meta properties-->
+    <meta name="og:title" content="Palm Beach Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marcoq10x.github.io/wdd230/">
+    <meta name="author" content="Marco Quintero">
+
+    <title>Palm Beach Chamber of Commerce</title>
+    <meta name="description" content="Palm Beach Chamber of Commerce">
+    <!--Font links-->
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Roboto+Serif:opsz,wght@8..144,300&display=swap" rel="stylesheet">
+    <!-- CSS links -->
+    <link rel="icon" href="/wdd230/chamber/images/favicon.ico">
+    <link rel="stylesheet" href="/wdd230/chamber/styles/normalize.css">
+    <link rel="stylesheet" href="/wdd230/chamber/styles/base.css">
+    <link rel="stylesheet" href="/wdd230/chamber/styles/medium.css">
+    <link rel="stylesheet" href="/wdd230/chamber/styles/larger.css">
+    
+</head>
+<body>
+    <header>
+        
+        <nav id="mainNav">
+            <button id="hamburger" onclick="toggleMenu()"></button>
+            <img src="/wdd230/chamber/images/logoM.png" width=90 height=90 alt="Chamber logo" id="logo">
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+        
+        <div class="hero">
+            <div class="hero-text">
+                <p>Palm Beach</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>~Welcome to the Palm Beach~</h1>
+        <h2>Chamber of Commerce</h2>
+
+        <section class="cards">
+            <div class="card">
+                <h3>Weather Conditions</h3>
+                <!-- Fictitious content for Weather Conditions -->
+                <p>Temperature: 78°F</p>
+                <p>Humidity: 65%</p>
+                <p>Wind Speed: 5 mph</p>
+            </div>
+            <div class="card">
+                <h3>Events</h3>
+                <!-- Fictitious content for Events -->
+                <p>Beach Cleanup - Oct 25th</p>
+                <p>Music Festival - Nov 3rd</p>
+                <p>Local Market - Every Saturday</p>
+            </div>
+            <div class="card">
+                <h3>Company Spotlight Add</h3>
+                <!-- Fictitious content for Company Spotlight Add -->
+                <p>Visit our Premium Member: BeachBum Rentals</p>
+                <p>Special offers for Chamber members!</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <img src="/wdd230/chamber/images/logoM.png" width= 90 height= 90 alt="Chamber logo">
+            <div class="contact">
+                <p>Contact Us.</p>
+                <p>700 Royal Palm Avenue, suite 107</p>
+                <p>Palm Beach, Fl 33414</p>
+                <p>(561)777-7777</p>
+            </div>
+            <div class="social-icons">
+                <img src="/wdd230/chamber/images/instagram.png" alt="Instagram icon">
+                <img src="/wdd230/chamber/images/facebook.png" alt="Facebook icon">
+                <img src="/wdd230/chamber/images/linkedin.png" alt="LinkedIn icon">
+                <img src="/wdd230/chamber/images/youtube.png" alt="YouTube icon">
+            </div>
+        </div>
+    <hr>
+        <div class="footer-info">
+            <p>Copyright © <span id="currentYear"></span> .:|:. Palm Beach Chamber .:|:. WDD 230 Project .:|:. Marco Quintero </p>
+            <p style="color:#FFFDD0;">Last Updated: <span id="lastModified"></span></p>
+        </div>
+        <script src="/wdd230/chamber/scripts/lastmod.js"></script>
+    </footer>
+</body>
+</html>

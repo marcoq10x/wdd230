@@ -1,0 +1,145 @@
+/* Mobile View */
+@media only screen and (max-width: 480px) {
+    
+    /* Adjustments for the nav menu */
+    nav {
+        flex-direction: column;
+    }
+
+
+    * {
+        border-color: aqua !important;
+    }
+
+    img {
+        float:left;
+    }
+
+    /*Navigation links menu*/
+    .navigation li a {
+        display: block;
+        text-align: center;
+        font-family: 'Gloock', serif;
+        text-decoration: underline;
+        color: var(--nav-link-color);
+        transition: color 0.3s ease;
+        font-size: 20px;
+    }
+    
+    /*Navigation links*/
+    ul.navigation.open {
+        padding-right: 90px;
+        margin-right: 20px;
+    }
+
+
+    .footer-content img {
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        border-bottom: 10px;
+        padding-bottom: 10px;
+        margin-left: 10px;
+    }
+
+    .contact {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .social-icons img {
+        padding-top: 10px;
+        margin-right: 2px;
+    }
+    #hamburger {
+        display: block;
+    }
+
+    nav.active a {
+        display: block; /* shows the links when the menu is toggled */
+    }
+
+    /*hero section */
+    .hero-text {
+        font-size: 2em; /* font size for better view on small devices */
+    }
+
+/*Navigation Menu*/
+    #mainNav {
+        position: absolute; /* Resets the positioning */
+        background-color: rgba(0, 0, 0, 0.7); /*background to be fully opaque on mobile */
+        top: 0px; /* Resets the top positioning */
+        display: block;
+    }
+    
+h1 {
+    font-size: 20px;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 18px;
+}
+   
+    /* Adjustments for the card layout in main section */
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 1;
+        margin-bottom: 10px;
+    }
+}
+
+/*=============================================================================*/
+
+/* Media query */
+@media (min-width: 481px) {
+    #hamburger {
+        display: none;  /* Hamburger hidden beyond 480px */
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+}
+
+
+/* Large View */
+@media only screen and (min-width: 1001px) {
+
+    .hero {
+        height: 600px;  /*Adjust height of hero */
+    }
+    /* better appearance on larger screens */
+    body {
+        font-size: 18px; /* Increasing the base font size for better readability on large screens */
+    }
+
+    h1, h2, h3 {
+        margin: 20px 0; /* Increase margin for headings for better spacing on large screens */
+    }
+
+    nav a {
+        font-size: 30px; /* Increase nav link size for large screens */
+    }
+
+    .cards {
+        gap: 30px; /* Increase gap between cards */
+    }
+
+    .card {
+        padding: 20px; /* Increase padding inside cards */
+    }
+    
+}

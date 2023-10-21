@@ -1,0 +1,275 @@
+/* base.css */
+
+/* Variables for colors */
+:root {
+    --nav-link-color: #DBB740;
+    --headline-color-on-white: #064E83;
+    --nav-background-color: black;
+    --nav-hover-link-color: #FFFDD0;
+    --nav-hover-background-color: #064E83;
+    --headline-color-on-color: #DBB740;
+    --paragraph-color-on-white: black;
+    --paragraph-color-on-color: #FFFDD0;
+    --paragraph-background-color: black;
+}
+
+/* General Reset and Typography */
+body {
+    font-family: 'Roboto Serif', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-color: #20201e;    /* Color of the background of entire page*/
+    color: var(--paragraph-color-on-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*center the content if its width is less than the viewport width */
+}
+
+header, main, footer {
+    max-width: 1000px;
+    width: 100%; /* ensures they take up the full available width up to 1000px */
+    box-sizing: border-box; /* This will make sure any padding or border doesn't add to the total width */
+}
+
+h1, h2, h3 {
+    font-family: 'Gloock', serif;
+    margin-top: 0;
+    color: var(--headline-color-on-white);
+    text-align: center;
+}
+
+h1, h2 {
+    color:#DBB740;
+    box-shadow: 0 0 50px black;
+}
+
+h3 {
+    font-size: 20px;
+    color: #DBB740;
+}
+
+/* Header styles */
+header {
+    position: relative;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hero img {
+    width: 100%;
+    height: 140%;
+    box-shadow: 0 0 50px black;
+}
+
+.hero-container {
+    position: relative;
+}
+
+/*Navigation Menu*/
+#mainNav {
+    position: absolute;
+    top: 0px; /* Adjust as needed to position where you want on the hero image */
+    left: 0;
+    right: 0;
+    z-index: 10; /* Makes sure the navigation is always on top */
+    display: flex;
+    align-items: center;
+    border-color: #DBB740;
+    border-style: double;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#mainNav img {
+    float: left;
+}
+
+.nav img {
+    width: 120px;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav li {
+    gap: 50px;
+
+}
+
+.nav a:hover {
+    background-color: var(--nav-hover-background-color);
+}
+
+.hero-text {
+    font-family: 'Gloock', serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    background-color: transparent;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.hero {
+    background-size: cover;       /* Cover the full view of the container */
+    background-repeat: no-repeat; /* No repeat of the image */
+    background-position: center;  /* Center the background image */
+    height: 400px;             
+    width: 100%;                  /* Take full width of its container */
+}
+
+#hamburger {
+    display: block;
+    font-size: 1.5rem;
+    border: 1px solid rgba(166, 10, 10, 0.3);
+    padding: 3px 7px 6px;
+    background-color: #064E83;
+    color: #DBB740;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#hamburger::before {
+    content: "≡";
+}
+
+#hamburger.open::before {
+    content: "❎";
+}
+
+/* Navigation links espacio */
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    flex: 1; /* Make each list item take up equal space */
+}
+ 
+/*Hides the Navigation menu on mobile view*/
+.navigation li {
+    display: none;
+}
+
+/*Navigation links menu*/
+.navigation li a {
+    display: block;
+    text-align: center;
+    font-family: 'Gloock', serif;
+    text-decoration: underline;
+    color: var(--nav-link-color);
+    transition: color 0.3s ease;
+    font-size: 30px;
+}
+
+
+/*Navigation links hover background*/
+.navigation li a:hover {
+    background-color: #064E83;
+    font-weight: 700;
+}
+
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+}
+
+/* Main content styles */
+main {
+    box-shadow: 0 0 50px black;
+}
+
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between; /*distributes the space evenly between the columns */
+    background-color:#20201e;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px black;
+    text-align: center;
+    padding: 0 10px;
+    box-shadow: 0 0 50px black;
+}
+
+.card {
+    flex: 1;
+    background-color: black;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border-color: #DBB740;
+    border-style: double;
+    margin: 0 10px; /* Add a bit of margin for spacing */
+    box-sizing: border-box; /* padding and border are included in the total width */
+}
+
+
+.card p {
+    color: var(--paragraph-color-on-color);
+    background-color: var(--paragraph-background-color);
+    padding: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #000000;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 0 50px black;
+    border-color: #DBB740;
+    border-style: double;
+}
+
+.footer-content, .footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*edits ContactUs info*/
+footer p{
+    margin: 0 0px;
+    font-size: 14px;
+}
+
+.footer-content img, .social-icons img {
+    margin-right: 10px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #DBB740;;
+    margin: 20px 0;
+}
+
+.contact {
+    margin-left: 20px;
+}
+
+div.footer-info{
+    gap: 20px;
+}
