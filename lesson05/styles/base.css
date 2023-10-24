@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: Acme, Arial, sans-serif;
+    background-color: #e1f5fe; /* Light blue background for vibrant light theme */
+    color: #0d47a1; /* Dark blue text for vibrant light theme */
+}
+
+/* Vibrant Light Theme */
+body.vibrant {
+    background-color: #e1f5fe; /* Light blue background */
+    color: #0d47a1; /* Dark blue text */
+}
+
+body.vibrant button {
+    background-color: #aed581; /* Light green background for button */
+    color: #2e7d32; /* Dark green text for button */
+}
+
+body.vibrant h1 {
+    color: #5e35b1; /* Purple text for heading */
+}
+
+body.vibrant button[type="submit"] {
+    color: #000000; /* Black text */
+}
+
+/* Deep Dark Theme */
+body.dark {
+    background-color: #263238; /* Very dark blue-grey background */
+    color: #b0bec5; /* Light grey text */
+}
+
+body.dark button {
+    background-color: #ff5252; /* Bright red background for button */
+    color: #ffffff; /* White text for button */
+}
+
+body.dark h1 {
+    color: #80d8ff; /* Light blue text for heading */
+}
+
+body.dark label[for="favchap"] {
+    color: #000000; /* Black text */
+}
+
+li {
+    color: #000000;
+}
+
+h1 {
+	font-size: 1.5rem;
+}
+
+main {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+	background-color: #ddd;
+	display: flex;
+	flex-direction: column;
+}
+
+input,
+button {
+	padding: 0.5rem;
+}
+
+button {
+	margin: 0.5rem;
+}
+
+.delete {
+	width: fit-content;
+}
+
+.input {
+	display: flex;
+	gap: 1rem;
+}
+
+.list {
+	padding: 0.5rem;
+}
+
+ul {
+	margin: 1rem;
+	list-style: none;
+}
+
+li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.chapter-summary {
+    display: none;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+li:hover .chapter-summary {
+    display: block;
+}
+
+
+@media only screen and (min-width: 32.5em) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	main {
+		width: 320px;
+	}
+}
+
