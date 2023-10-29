@@ -1,3 +1,7 @@
+/*base.css for WDD230 Home page */
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 
 body {
     font-family: 'Marcellus', serif;
@@ -82,7 +86,45 @@ h2 {
     width: 80px; /* Adjust profile image size for mobile */
     height: 80px;
     }
-    
+
+/* responsive Hero Image using srcset San Diego Temple */
+    .hero img{
+        margin-left: 0;  
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+        box-shadow: 0 0 50px black;
+    }
+ 
+    /*image container (afuera) */
+    .hero {
+        position: relative; /* Relative positioning so that child absolute positioning works */
+    }
+
+    .overlay {
+        position: absolute; /* Absolute positioning */
+        top: 30px;
+        
+        left: 30px; /* Position from the left */
+        background-color: rgba(135, 190, 236, 0.8); /* Background color with transparency */
+        padding: 1.5rem; /* Some padding */
+        border-radius: 4px; /* Rounded corners */
+        box-shadow: 0 0 2rem #fff; /* White glow */
+        opacity: 0.75;
+        font-size: 30px; /* Font size */
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+
+    .overlay p {
+        margin: 0;
+        padding: .25rem;
+        font-weight: 700;
+        font-size: 2rem;
+        font-family:"Great Vibes", serif;
+    }
+
     li {
         font-size: 1.2em;
         line-height: 1.2em;

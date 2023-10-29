@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/wdd230/lesson06/styles/responsive-images.css">
+    <title>Responsive Images with srcset</title>
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="/wdd230/lesson06/images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="/wdd230/lesson06/images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="/wdd230/lesson06/images/hero-large.webp" alt="Bogota Temple Large Image" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+    
+</body>
+</html>

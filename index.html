@@ -26,12 +26,10 @@
 <body>
   <header>
     <div class="container">
-      <img src="images/me.jpeg"  width="150" height="150" alt="Profile Image of Me">
+      <img src="images/me.webp"  width="150" height="150" alt="Profile Image of Me">
       <h1>Marco Quintero</h1>
     </div>  
   </header>
-
-
   <nav id="mainNav">
     <button id="hamburger" onclick="toggleMenu()">≡</button>
     <a href="#">Home</a>
@@ -40,7 +38,16 @@
     <a href="https://www.byui.edu/">BYU-Idaho</a>
     <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng" target="_blank">Scripture</a>
   </nav>
-
+  <div class="hero">
+    <picture>
+      <source srcset="images/san-diego-temple-small.webp" media="(max-width: 400px)">
+        <source srcset="images/san-diego-temple-large.webp" media="(max-width: 960px)">
+        <img src="images/san-diego-temple-large.webp" alt="San Diego Temple">
+    </picture>
+    <div class="overlay">
+      <p>San Diego Temple</p>
+    </div> <!-- This is the overlay -->
+  </div>
   <main>
     <h2>WDD 230: Web Fronted Development</h2>
     <hr>
@@ -51,10 +58,10 @@
         <ul>
           <li>Lesson 01: <u style="color:blue;"><a href="lesson01/holygrail.html" style="text-decoration:underline;">Holy Layout</a> | <a href="https://codepen.io/marcoq10x/pen/XWoEyEp" style="text-decoration:underline;" target="_blank" rel="noopener noreferrer">JS Pen</a></u></li>
           <li>Lesson 02: <u style="color:blue;"><a href="lesson01/media-query.html" style="text-decoration:underline;">Media Query</a> | <a href="lesson02/design-principles.html" style="text-decoration:underline;">Design Principles web page</a></u></li>
-          <li>Lesson 03:  <u style="color:blue;"><a href="https://drive.google.com/file/d/1M8wWS2KL2GmFe4u3i5bkOADnOjQcKlLR/view?usp=drive_link" target="_blank"> css combinator </a> | <a href="https://codepen.io/marcoq10x/pen/ExGdPax">Pseudo Elements </a> |<a href="https://codepen.io/marcoq10x/pen/WNLarPB">Hamburger Menu </a> | <a href="lesson03/chamber-site-plan.html">Website Planning Document</a></u></li>
+          <li>Lesson 03:  <u style="color:blue;"><a href="https://drive.google.com/file/d/1M8wWS2KL2GmFe4u3i5bkOADnOjQcKlLR/view?usp=drive_link" target="_blank"> css combinator </a> | <a href="https://codepen.io/marcoq10x/pen/ExGdPax" style="text-decoration:underline;">Pseudo Elements </a> |<a href="https://codepen.io/marcoq10x/pen/WNLarPB" style="text-decoration:underline;">Hamburger Menu </a> | <a href="lesson03/chamber-site-plan.html">Website Planning Document</a></u></li>
           <li>Lesson 04:  <u style="color:blue;"><a href="https://codepen.io/marcoq10x/pen/vYbBore">CSS Pseudo-Classes</a> | <a href="chamber/" style="text-decoration:underline;">Home Page Build</a></u></li>
           <li>Lesson 05:  <u style="color:blue;"><a href="lesson05/bom.html" style="text-decoration:underline;">BOM</a> | <a href="chamber/" style="text-decoration:underline;">Chamber Home Page Continued</a></u></li>
-          <li>Lesson 06:  <u style="color:blue;">Responsive Design</u></li>
+          <li>Lesson 06:  <u style="color:blue;"><a href="lesson02/images-dp/landscape.webp" style="text-decoration:underline;">WebP</a> | <a href="lesson06/responsive-images.html" style="text-decoration:underline;">Responsive Images: srcset</a> | Responsive Design</u></li>
           <li>Lesson 07:  <u style="color:blue;">The Discover Page - Image Section</u></li>
           <li>Lesson 08:  <u style="color:blue;">Join Page</u></li>
           <li>Lesson 09:  <u style="color:blue;">Business Directory</u></li>

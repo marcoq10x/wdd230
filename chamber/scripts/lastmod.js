@@ -1,3 +1,5 @@
+//JS Chamber
+
 // Last Modification Function
 document.addEventListener("DOMContentLoaded", function() {
     // Populate copyright year
@@ -38,4 +40,19 @@ const navigation = document.querySelector('.navigation');
 hamburger.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamburger.classList.toggle('open');
+});
+
+// Dark Mode Toggle Function
+const modeButton = document.querySelector("#mode");
+const main = document.querySelector("main");
+const body = document.querySelector("body");
+
+modeButton.addEventListener("click", () => {
+  if (modeButton.textContent.includes("😎")) {
+    body.classList.add("dark-mode");
+    modeButton.textContent = "🌤";
+  } else {
+    body.classList.remove("dark-mode");
+    modeButton.textContent = "😎";
+  }
 });

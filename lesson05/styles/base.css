@@ -1,3 +1,4 @@
+/*base.css for BOM with Dynamic dark mode*/
 * {
 	margin: 0;
 	padding: 0;
@@ -106,7 +107,7 @@ li {
     display: none;
     background-color: #eee;
     border: 1px solid #ccc;
-    padding: 0.5rem;
+		padding: 0.5rem;
     position: absolute;
     z-index: 1;
     top: 100%;
