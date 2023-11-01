@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // Hero Image Slideshow Function
-let currentImageIndex = 0;
+/*let currentImageIndex = 0;
 const heroImages = [
     "/wdd230/chamber/images/clock.jpg",
     "/wdd230/chamber/images/umbrella.jpg",
@@ -30,7 +30,7 @@ function changeHeroImage() {
 }
 
 setInterval(changeHeroImage, 3000); // Change image every 3 seconds
-
+*/
 
 
 // Hamburger Menu Toggle Function
