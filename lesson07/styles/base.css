@@ -1,0 +1,66 @@
+/* Base CSS styles for lazyload.html */
+
+/* Reset some default styles for a consistent look */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #e2e2e2; /* Light grey background for the container */
+}
+
+header .container,
+footer .container {
+    background-color: #333; /* Darker background for header and footer containers */
+    color: #fff;
+}
+
+header h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the child img elements horizontally */
+    margin-top: 20px;
+}
+
+/* Style for img elements */
+img {
+    display: block; /* Makes each img element a block-level element */
+    margin-bottom: 20px; /* Adds space between the images */
+    background: #000; /* Black background for images */
+    transition: opacity 1s ease; /* Transition for the fade effect */
+    animation: fadeInFromBlack 15s; /* Animation for the fade effect */
+}
+
+
+footer {
+    text-align: center;
+}
+
+/* Fade-in animation */
+@keyframes fadeInFromBlack {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        background-color: transparent;
+    }
+}
+

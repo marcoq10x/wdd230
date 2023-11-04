@@ -192,7 +192,7 @@ header {
     background-size: cover;       /* Cover the full view of the container */
     background-repeat: no-repeat; /* No repeat of the image */
     background-position: center;  /* Center the background image */
-    height: 400px;             
+    height: auto;             
     width: 100%;                  /* Take full width of its container */
 }
 

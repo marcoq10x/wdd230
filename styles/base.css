@@ -182,7 +182,7 @@ h2 {
 #mainNav a {
     text-decoration: none;
     padding: 0.5rem 1rem;
-    background-color: rgb(0, 0, 0); /* Just an example background for links */
+    background-color: rgb(0, 0, 0); /*example background for links */
     color: rgb(255, 255, 255);
 }
 
@@ -218,6 +218,17 @@ section {
     border-radius: 10px;
     flex: 0.3; /* Takes up 30% width */
   }
+
+  .label {
+	font-family: Arial, sans-serif;
+	font-weight: 700;
+}
+
+.visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
 
   hr {
     display: block;

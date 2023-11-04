@@ -10,6 +10,15 @@
     background-color: #666;
     color: #fff;
     }
+
+    .container img {
+        aspect-ratio: 4/3;
+        width: 120px;
+        height: 90px;
+        margin-right: 20px;
+        margin-left: 80px;
+    }
+    
     
     .container {
     padding: 15px;
@@ -24,6 +33,15 @@
     }
 /* Media query for larger screens */
 @media (min-width: 768px) { /* width can be adjusted as per design's breakpoints */
+
+
+    .container img {
+        aspect-ratio: 4/3;
+        width: 200px;
+        height: 150px;
+        margin-left: 200px;
+    }
+    
     #mainNav {
         flex-direction: row;
         justify-content: space-between;

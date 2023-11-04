@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Image Lazy Loading">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="random images">
+  <meta property="og:url" content="https://marcoq10x.github.io/wdd230/">
+    <title>Image Lazy Loading</title>
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Lazy Loading Image Gallery</h1>
+        </div>
+    </header>
+    <main>
+        <picture><img src="/wdd230/chamber/images/clockL.webp" alt="Clock Palm Beach" loading="lazy" class="lazy" width="400" height="600"></picture>
+        <picture><img src="/wdd230/chamber/images/umbrellaL.webp" alt="Umbrella" loading="lazy" class="lazy" width="400" height="600"></picture>
+        <picture><img src="/wdd230/chamber/images/oceanL.webp" alt="Ocean" loading="lazy" class="lazy" width="400" height="600"></picture>
+        <picture><img src="/wdd230/chamber/images/terraceL.webp" alt="terrace" loading="lazy" class="lazy" width="400" height="600"></picture>
+        <picture><img src="/wdd230/chamber/images/palmtreeM.webp" alt="Palm Tree" loading="lazy" class="lazy" width="400" height="600"></picture>
+        <picture><img src="/wdd230/chamber/images/poolM.webp" alt="pool" loading="lazy" class="lazy"width="400" height="600"></picture>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Copyright © <span id="currentYear"></span> .:|:. Marco Quintero .:|:. USA</p>
+              <p style="color:rgb(255, 255, 255);">Last Updated: <span id="lastModified"></span></p>
+          </div>
+        <script src="/wdd230/lesson07/scripts/lazyload.js"></script>
+    </footer>
+</body>
+</html>
+
