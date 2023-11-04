@@ -219,6 +219,7 @@ section {
     flex: 0.3; /* Takes up 30% width */
   }
 
+  /*targets number of visits class */
   .label {
 	font-family: Arial, sans-serif;
 	font-weight: 700;
