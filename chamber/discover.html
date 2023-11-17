@@ -11,7 +11,7 @@
     <meta name="author" content="Marco Quintero">
 
     <title>Palm Beach Chamber of Commerce</title>
-    <meta name="description" content="web page for the Palm Beach Chamber of Commerce | Connecting Local Businesses | Networking, Business Growth & Community Support">
+    <meta name="description" content="web page for the Palm Beach Chamber of Commerce">
     <!--Font links-->
     <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Roboto+Serif:opsz,wght@8..144,300&display=swap" rel="stylesheet">
     <!-- CSS links -->
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="/wdd230/chamber/styles/larger.css">
     
 </head>
-<body>  
+<body>
     <header>
         
         <nav id="mainNav">
@@ -44,7 +44,7 @@
                 <source srcset="/wdd230/chamber/images/LargeHeroS.webp" media="(max-width: 480px)">
                 <source srcset="/wdd230/chamber/images/LargeHeroM.webp" media="(max-width: 1000px)">
                 <img src="/wdd230/chamber/images/LargeHeroL.webp" alt="Large Hero Image" width="986" height="657">
-            </picture>--> 
+            </picture>-->
             <div id="mode">
                 😎
             </div>
@@ -57,32 +57,93 @@
         </div>
     </header>
     <main>
-        <h1>~Palm Beach Chamber of Commerce~</h1>
-        <h2>Welcome</h2>
+        <div class="grid-container">
+            <!-- Sidebar starts here -->
+            <aside class="sidebar">
+                <div class="visit-message">
+                    <p></p>
+                </div>
+                <section class="demographics">
+                    <h2>Demographics</h2>
+                    <p><strong>Population:</strong> 1.5 million </p>
+                    <p><strong>Median Age:</strong> 70.6 years </p>
+                    <p><strong>Median Household Income:</strong> $168,787</p>
+                    <p><strong>Education:</strong> 89% high school diploma or higher</p>
+                </section>
+                <section class="events">
+                    <h2>Upcoming Events</h2>
+                    <ul>
+                        <li><strong>Art & Beach Walk:</strong> Nov 15, 2023</li>
+                        <li><strong>Beach Cleanup:</strong> Dec 5, 2023</li>
+                        <li><strong>Holiday Parade:</strong> Dec 19, 2023</li>
+                    </ul>
+                </section>
+                <section class="attractions">
+                    <h2>Local Attractions</h2>
+                    <ul>
+                        <li>Palm Beach Zoo & Conservation Society</li>
+                        <li>Lion Country Safari</li>
+                        <li>The Flagler Museum</li>
+                    </ul>
+                </section>
+            </aside>
+            
+            <div class="photo-gallery">
+        <!-- Image 1 -->
+        <figure>
+            <picture>
+                <source srcset="/wdd230/chamber/images/BreakersS.webp" media="(max-width: 480px)">
+                <img src="/wdd230/chamber/images/Breakers.webp" alt="The Breakers" loading="lazy" width="600" height="400">
+            </picture>
+            <figcaption>The famous Breakers hotel in Palm Beach</figcaption>
+        </figure>
 
-        <section class="cards">
-            <div class="card">
-                <h3>Weather Conditions</h3>
-                <!-- Fictitious content for Weather Conditions -->
-                <p>Temperature: <span id="temp-value">45</span>°F</p>
-                <p>Humidity: 65%</p>
-                <p>Wind Speed: <span id="wind-speed-value">5</span> mph</p>
-                <p>Wind Chill: <span id="wind-chill-value">N/A</span></p>
+        <!-- Image 2 -->
+        <figure>
+            <picture>
+                <source srcset="/wdd230/chamber/images/businessS.webp" media="(max-width: 480px)">
+                <img src="/wdd230/chamber/images/business.webp" alt="Downtown Palm Beach" loading="lazy" width="600" height="400">
+            </picture>
+            <figcaption>Business district in downtown Palm Beach</figcaption>
+        </figure>
+
+        <!-- Image 3 -->
+        <figure>
+            <picture>
+                <source srcset="/wdd230/chamber/images/gazeboS.webp" media="(max-width: 480px)">
+                <img src="/wdd230/chamber/images/gazebo.webp" alt="Palm Beach Gazebo" loading="lazy" width="600" height="400">
+            </picture>
+            <figcaption>Scenic pools in Palm Beach</figcaption>
+        </figure>
+
+        <!-- Image 4 -->
+        <figure>
+            <picture>
+                <source srcset="/wdd230/chamber/images/meetingS.webp" media="(max-width: 480px)">
+                <img src="/wdd230/chamber/images/meeting.webp" alt="City Place Meeting" loading="lazy" width="600" height="400">
+            </picture>
+            <figcaption>City Place, a hub for meetings and events</figcaption>
+        </figure>
+
+        <!-- Image 5 -->
+        <figure>
+            <picture>
+                <source srcset="/wdd230/chamber/images/BreakfastS.webp" media="(max-width: 480px)">
+                <img src="/wdd230/chamber/images/Breakfast.webp" alt="Breakfast in Palm Beach" loading="lazy" width="600" height="400">
+            </picture>
+            <figcaption>Enjoying a breakfast with a view</figcaption>
+        </figure>
+
+        <!-- Image 6 -->
+        <figure>
+            <picture>
+                <source srcset="/wdd230/chamber/images/beachS.webp" media="(max-width: 480px)">
+                <img src="/wdd230/chamber/images/beach.webp" alt="Palm Beach Shoreline" loading="lazy" width="600" height="400">
+            </picture>
+            <figcaption>Sunrise on the beautiful shores of Palm Beach</figcaption>
+        </figure>
             </div>
-            <div class="card">
-                <h3>Events</h3>
-                <!-- Fictitious content for Events -->
-                <p>Beach Cleanup - Oct 25th</p>
-                <p>Music Festival - Nov 3rd</p>
-                <p>Local Market - Every Saturday</p>
-            </div>
-            <div class="card">
-                <h3>Company Spotlight Ad</h3>
-                <!-- Fictitious content for Company Spotlight Add -->
-                <p>Visit our Premium Member: BeachBum Rentals</p>
-                <p>Special offers for Chamber members!</p>
-            </div>
-        </section>
+        </div>    
     </main>
     <footer>
         <div class="footer-content">

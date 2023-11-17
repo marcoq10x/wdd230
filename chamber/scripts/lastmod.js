@@ -1,4 +1,4 @@
-//JS Chamber
+//JavaScript for Chamber of Commerce of Palm Beach
 
 // Last Modification Function
 document.addEventListener("DOMContentLoaded", function() {
@@ -13,12 +13,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // Hero Image Slideshow Function
-/*let currentImageIndex = 0;
+let currentImageIndex = 0;
 const heroImages = [
-    "/wdd230/chamber/images/clock.jpg",
-    "/wdd230/chamber/images/umbrella.jpg",
-    "/wdd230/chamber/images/ocean.jpg",
-    "/wdd230/chamber/images/terrace.jpg"
+    "/wdd230/chamber/images/clockL.webp",
+    "/wdd230/chamber/images/umbrellaL.webp",
+    "/wdd230/chamber/images/oceanL.webp",
+    "/wdd230/chamber/images/terraceL.webp"
 ];
 
 function changeHeroImage() {
@@ -30,7 +30,7 @@ function changeHeroImage() {
 }
 
 setInterval(changeHeroImage, 3000); // Change image every 3 seconds
-*/
+
 
 
 // Hamburger Menu Toggle Function
@@ -56,3 +56,41 @@ modeButton.addEventListener("click", () => {
     modeButton.textContent = "😎";
   }
 });
+
+
+//Last Visit and messages for User
+// Constants for time calculations
+const MS_PER_DAY = 86400000; // (1000 ms/s * 60 s/m * 60 m/h * 24 h/day)
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    //  last visit in localStorage
+    const lastVisit = localStorage.getItem('lastVisit');
+    const now = Date.now();
+    let message = "Welcome! Let us know if you have any questions.";
+
+    if (lastVisit) {
+        const daysSinceLastVisit = Math.floor((now - lastVisit) / MS_PER_DAY);
+
+        if (daysSinceLastVisit < 1) {
+            message = "Back so soon! Awesome!";
+        } else {
+            const dayOrDays = daysSinceLastVisit === 1 ? "day" : "days";
+            message = `You last visited ${daysSinceLastVisit} ${dayOrDays} ago.`;
+        }
+    }
+
+    // Display message in the sidebar content area
+    const visitMessageElement = document.querySelector('.visit-message'); // Add this class to your HTML where you want to display the message
+    if (visitMessageElement) {
+        visitMessageElement.textContent = message;
+    }
+
+    // Update the last visit to now
+    localStorage.setItem('lastVisit', now);
+});
+
+
+
+
+
+

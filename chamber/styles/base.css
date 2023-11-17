@@ -73,6 +73,11 @@ header, main, footer {
   .dark-mode footer {
     border-color: white;
   }
+
+  .dark-mode div.visit-message {
+    color: #FFFDD0;
+    background-color: #85acff;
+  }
   
   .hero-label {
     position: absolute;
@@ -129,7 +134,7 @@ header {
 
 .hero img {
     width: 100%;
-    height: 100%;
+    height: 140%;
     box-shadow: 0 0 50px black;
 }
 
@@ -192,7 +197,7 @@ header {
     background-size: cover;       /* Cover the full view of the container */
     background-repeat: no-repeat; /* No repeat of the image */
     background-position: center;  /* Center the background image */
-    height: auto;             
+    height: 400px;          /*mobile view and medium view Hero image appears*/   
     width: 100%;                  /* Take full width of its container */
 }
 
@@ -339,3 +344,114 @@ div.footer-info{
     gap: 20px;
 }
 
+/*===================Code for Discover Page===================*/
+
+/* Styles for the sidebar content */
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    width: 105%;
+    margin-left: 15px;
+}
+
+/* Styling Demographics*/
+.sidebar p, .sidebar ul {
+    font-size: 1em;
+    margin-bottom: 1em;
+    padding-top: 50px;
+    font-size: 22px;
+    margin-left: 15px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This will distribute space evenly */
+    height: 100%; /* Make sure the sidebar takes full height */
+    font-size: 22px;
+}
+
+.sidebar ul li strong {
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+/* Base styles for mobile view - single column layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /*more space to photo gallery*/
+    gap: 20px; /* Space between sidebar and main content */
+    padding-top: 20px;
+    align-items: start;
+    width: auto;
+}
+
+.sidebar,
+.photo-gallery {
+        /* Ensure that sidebar and gallery take full width */
+        width: 100%;
+        
+ }
+
+ .photo-gallery {
+    display: flex;
+    justify-content: flex-end; /* Aligns the gallery to the far right */
+    flex-wrap: wrap; /* Allows images to wrap to the next line */
+    margin-left: 40px;
+ }
+
+
+ .sidebar {
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around; /* This will stretch the sidebar content to fill the space */
+    height: 81%;   
+    width: 140%;
+    flex: 1;
+ } 
+
+  img {
+    margin-left: 0px;
+ }
+
+  figcaption {font-size: smaller;}
+
+  /* visit message background, font color, font type*/
+ .visit-message {
+    margin-bottom: 300px; /* Adjust as needed */
+    background-color:rgba(0, 0, 0, 0.7); /*background color*/
+    color: Aqua;   /*font color*/
+    font-family: 'Gloock', serif; /*font*/
+   
+ }
+
+ /*Position, padding, background style border radius*/
+ div.visit-message {
+    position:inherit;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    padding: 10px;
+    margin: 0px 0px 0px 18px;
+    text-align: center;
+    margin-bottom: 320px;
+    border-radius: 50%;
+ }
+
+ .demographics {
+    margin-top: 50px;
+    text-align: center;
+ }
+
+ .events {
+    margin-top: 200px;
+    text-align: center;
+ }
+
+ .attractions {
+    margin-top: 400px;
+    text-align: center;
+ }

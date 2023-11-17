@@ -1,4 +1,4 @@
-/*larger.css for Chamber of Commerce*/
+/*larger.css for Chamber of Commerce stores Media Queries for different views*/
 
 /* Mobile View */
 @media only screen and (max-width: 480px) {
@@ -96,6 +96,80 @@ h3 {
         flex: 1;
         margin-bottom: 10px;
     }
+/*==================================discover page=================================*/
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        padding-top: 0;
+        display: block; /* Stack sidebar and gallery vertically */
+    }
+
+    .photo-gallery {
+        justify-content: center; /* Centers the gallery in the single column */
+    }
+
+    .sidebar {
+        order: -1; /* Moves the sidebar to the top */
+        flex-basis: 100px;
+    }
+
+    
+      .sidebar,
+      .photo-gallery {
+        /* Ensure that sidebar and gallery take full width */
+        width: 100%;
+        order: 0; /* Reset order */
+    }
+
+    main, .sidebar, .photo-gallery, .grid-container {
+        margin: 0;
+        padding: 0;
+        width: 100%; /* Ensures content does not overflow */
+    }
+
+    .sidebar section, .photo-gallery figure {
+        margin-bottom: 20px; /* Add space between sections */
+    }
+
+    .sidebar h2, .sidebar p, .sidebar ul, .sidebar li {
+        text-align: center; /* Center text in the sidebar */
+        margin-left: 0; /* Reset any left margins */
+    }
+
+    .photo-gallery figure {
+        margin: auto; /* Center figures in the gallery */
+    }
+
+    .photo-gallery img {
+        display: block; /* Prevent inline-block default spacing */
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 400px; /* Max width for images */
+        margin-top: 10px; /* Center align images */
+    }
+
+    div.visit-message {
+        align-items: center;
+        justify-content:center;
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0px -30px 0px;
+        text-align: center;
+     }
+
+     .demographics {
+        margin-top: 40px;
+        text-align: center;
+     }
+    
+     .events {
+        margin-top: 20px;
+        text-align: center;
+     }
+    
+     .attractions {
+        margin-top: 40px;
+        text-align: center;
+     }
 }
 
 /*=============================================================================*/
@@ -114,6 +188,18 @@ h3 {
         display: block;
         flex: 1 1 100%;
     }
+
+    /* Base styles for hover effect on images */
+    .photo-gallery img {
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .photo-gallery img:hover {
+        box-shadow: 0 0 50px Aqua;
+    }
+
+
+    
 }
 
 
