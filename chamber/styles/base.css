@@ -347,10 +347,19 @@ div.footer-info{
 /*===================Code for Discover Page===================*/
 
 /* Styles for the sidebar content */
+.sidebar h1 {
+    font-size: 1em;
+    margin-top: 2em;
+    width: 100%;
+    align-items: center;
+    justify-content:center;
+}
+
+
 .sidebar h2 {
     font-size: 1.5em;
     margin-bottom: 0.5em;
-    width: 105%;
+    width: 100%;
     margin-left: 15px;
 }
 
@@ -408,7 +417,7 @@ div.footer-info{
     display:flex;
     flex-direction: column;
     justify-content:space-around; /* This will stretch the sidebar content to fill the space */
-    height: 81%;   
+    height: 85%;   
     width: 140%;
     flex: 1;
  } 
@@ -425,7 +434,8 @@ div.footer-info{
     background-color:rgba(0, 0, 0, 0.7); /*background color*/
     color: Aqua;   /*font color*/
     font-family: 'Gloock', serif; /*font*/
-   
+    width:fit-content;
+    margin-bottom: 10px;
  }
 
  /*Position, padding, background style border radius*/
