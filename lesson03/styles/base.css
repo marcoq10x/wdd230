@@ -1,25 +1,23 @@
-/* if you are using any Google fonts change the font names below to your fonts. 
-Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a | */
+/* Google fonts change the font names below. 
+spaces in font name should be replaced with a +. 
+Fonts separated by a | */
 body {
 font-family: 'Gloock', serif;
 font-family: 'Roboto Serif', serif;
 }
+
 :root {
-  /* change the values below to your colors from your palette */
+  /* values below matching colors from palette */
   --primary-color: black;
   --secondary-color:#DBB740;
   --accent1-color: #FFFDD0;
   --accent2-color: #064E83;
 
-  /* change the values below to your chosen font(s) */
+  /* chosen fonts*/
   --heading-font: 'Gloock', serif;
   --paragraph-font: 'Roboto Serif', serif;
 
-  /* these colors below should be chosen from among your palette colors above */
-  --nav-link-color: #DBB740;
-  --headline-color-on-white: #064E83 /* headlines on a white background */ 
-  --nav-link-color: #DBB740;
+  /*colors below chosen from palette colors above */
   --nav-background-color: black;
   --nav-hover-link-color: #FFFDD0;
   --nav-hover-background-color: #064E83;
@@ -28,9 +26,6 @@ font-family: 'Roboto Serif', serif;
   --paragraph-color-on-color: #FFFDD0; /* paragraph text on a colored background */ 
   --paragraph-background-color: black;
 }
-        
-
-/*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
   max-width: 1200px;
@@ -38,30 +33,36 @@ body {
   padding: 4em;
   font-size: 18px;
   text-align: center;
+  font-family: var(--paragraph-font);
 }
 
 img {
   display: block;
   margin: 0 auto;
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
 }
+
 h2 {
   text-align: center;
 }
+
 hr {
   height: 3px;
   margin: 35px 0;
   background: var(--accent1-color);
 }
+
 header {
   padding: 1em;
   text-align: center;
   color: var(--headline-color-on-color);
   background-color: var(--paragraph-background-color);
 }
+
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
 }
@@ -71,15 +72,18 @@ p {
   color: var(--paragraph-color-on-white);
   padding: 1em;
 }
+
 .colors {
   width: 100%;
   min-width: 350px;
   margin: 30px auto;
   text-align: center;
 }
+
 .colors th {
   background-color: #999;
 }
+
 .colors td{
   width: 25%;
   height: 3em;
@@ -88,12 +92,15 @@ p {
 .primary {
   background-color: var(--primary-color);
 }
+
 .secondary {
   background-color: var(--secondary-color);
 }
+
 .accent1 {
   background-color: var(--accent1-color);
 }
+
 .accent2{
   background-color: var(--accent2-color);
 }
@@ -120,11 +127,12 @@ nav a {
   padding: 10px;
   margin-left: 20px;
 }
+
 nav a:link, nav a:visited {
   color: var(--nav-link-color);
 }
+
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
 }
-

@@ -10,8 +10,8 @@
     <meta property="og:url" content="https://marcoq10x.github.io/wdd230/">
     <meta name="author" content="Marco Quintero">
 
-    <title>Palm Beach Chamber of Commerce Discover</title>
-    <meta name="description" content="Discover page for the Palm Beach Chamber of Commerce Website">
+    <title>Palm Beach Chamber of Commerce join page</title>
+    <meta name="description" content="Join page for the Palm Beach Chamber of Commerce | Connecting Local Businesses | Networking, Business Growth & Community Support">
     <!--Font links-->
     <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Roboto+Serif:opsz,wght@8..144,300&display=swap" rel="stylesheet">
     <!-- CSS links -->
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="/wdd230/chamber/styles/larger.css">
     
 </head>
-<body>
+<body>  
     <header>
         
         <nav id="mainNav">
@@ -44,7 +44,7 @@
                 <source srcset="/wdd230/chamber/images/LargeHeroS.webp" media="(max-width: 480px)">
                 <source srcset="/wdd230/chamber/images/LargeHeroM.webp" media="(max-width: 1000px)">
                 <img src="/wdd230/chamber/images/LargeHeroL.webp" alt="Large Hero Image" width="986" height="657">
-            </picture>-->
+            </picture>--> 
             <div id="mode">
                 😎
             </div>
@@ -59,94 +59,81 @@
         </div>
     </header>
     <main>
-        <div class="grid-container">
-            <!-- Sidebar starts here -->
-            <aside class="sidebar">
-                <div class="visit-message">
-                    <p></p>
-                </div>
-                <h1>Palm Beach Chamber of Commerce</h1>
-                <section class="demographics">
-                    <h2>Demographics</h2>
-                    <p><strong>Population:</strong> 1.5 million </p>
-                    <p><strong>Median Age:</strong> 70.6 years </p>
-                    <p><strong>Median Household Income:</strong> $168,787</p>
-                    <p><strong>Education:</strong> 89% high school diploma or higher</p>
-                </section>
-                <section class="events">
-                    <h2>Upcoming Events</h2>
-                    <ul>
-                        <li><strong>Art & Beach Walk:</strong> Nov 15, 2023</li>
-                        <li><strong>Beach Cleanup:</strong> Dec 5, 2023</li>
-                        <li><strong>Holiday Parade:</strong> Dec 19, 2023</li>
-                    </ul>
-                </section>
-                <section class="attractions">
-                    <h2>Local Attractions</h2>
-                    <ul>
-                        <li>Palm Beach Zoo & Conservation Society</li>
-                        <li>Lion Country Safari</li>
-                        <li>The Flagler Museum</li>
-                    </ul>
-                </section>
-            </aside>
+          <div class="membership-container">
+            <form id="joinForm" class="form-container" method="get" action="thankyou.html">
+              <fieldset>
+                <legend>Join the Chamber</legend>
+                <label for="firstName">First Name*</label>
+                <input type="text" id="firstName" name="firstName" required>
+                
+                <label for="lastName">Last Name*</label>
+                <input type="text" id="lastName" name="lastName" required>
+                
+                <label for="title">Title/Position*</label>
+                <input type="text" id="title" name="title" pattern="[A-Za-z- ]{7,}" required>
+                
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                
+                <label for="phone">Mobile Phone*</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="organization">Business/Organization Name*</label>
+                <input type="text" id="organization" name="organization" required>
+                
+                <label for="membershipLevel">Membership Level*</label>
+                <select id="membershipLevel" name="membershipLevel" required>
+                    <option value="" disabled selected>Select Membership Level</option>
+                    <option value="np">NP Membership - No Fee</option>
+                    <option value="bronze">Bronze Membership - $350</option>
+                    <option value="silver">Silver Membership - $500</option>
+                    <option value="gold">Gold Membership - $700</option>
+                  </select>
+                  
+                
+                <label for="description">Business/Organization Description</label>
+                <textarea id="description" name="description"></textarea>
+                
+                <input type="hidden" id="formLoadTime" name="formLoadTime">
+                <script>
+                    // Set the hidden input value to the current timestamp
+                    document.getElementById('formLoadTime').value = Date.now();
+                </script>
+                <button type="submit" class="submit-button">Become a Member Today!</button>
+              </fieldset>
+            </form>
             
-            <div class="photo-gallery">
-        <!-- Image 1 -->
-        <figure>
-            <picture>
-                <source srcset="/wdd230/chamber/images/BreakersS.webp" media="(max-width: 480px)">
-                <img src="/wdd230/chamber/images/Breakers.webp" alt="The Breakers" loading="lazy" width="600" height="400">
-            </picture>
-            <figcaption>The famous Breakers hotel in Palm Beach</figcaption>
-        </figure>
-
-        <!-- Image 2 -->
-        <figure>
-            <picture>
-                <source srcset="/wdd230/chamber/images/businessS.webp" media="(max-width: 480px)">
-                <img src="/wdd230/chamber/images/business.webp" alt="Downtown Palm Beach" loading="lazy" width="600" height="400">
-            </picture>
-            <figcaption>Business district in downtown Palm Beach</figcaption>
-        </figure>
-
-        <!-- Image 3 -->
-        <figure>
-            <picture>
-                <source srcset="/wdd230/chamber/images/gazeboS.webp" media="(max-width: 480px)">
-                <img src="/wdd230/chamber/images/gazebo.webp" alt="Palm Beach Gazebo" loading="lazy" width="600" height="400">
-            </picture>
-            <figcaption>Scenic pools in Palm Beach</figcaption>
-        </figure>
-
-        <!-- Image 4 -->
-        <figure>
-            <picture>
-                <source srcset="/wdd230/chamber/images/meetingS.webp" media="(max-width: 480px)">
-                <img src="/wdd230/chamber/images/meeting.webp" alt="City Place Meeting" loading="lazy" width="600" height="400">
-            </picture>
-            <figcaption>City Place, a hub for meetings and events</figcaption>
-        </figure>
-
-        <!-- Image 5 -->
-        <figure>
-            <picture>
-                <source srcset="/wdd230/chamber/images/BreakfastS.webp" media="(max-width: 480px)">
-                <img src="/wdd230/chamber/images/Breakfast.webp" alt="Breakfast in Palm Beach" loading="lazy" width="600" height="400">
-            </picture>
-            <figcaption>Enjoying a breakfast with a view</figcaption>
-        </figure>
-
-        <!-- Image 6 -->
-        <figure>
-            <picture>
-                <source srcset="/wdd230/chamber/images/beachS.webp" media="(max-width: 480px)">
-                <img src="/wdd230/chamber/images/beach.webp" alt="Palm Beach Shoreline" loading="lazy" width="600" height="400">
-            </picture>
-            <figcaption>Sunrise on the beautiful shores of Palm Beach</figcaption>
-        </figure>
-            </div>
-        </div>    
+            <aside class="membership-benefits">
+              <!-- NP Membership -->
+              <article class="membership-level np-membership">
+                <h3>NP Membership (complimentary)</h3>
+                <p>For non-profit organizations. Benefits include access to all community events, networking opportunities, and listing in our directory.</p>
+              </article>
+              
+              <!-- Bronze Membership -->
+              <article class="membership-level bronze-membership">
+                <h3>Bronze Membership $350</h3>
+                <p>Ideal for small businesses looking to grow. Includes Bronze-level listing in the directory and access to training events.</p>
+              </article>
+              
+              <!-- Silver Membership -->
+              <article class="membership-level silver-membership">
+                <h3>Silver Membership $500</h3>
+                <p>For established businesses ready to make a bigger impact. Includes advertising opportunities and featured directory listing.</p>
+              </article>
+              
+              <!-- Gold Membership -->
+              <article class="membership-level gold-membership">
+                <h3>Gold Membership $700</h3>
+                <p>The ultimate membership for maximum exposure. Gold members enjoy priority event access, spotlight positions, and premium support.</p>
+              </article>
+            </aside>
+          </div>
+          
+          <script>
+            // Set the hidden input value to the current timestamp
+            document.getElementById('formLoadTime').value = Date.now();
+          </script>
     </main>
     <footer>
         <div class="footer-content">

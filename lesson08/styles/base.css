@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ececec;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  caption {
+    font-size: 1.5em;
+    text-align: center;
+    caption-side: bottom;
+    padding: 8px;
+    color: rgb(0, 0, 0);
+  }
+
+  .header-top-left {
+    background-color: rgb(255, 0, 195); /* Matches the top row background */
+  }
+
+  .black-background th {
+    background-color: rgb(0, 0, 0); /*background color to black */
+    padding: 10px; /* Adjust the padding as necessary */
+    border: 1px solid rgb(255, 255, 255); /* This sets the border color to black to match the background */
+  }
+  
+
+  /* This is the background color for the basic, premium and deluxe row */
+  thead th {
+    background-color: rgb(30, 0, 255);
+    color: white;
+    padding: 12px 0;
+  }
+
+  /* Crazy top row that gave me gray hairs and has company name*/
+  th[colspan="4"] {
+    background-color:rgb(255, 0, 195); /*background */
+    padding: 12px; 
+  }
+
+  .company-name {
+    color: white; /* White text color */
+    font-weight: bold; /* Bold font weight */
+    padding: 10px; 
+    text-align: center; 
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 12px 0;
+    font-size: 30px;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #FFFFFF;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #EFEFEF;
+  }
+  
+  tbody td {
+    border: 1px solid #595959;
+  }
+  
+  /* Styling check marks and crosses */
+  td {
+    font-size: 24px;
+  }
+
+  .feature-bold {
+    font-weight: bold; /* This makes the font weight bold */
+  }
+  
+  
+  

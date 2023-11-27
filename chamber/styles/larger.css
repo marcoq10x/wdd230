@@ -8,9 +8,9 @@
         flex-direction: column;
     }
 
-
-    * {
-        border-color: aqua !important;
+    /*makes border of nav menu Aqua*/
+    #mainNav {
+        border-color: aqua;
     }
 
     img {
@@ -34,6 +34,18 @@
         margin-right: 20px;
     }
 
+    div.card {
+        border-color: Aqua;
+    }
+
+    footer {
+        border-color: Aqua;
+    }
+
+    footer hr{
+        border-color: Aqua;
+    }
+
 
     .footer-content img {
         align-items: center;
@@ -42,6 +54,11 @@
         border-bottom: 10px;
         padding-bottom: 10px;
         margin-left: 10px;
+    }
+
+    img#logo {
+        width: 90px;
+        Height: 90px;
     }
 
     .contact {
@@ -86,6 +103,12 @@ h2 {
 h3 {
     font-size: 18px;
 }
+
+h1, h2, h3 {
+    margin: 10px 0; /* Increase margin for headings for better spacing on large screens */
+    box-shadow: 0 0 50px #20201e;
+    border-radius: 10px;
+}
    
     /* Adjustments for the card layout in main section */
     .cards {
@@ -96,6 +119,7 @@ h3 {
         flex: 1;
         margin-bottom: 10px;
     }
+
 /*==================================discover page=================================*/
     .grid-container {
         grid-template-columns: 1fr; /* Single column layout */
@@ -135,6 +159,7 @@ h3 {
         width: 100%;
         align-items: center;
         justify-content:center;
+        padding: 0%;
     }
 
     .sidebar h2, .sidebar p, .sidebar ul, .sidebar li {
@@ -177,6 +202,52 @@ h3 {
         margin-top: 40px;
         text-align: center;
      }
+/* ==================================Code for Join Page ==============================*/
+      form#joinForm.form-container {
+        border-color: aqua;
+     }
+
+     aside.membership-benefits {
+        border-color: aqua;
+     }
+
+     /* ===========================Code for thank You page (Join Page ammendment)=======================*/
+      /*Black background on thank you container*/
+    .thank-you-container {
+        padding: 40px;
+        background-color:#000000;
+        border-color: aqua;
+    }
+   
+    /*hover over the "Thank you!" and displays an Aqua shadow*/
+    .thank-you-container h1:hover {
+        box-shadow: 0 0 50px Aqua;
+    }
+
+    /*Thank You background completely black*/
+    .thank-you-container h1 {
+        background-color: black;
+    }
+
+    .thank-you-container p {
+        box-shadow: 0 0 40px black;
+        border-radius: 10px;
+    }
+
+    /*Black shadow around the "Back to Join Page" button*/
+    .thank-you-container a:hover {
+        box-shadow: 0 0 70px #0040ff;
+    }
+
+    form#joinForm.form-container {
+        background-color: black;
+        box-shadow: 0 0 50px #20201e;
+    }
+    
+    aside.membership-benefits {
+        background-color: black;
+        box-shadow: 0 0 50px #20201e;
+    }
 }
 
 /*=============================================================================*/
@@ -194,6 +265,12 @@ h3 {
     .navigation li {
         display: block;
         flex: 1 1 100%;
+    }
+
+    h1, h2, h3 {
+        margin: 20px 0; /* Increase margin for headings for better spacing on large screens */
+        box-shadow: 0 0 50px #20201e;
+        border-radius: 10px;
     }
 
 /* ===========================Discover Page Code=======================*/
@@ -228,9 +305,52 @@ h3 {
         margin-bottom: 200px;
         border-radius: 50%;
      }
+
+     form#joinForm.form-container {
+        background-color: black;
+        box-shadow: 0 0 50px #20201e;
+        width: 45%;
+        margin-right: 7px;
+    }
+    
+    aside.membership-benefits {
+        background-color: black;
+        box-shadow: 0 0 50px #20201e;
+        width: 45%;
+        margin-left: 7px;
+    }
+
+     /* ===========================Code for thank You page (Join Page ammendment)=======================*/
+
+    /*Black background on thank you container*/
+    .thank-you-container {
+        padding: 40px;
+        background-color:#000000;
+    }
+
+    /*hover over the "Thank you!" and displays an Aqua shadow*/
+    .thank-you-container h1:hover {
+        box-shadow: 0 0 50px Aqua;
+    }
+
+    /*Thank You background completely black*/
+    .thank-you-container h1 {
+        background-color: black;
+    }
+
+    .thank-you-container p {
+        box-shadow: 0 0 40px black;
+        border-radius: 10px;
+    }
+
+    /*Blue shadow around the "Back to Join Page" button*/
+    .thank-you-container a:hover {
+        box-shadow: 0 0 70px #0040ff;
+    }
     
 }
 
+/*=============================================================================*/
 
 /* Large View */
 @media only screen and (min-width: 1001px) {
@@ -245,10 +365,13 @@ h3 {
 
     h1, h2, h3 {
         margin: 20px 0; /* Increase margin for headings for better spacing on large screens */
+        box-shadow: 0 0 50px #20201e;
+        border-radius: 10px;
     }
 
     nav a {
         font-size: 30px; /* Increase nav link size for large screens */
+        border-radius: 5px;
     }
 
     .cards {
@@ -258,5 +381,46 @@ h3 {
     .card {
         padding: 20px; /* Increase padding inside cards */
     }
+
+
+    /* ===========================Code for thank You page (Join Page ammendment)=======================*/
+    /*Black background on thank you container*/
+    .thank-you-container {
+        padding: 40px;
+        background-color:#000000;
+    }
     
+    /*hover over the "Thank you!" and displays an Aqua shadow*/
+    .thank-you-container h1:hover {
+        box-shadow: 0 0 50px Aqua;
+    }
+
+    /*Thank You background completely black*/
+    .thank-you-container h1 {
+        background-color: black;
+    }
+
+    .thank-you-container p {
+        box-shadow: 0 0 40px black;
+        border-radius: 10px;
+    }
+
+    /*Blue shadow around the "Back to Join Page" button*/
+    .thank-you-container a:hover {
+        box-shadow: 0 0 70px #0040ff;
+    }
+
+    form#joinForm.form-container {
+        background-color: black;
+        box-shadow: 0 0 50px #20201e;
+        width: 45%;
+        margin-right: 7px;
+    }
+    
+    aside.membership-benefits {
+        background-color: black;
+        box-shadow: 0 0 50px #20201e;
+        width: 45%;
+        margin-left: 7px;
+    }
 }

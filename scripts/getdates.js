@@ -8,16 +8,16 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("lastModified").textContent = lastModified;
 });
 
-function toggleMenu() {
-    const navItems = document.getElementById("mainNav");
-    if (navItems.style.display === "none" || navItems.style.display === "") {
-        navItems.style.display = "flex";
-        document.getElementById("hamburger").innerText = 'X';  // Change to 'X' for close
-    } else {
-        navItems.style.display = "none";
-        document.getElementById("hamburger").innerText = '≡';  // Change back to '≡'
-    }
-}
+// Hamburger Menu Toggle Function
+const hamburger = document.querySelector('#hamburger');
+const navigation = document.querySelector('.navigation');
+
+hamburger.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    hamburger.classList.toggle('open');
+});
+
+
 
 
 // page visitor counter
@@ -39,3 +39,8 @@ numVisits++;
 
 // Store the new visit total into localStorage, key=numVisits-ls
 localStorage.setItem("numVisits-ls", numVisits);
+
+
+
+
+

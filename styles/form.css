@@ -1,0 +1,159 @@
+/*form.css which complements "form.html" as well as "record.html" which is the thank you for submitting page for the form. */
+
+:root {
+    --primary-color: Aqua; /* Example color */
+    --font-family: 'Arial', sans-serif;
+    --spacing: 10px;
+}
+
+main {
+    justify-content:flex-start;
+    align-items:flex-start
+}
+
+form {
+    width: 600px;
+    margin: 0 0 0 105px;
+    padding: 20px 0px 20px 0px;
+    font-family: var(--font-family);
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    display: block;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 40px;     /*field set spacing from form boundary*/
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 0px;
+
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="submit"],
+input[type="range"] {
+    width: 96%;
+    padding: var(--spacing);
+    margin-bottom: var(--spacing);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background:rgb(239, 235, 235)
+}
+
+input[type="submit"] {
+    display: block;
+    background-color: var(--primary-color);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+   border-radius: 40px;
+   width: 150px;
+}
+
+input[type="range"] {
+    width: 100px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 30px 0px;
+}
+
+
+span#range-value {
+    position:absolute;
+    display: inline-block;
+    height: 0px;
+}
+
+/* Range slider styles */
+input#page-rating {
+    margin-bottom: 0px;
+}
+
+#range-value {
+    display: inline-block;
+    padding-left: var(--spacing);
+}
+
+/*====================record.html complementing css==================*/
+
+
+
+  
+  .confirmation-container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .confirmation-container h1 {
+    color: #ff00ff; /* Use the same primary color as in form.css */
+  }
+  
+  .confirmation-container p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  
+  .confirmation-container a {
+    text-decoration: none;
+    color: white;
+    background-color: #ff00ff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .confirmation-container a:hover {
+    background-color: #003cff;
+  }
+  
+
+
+/*====================Media Query==================*/
+@media (max-width: 480px) {
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
+  
+    form {
+      width: 100%; /* Adjust the width to fit your design needs */
+      margin: 10px 0px 20px; /* Center the form */
+      padding: 0;
+    }
+
+    fieldset {
+        display: block;
+        border: 1px solid var(--primary-color);
+        border-radius: 15px;
+        padding: 40px;     /*field set spacing from form boundary*/
+        width: auto;
+        align-items: center;
+        justify-content: center;
+    }
+  
+   
+  
+    .confirmation-container {
+      width: 90%; /* Adjust the width for the confirmation message */
+      margin: 0 auto; /* Center the confirmation container */
+    }
+  }
+  

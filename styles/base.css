@@ -42,6 +42,7 @@ li {
     margin-left: 20px;
 }
 
+/*pseudo-element adds circle before each navigation link under "Learning Activities" for better UX*/
 li::before {
     content: "";
     position: absolute;
@@ -59,6 +60,26 @@ nav a::before {
     content: "\1F3B5";
     display: inline-block;
     margin-right: 5px;
+}
+
+#hamburger {
+    display: block;
+    font-size: 1.5rem;
+    border: 1px solid rgba(166, 10, 10, 0.3);
+    padding: 3px 7px 6px;
+    background-color: #000000;
+    color: #ffffff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#hamburger::before {
+    content: "≡";
+}
+
+#hamburger.open::before {
+    content: "x";
 }
 
 h2 {

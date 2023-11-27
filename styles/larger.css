@@ -1,6 +1,6 @@
 /* Larger.css for WDD230 Home page*/
 /* Default styles (mobile-first) */
-
+@media only screen and (max-width: 480px) {
     body {
     background-color: #fff;
     font-size: 14px;
@@ -11,6 +11,34 @@
     color: #fff;
     }
 
+    /*Hides the Navigation menu on mobile view*/
+    .navigation li {
+        display: none;
+    }
+
+      /* Get's rid of the Navigation Menu background (quita la barra negra en mobile view*/
+      nav#mainNav {
+        align-items: center;
+        align-content: center;
+       justify-content: center;
+       padding: 0px 0px 0px 0px;
+    }
+
+    ul.navigation.open {
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        padding: 0px 0px 0px 0px;
+    }
+
+
+    /* Toggle display of menu items when hamburger is active */
+    .navigation.open li {
+        display: block;
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+    }
+  
     .container img {
         aspect-ratio: 4/3;
         width: 120px;
@@ -30,8 +58,9 @@
     section .card, section .card2 {
         width: 100%
     }
+}
 /* Media query for larger screens */
-@media (min-width: 768px) { /* width can be adjusted as per design's breakpoints */
+@media (min-width: 481px) { /* width can be adjusted as per design's breakpoints */
 
 
     .container img {
@@ -40,6 +69,15 @@
         height: 150px;
         margin-left: 200px;
     }
+
+    /*in larger view it displays the Navigation Menu horizontally and evenly spaced*/
+    ul.navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        padding: 0px 0px 0px 0px;
+        width: auto;
+    }
     
     #mainNav {
         flex-direction: row;
@@ -47,6 +85,11 @@
     }
     #mainNav a {
         display: inline-block;
+    }
+
+    .navigation li {
+        display: inline-block;
+        font-size: 30px;
     }
 
     .cards-container {
@@ -73,3 +116,31 @@
 
 
 
+/* Large View */
+@media only screen and (min-width: 1001px) {
+
+    .hero {
+        height: 600px;  /*Adjust height of hero */
+    }
+    /* better appearance on larger screens */
+    body {
+        font-size: 18px; /* Increasing the base font size for better readability on large screens */
+    }
+
+    h1, h2, h3 {
+        margin: 20px 0; /* Increase margin for headings for better spacing on large screens */
+    }
+
+    nav a {
+        font-size: 30px; /* Increase nav link size for large screens */
+    }
+
+    .cards {
+        gap: 30px; /* Increase gap between cards */
+    }
+
+    .card {
+        padding: 20px; /* Increase padding inside cards */
+    }
+    
+}

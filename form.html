@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Open Graph Meta properties-->
+  <meta property="og:title" content="Marco Quintero - WDD 230 - Web Frontend Development">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://wallpapers.com/wallpapers/bogota-city-with-colorful-buildings-4wwlgr5ej0yujdqy.html">
+  <meta property="og:url" content="https://marcoq10x.github.io/wdd230/">
+  <meta name="author" content="Marco Quintero">
+  
+  <title>Marco Quintero - WDD230 - Web Frontend Development</title>
+  <meta name="description" content="Marco Quintero - WDD230 - Web Frontend Development">
+<!-- Font links -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+<!-- CSS links -->
+<link rel="icon" href="/wdd230/favicon.ico">
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/larger.css">
+<link rel="stylesheet" href="styles/form.css">
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="images/me.webp"  width="200" height="150" alt="Profile Image of Me">
+      <h1>Marco Quintero</h1>
+    </div>  
+  </header>
+  <nav id="mainNav">
+    <button id="hamburger"></button>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+      <li><a href="chamber/">Chamber</a></li>
+      <li><a href="https://www.byui.edu/">BYU-Idaho</a></li>
+      <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng" target="_blank">Scripture</a></li>
+    </ul>
+  </nav>
+<main>
+
+    <form method="get" action="record.html">
+        <fieldset>
+            <legend>Contact Form</legend>
+
+            <label class="top">Username*</label>
+            <input type="text" id="username" name="username" required>
+
+            <label class="top">Password*</label>
+            <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" title="Password must be at least 8 alpha-numeric characters" required>
+
+            <label class="top">Confirm Password*</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <label class="top">Email*</label>
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address from the byui.edu domain" required>
+
+            <label class="page-rating">Page Rating:</label>
+            <input type="range" id="page-rating" name="page-rating" min="1" max="10" step="1">
+            <span id="range-value">5</span>
+
+            <input type="submit" value="Send My Info">
+        </fieldset>
+    </form>
+
+    <!-- Existing content ... -->
+</main>
+  <footer>
+    <div class="container">
+      <p>Copyright © <span id="currentYear"></span> .:|:. Marco Quintero .:|:. USA</p>
+        <p style="color:rgb(0, 0, 0);">Last Updated: <span id="lastModified"></span></p>
+    </div>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/form.js"></script>
+  </footer>
+</body>
+</html>

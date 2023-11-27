@@ -55,7 +55,7 @@ header, main, footer {
   
   .dark-mode .card {
     background-color: black !important;
-    border-color: white;
+    border-color: #FFFDD0;
   }
   
   .dark-mode .cards {
@@ -63,21 +63,58 @@ header, main, footer {
   }
 
   .dark-mode .card-content {
-    background-color: white !important;
+    background-color: #FFFDD0 !important;
   }
   
   .dark-mode hr {
-    border-color: white;
+    border-color: #FFFDD0;
   }
 
   .dark-mode footer {
-    border-color: white;
+    border-color: #FFFDD0;
   }
 
   .dark-mode div.visit-message {
     color: #FFFDD0;
     background-color: #85acff;
   }
+
+  .dark-mode aside.membership-benefits {
+    border-color: #FFFDD0;
+  }
+
+  .dark-mode aside.membership-benefits h3 {
+    color:#FFFDD0;
+  }
+
+  .dark-mode form#joinForm.form-container {
+    border-color: #FFFDD0;
+ }
+
+ .dark-mode form#joinForm.form-container label {
+    color: #FFFDD0;
+ }
+
+ .dark-mode form#joinForm.form-container legend {
+    color:#FFFDD0;
+ }
+
+ .dark-mode form#joinForm.form-container .submit-button {
+    color:#FFFDD0;
+ }
+ 
+ .dark-mode .thank-you-container {
+    border-color:#FFFDD0;
+ }
+
+ .dark-mode .thank-you-container h1 {
+    color: #FFFDD0;
+ }
+
+ .dark-mode .thank-you-container a {
+    color:#FFFDD0;
+ }
+  
   
   .hero-label {
     position: absolute;
@@ -87,7 +124,7 @@ header, main, footer {
     border: 1px solid rgba(0,0,0,.75);
     padding: 1rem;
     box-shadow: 0 0 3rem #fff; /* Optional, adds a glow effect */
-    opacity: 0.75; /* Optional, for some transparency */
+    opacity: 0.80; /* Optional, for some transparency */
   }
   
   .hero-label p {
@@ -96,7 +133,7 @@ header, main, footer {
     font-weight: 700;
     font-size: 1.5rem;
     font-family: 'Gloock', serif;
-    color: #DBB740;
+    color: #DBB740
   }
   
 
@@ -272,9 +309,8 @@ main {
     display: flex;
     gap: 20px;
     justify-content: space-between; /*distributes the space evenly between the columns */
-    background-color:#20201e;
+    background-color:#000000;
     margin-bottom: 20px;
-    box-shadow: 0 0 5px black;
     text-align: center;
     padding: 0 10px;
     box-shadow: 0 0 50px black;
@@ -465,3 +501,169 @@ div.footer-info{
     margin-top: 400px;
     text-align: center;
  }
+
+
+ /*===================Code for Join Page===================*/
+
+ /* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #000000;
+  }
+  
+  /* Form Container */
+  .form-container {
+    background: #20201e;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 2rem auto;
+    width: 80%;/*affects width of form (specially mobile view)*/
+    max-width: 800px;
+    border-color: #DBB740;
+    border-style: double;
+  }
+  
+  /* Field Styles */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"],
+  button.submit-button {
+    width: 70%;
+    padding: 12px 20px;
+    border: none;
+    background-color: #172047;
+    color: #DBB740;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-family: 'Gloock', serif;
+    align-items: center;
+    justify-content:center;
+    margin-left: 50px;
+  }
+  
+  input[type="submit"]:hover,
+  button.submit-button:hover {
+    background-color:#0040ff;
+    box-shadow: 0 0 70px #0040ff;
+  }
+  
+  /* Membership Benefits */
+  .membership-benefits {
+    background:#20201e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 800px;
+    border-color: #DBB740;
+    border-style: double;
+  }
+  
+  .membership-level {
+    padding: 10px;
+    border-left: 4px solid #064E83;
+    margin-bottom: 1rem;
+  }
+  
+  /* Specific Membership Styles */
+  .np-membership { border-color: Aqua; }
+  .bronze-membership { border-color: #9c560f; }
+  .silver-membership { border-color: #c0c0c0; }
+  .gold-membership { border-color: #DBB740; }
+  
+  /* Responsive Layout */
+  @media (min-width: 481px) {
+    .membership-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+  
+    .form-container,
+    .membership-benefits {
+      width: 45%;
+    }
+  }
+  
+  /* Typography */
+  h1, h2, h3, label, legend {
+    color: #DBB740;
+    font-family: 'Gloock', serif;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 0;
+    
+  }
+  
+  legend {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  /* Utility Classes */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /*===================Code for thank You page (Joint Page ammendment)===================*/
+
+  body, html {
+    background: #000000
+  }
+  
+  
+  /* Thank You Page Styling */
+  .thank-you-container {
+    text-align: center;
+    padding: 2rem;
+    background: #20201e;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 100%;
+    border-color: #DBB740;
+    border-style: double;
+    margin: 20px 20px 20px 20px;
+  }
+  
+  .thank-you-container h1 {
+    color: #DBB740;
+    margin-bottom: 1rem;
+    background-color: #1d1d1e;
+  }
+  
+  .thank-you-container p {
+    color: #FFFDD0;
+    margin-bottom: 2rem;
+  }
+  
+  .thank-you-container a {
+    background-color: #064E83;
+    color: #DBB740;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 300ms;
+  }
+  
+  .thank-you-container a:hover {
+    background-color: #0040ff;
+  }
