@@ -1,0 +1,159 @@
+{
+    "lessons": [
+      {
+        "lesson": "01",
+        "links": [
+          {
+            "url": "lesson01/holy-layout.html",
+            "title": "Holy Layout | JS Pen"
+          }
+        ]
+      },
+      {
+        "lesson": "02",
+        "links": [
+          {
+            "url": "lesson02/media-query.html",
+            "title": "Media Query"
+          },
+          {
+            "url": "lesson02/design-principles.html",
+            "title": "Design Principles web page"
+          }
+        ]
+      },
+      {
+        "lesson": "03",
+        "links": [
+          {
+            "url": "lesson03/css-combinator.html",
+            "title": "CSS Combinator"
+          },
+          {
+            "url": "lesson03/pseudo-elements.html",
+            "title": "Pseudo Elements"
+          },
+          {
+            "url": "lesson03/hamburger-menu.html",
+            "title": "Hamburger Menu"
+          },
+          {
+            "url": "lesson03/website-planning.html",
+            "title": "Website Planning Document"
+          }
+        ]
+      },
+      {
+        "lesson": "04",
+        "links": [
+          {
+            "url": "lesson04/pseudo-classes.html",
+            "title": "CSS Pseudo-Classes"
+          },
+          {
+            "url": "lesson04/home-page-build.html",
+            "title": "Home Page Build"
+          }
+        ]
+      },
+      {
+        "lesson": "05",
+        "links": [
+          {
+            "url": "lesson05/bom.html",
+            "title": "BOM"
+          },
+          {
+            "url": "lesson05/chamber-home.html",
+            "title": "Chamber Home Page Continued"
+          }
+        ]
+      },
+      {
+        "lesson": "06",
+        "links": [
+          {
+            "url": "lesson06/webp.html",
+            "title": "WebP"
+          },
+          {
+            "url": "lesson06/srcset.html",
+            "title": "Responsive Images: srcset"
+          },
+          {
+            "url": "lesson06/responsive-design.html",
+            "title": "Responsive Design"
+          }
+        ]
+      },
+      {
+        "lesson": "07",
+        "links": [
+          {
+            "url": "lesson07/lazy-loading.html",
+            "title": "Lazy loading"
+          },
+          {
+            "url": "lesson07/discover-page.html",
+            "title": "The Discover Page - Image Section"
+          }
+        ]
+      },
+      {
+        "lesson": "08",
+        "links": [
+          {
+            "url": "lesson08/html-tables.html",
+            "title": "HTML tables"
+          },
+          {
+            "url": "lesson08/html-forms.html",
+            "title": "HTML forms"
+          },
+          {
+            "url": "lesson08/join-page.html",
+            "title": "Join Page"
+          }
+        ]
+      },
+      {
+        "lesson": "09",
+        "links": [
+          {
+            "url": "lesson09/json.html",
+            "title": "JSON"
+          },
+          {
+            "url": "lesson09/fetch-api.html",
+            "title": "Fetch API"
+          },
+          {
+            "url": "lesson09/json-menu.html",
+            "title": "JSON menu"
+          },
+          {
+            "url": "lesson09/business-directory.html",
+            "title": "Business Directory"
+          }
+        ]
+      },
+      {
+        "lesson": "10",
+        "links": [
+          {
+            "url": "lesson10/weather-info.html",
+            "title": "Weather info"
+          },
+          {
+            "url": "lesson10/weather-api.html",
+            "title": "Using the Weather API"
+          },
+          {
+            "url": "lesson10/home-enhancements.html",
+            "title": "Home Page Enhancements"
+          }
+        ]
+      }
+    ]
+  }
+  

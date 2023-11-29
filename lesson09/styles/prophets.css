@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Marcellus&display=swap");
+
+body {
+  font-family: 'Marcellus', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #14151a; /* Change as per your preference */
+}
+
+header {
+  background-color: rgb(150, 149, 221); /* Dark header */
+  color: rgb(0, 0, 0); /* White text */
+  padding: 1rem;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font:bolder;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* This will create a responsive grid */
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+section {
+  background-color: #fff; /* Card background */
+  border: 1px solid #ddd; /* Card border */
+  border-radius: 8px; /* Rounded corners for card */
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Card shadow */
+}
+
+section h2 {
+  margin: 0.5rem 0;
+  font-style: oblique;
+}
+
+section h3{
+    font-style: oblique;
+}
+
+section img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Mobile view */
+@media only screen and (max-width: 480px) {
+  #cards {
+    grid-template-columns: 1fr; /* Stack the cards in one column on small screens */
+  }
+}
+
+footer {
+  background-color:rgb(150, 149, 221); /* Dark footer */
+  color: rgb(0, 0, 0); /* White text */
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font:bolder;
+}

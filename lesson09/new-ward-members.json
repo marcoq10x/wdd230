@@ -1,0 +1,29 @@
+{
+    "familyName": "Paz",
+    "moveInDate": "2022-01-15",
+    "numberOfPeople": 4,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "Joao Paz",
+        "gender": "Male",
+        "birthdate": "1980-07-10"
+      },
+      {
+        "name": "Jadira Paz",
+        "gender": "Female",
+        "birthdate": "1982-05-15"
+      },
+      {
+        "name": "Joel Paz",
+        "gender": "Male",
+        "birthdate": "2008-03-22"
+      },
+      {
+        "name": "Jara Paz",
+        "gender": "Female",
+        "birthdate": "2010-11-30"
+      }
+    ]
+  }
+  
