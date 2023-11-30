@@ -30,19 +30,19 @@
         "lesson": "03",
         "links": [
           {
-            "url": "lesson03/css-combinator.html",
+            "url": "https://drive.google.com/file/d/1M8wWS2KL2GmFe4u3i5bkOADnOjQcKlLR/view?usp=drive_link",
             "title": "CSS Combinator"
           },
           {
-            "url": "lesson03/pseudo-elements.html",
+            "url": "https://codepen.io/marcoq10x/pen/ExGdPax",
             "title": "Pseudo Elements"
           },
           {
-            "url": "lesson03/hamburger-menu.html",
+            "url": "https://codepen.io/marcoq10x/pen/WNLarPB",
             "title": "Hamburger Menu"
           },
           {
-            "url": "lesson03/website-planning.html",
+            "url": "lesson03/chamber-site-plan.html",
             "title": "Website Planning Document"
           }
         ]
@@ -51,11 +51,11 @@
         "lesson": "04",
         "links": [
           {
-            "url": "lesson04/pseudo-classes.html",
+            "url": "https://codepen.io/marcoq10x/pen/vYbBore",
             "title": "CSS Pseudo-Classes"
           },
           {
-            "url": "lesson04/home-page-build.html",
+            "url": "chamber/index.html",
             "title": "Home Page Build"
           }
         ]
@@ -68,7 +68,7 @@
             "title": "BOM"
           },
           {
-            "url": "lesson05/chamber-home.html",
+            "url": "chamber/index.html",
             "title": "Chamber Home Page Continued"
           }
         ]
@@ -77,15 +77,15 @@
         "lesson": "06",
         "links": [
           {
-            "url": "lesson06/webp.html",
+            "url": "lesson02/images-dp/landscape.webp",
             "title": "WebP"
           },
           {
-            "url": "lesson06/srcset.html",
+            "url": "lesson06/responsive-images.html",
             "title": "Responsive Images: srcset"
           },
           {
-            "url": "lesson06/responsive-design.html",
+            "url": "chamber/index.html",
             "title": "Responsive Design"
           }
         ]
@@ -94,11 +94,11 @@
         "lesson": "07",
         "links": [
           {
-            "url": "lesson07/lazy-loading.html",
+            "url": "lesson07/lazyload.html",
             "title": "Lazy loading"
           },
           {
-            "url": "lesson07/discover-page.html",
+            "url": "chamber/discover.html",
             "title": "The Discover Page - Image Section"
           }
         ]
@@ -107,15 +107,15 @@
         "lesson": "08",
         "links": [
           {
-            "url": "lesson08/html-tables.html",
+            "url": "lesson08/tablebuild.html",
             "title": "HTML tables"
           },
           {
-            "url": "lesson08/html-forms.html",
+            "url": "lesson08/form-start/thanks.html",
             "title": "HTML forms"
           },
           {
-            "url": "lesson08/join-page.html",
+            "url": "chamber/join.html",
             "title": "Join Page"
           }
         ]
@@ -124,19 +124,15 @@
         "lesson": "09",
         "links": [
           {
-            "url": "lesson09/json.html",
+            "url": "lesson09/new-ward-members.json",
             "title": "JSON"
           },
           {
-            "url": "lesson09/fetch-api.html",
+            "url": "lesson09/prophets.html",
             "title": "Fetch API"
           },
           {
-            "url": "lesson09/json-menu.html",
-            "title": "JSON menu"
-          },
-          {
-            "url": "lesson09/business-directory.html",
+            "url": "chamber/directory.html",
             "title": "Business Directory"
           }
         ]
@@ -145,15 +141,11 @@
         "lesson": "10",
         "links": [
           {
-            "url": "lesson10/weather-info.html",
+            "url": "lesson10/weather.html",
             "title": "Weather info"
           },
           {
-            "url": "lesson10/weather-api.html",
-            "title": "Using the Weather API"
-          },
-          {
-            "url": "lesson10/home-enhancements.html",
+            "url": "chamber/index.html",
             "title": "Home Page Enhancements"
           }
         ]
