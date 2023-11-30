@@ -89,6 +89,60 @@ window.addEventListener('DOMContentLoaded', (event) => {
     localStorage.setItem('lastVisit', now);
 });
 
+//==========================Directory Page==========================
+
+// Fetch the members data and display it
+async function fetchMembers() {
+    try {
+        const response = await fetch('/wdd230/chamber/data/members.json');
+        const membersData = await response.json();
+        displayMembers(membersData);
+    } catch (error) {
+        console.error('Error fetching members data: ', error);
+    }
+}
+
+// Display members in the directory container
+function displayMembers(membersData) {
+    const directoryContainer = document.getElementById('directoryContainer');
+    // Clear existing entries
+    directoryContainer.innerHTML = '';
+
+    membersData.forEach(member => {
+        const memberSection = document.createElement('section');
+        memberSection.innerHTML = `
+            <img src="${member.image}" alt="${member.name}">
+            <h3>${member.name}</h3>
+            <p>${member.address}</p>
+            <p>${member.phone}</p>
+            <a href="${member.website}" target="_blank">Website</a>
+        `;
+        directoryContainer.appendChild(memberSection);
+    });
+}
+
+// Toggle view functions
+function toggleGridView() {
+    const directoryContainer = document.getElementById('directoryContainer');
+    directoryContainer.classList.add('grid');
+    directoryContainer.classList.remove('list');
+}
+
+function toggleListView() {
+    const directoryContainer = document.getElementById('directoryContainer');
+    directoryContainer.classList.add('list');
+    directoryContainer.classList.remove('grid');
+}
+
+// Event listeners for view buttons
+document.getElementById('grid').addEventListener('click', toggleGridView);
+document.getElementById('list').addEventListener('click', toggleListView);
+
+// Initial fetch and display
+document.addEventListener('DOMContentLoaded', () => {
+    fetchMembers();
+    // Other DOMContentLoaded event content
+});
 
 
 

@@ -248,6 +248,21 @@ h1, h2, h3 {
         background-color: black;
         box-shadow: 0 0 50px #20201e;
     }
+
+/* ============================Code for Directory Page ==============================*/
+    .grid-view {
+        grid-template-columns: 1fr; /* Stacks grid items in a single column */
+     }
+
+     .list-view section {
+        flex-direction: column; /* Stacks list items vertically */
+        align-items: flex-start;
+    }
+  
+    .list-view img {
+        margin-bottom: 0.5rem; /* Adds space between the image and text in list view */
+    }
+
 }
 
 /*=============================================================================*/
@@ -347,7 +362,15 @@ h1, h2, h3 {
     .thank-you-container a:hover {
         box-shadow: 0 0 70px #0040ff;
     }
-    
+
+/* ===========================Code for Directory Page ==============================*/
+.grid-view {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Creates a responsive grid layout */
+  }
+
+  .list-view section {
+    flex-direction: row; /* Keeps the list items horizontal */
+  }
 }
 
 /*=============================================================================*/
