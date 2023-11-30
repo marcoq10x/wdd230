@@ -4,8 +4,12 @@
         "lesson": "01",
         "links": [
           {
-            "url": "lesson01/holy-layout.html",
-            "title": "Holy Layout | JS Pen"
+            "url": "/lesson01/holygrail.html",
+            "title": "Holy Layout"
+          },
+          {
+            "url": "https://codepen.io/marcoq10x/pen/XWoEyEp",
+            "title": "JS Pen"
           }
         ]
       },
@@ -13,7 +17,7 @@
         "lesson": "02",
         "links": [
           {
-            "url": "lesson02/media-query.html",
+            "url": "lesson01/media-query.html",
             "title": "Media Query"
           },
           {
