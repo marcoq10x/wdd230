@@ -91,60 +91,139 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 //==========================Directory Page==========================
 
-// Fetch the members data and display it
+// This script fetches member data and displays it on the page.
+
+// Asynchronously fetch member data from the given JSON file.
 async function fetchMembers() {
     try {
+        // Attempt to fetch the JSON data from the specified path.
         const response = await fetch('/wdd230/chamber/data/members.json');
+        
+        // If the fetch request fails, log an error and exit the function.
+        if (!response.ok) {
+            throw new Error('Oops! There was a problem fetching the data.');
+        }
+
+        // Parse the JSON data into a JavaScript object.
         const membersData = await response.json();
-        displayMembers(membersData);
+
+        // Pass the members data to be displayed on the page.
+        displayMembers(membersData.members);
     } catch (error) {
-        console.error('Error fetching members data: ', error);
+        // If there's an error during the fetch or data parsing, log it to the console.
+        console.error('Yikes! We ran into this issue:', error);
     }
 }
 
-// Display members in the directory container
-function displayMembers(membersData) {
+// Function to create and display member cards on the page.
+function displayMembers(members) {
+    // Get the container where member cards will be added.
     const directoryContainer = document.getElementById('directoryContainer');
-    // Clear existing entries
+
+    // Clear out any existing content in the container.
     directoryContainer.innerHTML = '';
 
-    membersData.forEach(member => {
-        const memberSection = document.createElement('section');
-        memberSection.innerHTML = `
-            <img src="${member.image}" alt="${member.name}">
-            <h3>${member.name}</h3>
-            <p>${member.address}</p>
-            <p>${member.phone}</p>
-            <a href="${member.website}" target="_blank">Website</a>
-        `;
-        directoryContainer.appendChild(memberSection);
+    // Loop through each member object in the array.
+    members.forEach(member => {
+        // Create a new card element for each member.
+        let card = document.createElement('section');
+        card.className = 'member-card'; // Add a CSS class for styling.
+
+        // Create an element for the member's name and add it to the card.
+        let name = document.createElement('h2');
+        name.textContent = member.name; // Set the text content to the member's name.
+        card.appendChild(name); // Add the name to the card.
+
+        // Repeat the process for address and phone number.
+        let address = document.createElement('p');
+        address.textContent = member.address;
+        card.appendChild(address);
+
+        let phone = document.createElement('p');
+        phone.textContent = member.phone;
+        card.appendChild(phone);
+
+        // Create an image element for the member's logo.
+        let image = document.createElement('img');
+        image.src = member.icon; // Set the source of the image.
+        image.alt = 'Logo of ' + member.name; // Provide alt text for accessibility.
+        card.appendChild(image);
+
+        // Create a link element for the member's website.
+        let website = document.createElement('a');
+        website.href = member.url; // Set the hyperlink reference.
+        website.textContent = 'Visit Website'; // Set the link text.
+        website.target = '_blank'; // Ensure it opens in a new tab/window.
+        card.appendChild(website);
+
+        // Finally, add the fully constructed card to the directory container.
+        directoryContainer.appendChild(card);
     });
 }
+// Wait for the DOM to fully load before fetching and displaying members.
+document.addEventListener('DOMContentLoaded', fetchMembers);
 
-// Toggle view functions
+
+// ... (This portion is for the grid/list view functionality)
+
+// // Function to switch to grid view
+// function toggleGridView() {
+//   const directoryContainer = document.getElementById('directoryContainer');
+//   directoryContainer.classList.add('grid');
+//   directoryContainer.classList.remove('list');
+//   // Update the style of each member card for grid view
+//   directoryContainer.querySelectorAll('.member-card').forEach(card => {
+//     card.style.display = 'block'; // Set display to block for grid view
+//     // Rest of your grid view styling
+//   });
+// }
+
+// // Function to switch to list view
+// function toggleListView() {
+//   const directoryContainer = document.getElementById('directoryContainer');
+//   directoryContainer.classList.add('list');
+//   directoryContainer.classList.remove('grid');
+//   // Update the style of each member card for list view
+//   directoryContainer.querySelectorAll('.member-card').forEach((card, idx) => {
+//     card.style.display = 'flex'; // Set display to flex for list view
+//     card.style.backgroundColor = idx % 2 ? '#fff' : '#bed'; // Zebra striping
+//     // Rest of your list view styling
+//   });
+// }
+
+// // Event listeners for the grid and list buttons
+// document.getElementById('grid').addEventListener('click', toggleGridView);
+// document.getElementById('list').addEventListener('click', toggleListView);
+
+// // ... (remaining code)
+
+// Existing fetchMembers and displayMembers functions remain the same...
+
+// New functions to toggle between grid and list views
 function toggleGridView() {
     const directoryContainer = document.getElementById('directoryContainer');
     directoryContainer.classList.add('grid');
     directoryContainer.classList.remove('list');
+    // Ensure cards have the correct class for grid layout
+    let cards = directoryContainer.querySelectorAll('section');
+    cards.forEach(card => card.classList.add('member-card-grid'));
 }
 
 function toggleListView() {
     const directoryContainer = document.getElementById('directoryContainer');
     directoryContainer.classList.add('list');
     directoryContainer.classList.remove('grid');
+    // Ensure cards have the correct class for list layout
+    let cards = directoryContainer.querySelectorAll('section');
+    cards.forEach(card => card.classList.add('member-card-list'));
 }
 
 // Event listeners for view buttons
 document.getElementById('grid').addEventListener('click', toggleGridView);
 document.getElementById('list').addEventListener('click', toggleListView);
 
-// Initial fetch and display
+// Call fetchMembers on DOMContentLoaded
 document.addEventListener('DOMContentLoaded', () => {
     fetchMembers();
-    // Other DOMContentLoaded event content
+    toggleGridView(); // Set default view to grid on page load
 });
-
-
-
-
-

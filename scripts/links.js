@@ -16,29 +16,6 @@ async function getLinks() {
   }
 }
 
-// function displayLinks(lessons) {
-//   const navList = document.querySelector('.lesson-links'); //<ul class="lesson-links"></ul> in HTML where  links will appear
-
-//   navList.innerHTML = ''; // Clears any existing content in the list
-
-
-//   lessons.forEach(lesson => {
-//     let listItem = document.createElement('li');
-//     listItem.innerHTML = `<strong>Lesson ${lesson.lesson}</strong>`;
-//     let sublist = document.createElement('ul');
-
-//     lesson.links.forEach(link => {
-//       let subListItem = document.createElement('li');
-//       subListItem.innerHTML = `<a href="${baseURL}${link.url}">${link.title}</a>`;
-//       sublist.appendChild(subListItem);
-//     });
-
-//     listItem.appendChild(sublist);
-//     navList.appendChild(listItem);
-//   });
-// }
-
-// getLinks();
 
 
 function displayLinks(lessons) {

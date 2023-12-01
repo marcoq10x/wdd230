@@ -250,18 +250,63 @@ h1, h2, h3 {
     }
 
 /* ============================Code for Directory Page ==============================*/
-    .grid-view {
-        grid-template-columns: 1fr; /* Stacks grid items in a single column */
-     }
+    /* Common styles for member cards in both grid and list views */
+.member-card-grid, .member-card-list {
+    padding: 0.5rem;
+    box-shadow: 0 0 10px aqua;
+  }
 
-     .list-view section {
-        flex-direction: column; /* Stacks list items vertically */
-        align-items: flex-start;
-    }
+  /* Styles for background of container both grid and list*/
+  .directory-view section {
+    background: rgb(26, 25, 25);
+    border: 1px solid Aqua;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
   
-    .list-view img {
-        margin-bottom: 0.5rem; /* Adds space between the image and text in list view */
-    }
+  /* Styles for grid view */
+  .directory-view.grid .member-card-grid {
+    text-align: center;
+    box-shadow: 0 0 15px aqua;
+  }
+
+  .member-card-grid, .member-card-list  a{
+    color:#0040ff;
+  }
+  
+  /* Styles for list view */
+  .directory-view.list .member-card-list {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+    border: 1px solid#0040ff;
+    box-shadow: 0 0 15px #0040ff;
+  }
+  
+  /* Zebra striping for list view */
+  .directory-view.list .member-card-list:nth-child(even) {
+    background-color: #0040ff;
+  }
+  
+  /* Hide image for list view */
+  .directory-view.list .member-card-list img {
+    display: none;
+  }
+  
+  /* Font sizes for list view */
+  .directory-view.list .member-card-list h2 {
+    font-size: 1.5rem;
+    width: fit-content;
+  }
+  
+  /*modifies the font color and font size of the address and phone # in the grid view*/
+  section.member-card.member-card-list.member-card p {
+    font-weight: 600;
+    font-size: 15px;
+    color:#FFFDD0;
+    font-weight: lighter;
+  }
 
 }
 
@@ -364,13 +409,78 @@ h1, h2, h3 {
     }
 
 /* ===========================Code for Directory Page ==============================*/
-.grid-view {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Creates a responsive grid layout */
+
+     /*styles for member cards in both grid and list views */
+.member-card-grid, .member-card-list {
+    padding: 0.5rem;
+    box-shadow: 0 0 10px aqua;
   }
 
-  .list-view section {
-    flex-direction: row; /* Keeps the list items horizontal */
+  .member-card-grid, .member-card-list  a{
+    color:#0040ff;
   }
+
+  /* Styles for background of container both grid and list*/
+  .directory-view section {
+    background: rgb(26, 25, 25);
+    border: 1px solid Aqua;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Styles for grid view */
+  .directory-view.grid .member-card-grid {
+    text-align: center;
+    box-shadow: 0 0 15px aqua;
+  }
+  
+  /* Styles for list view */
+  .directory-view.list .member-card-list {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+    border: 1px solid#0040ff;
+    box-shadow: 0 0 15px #0040ff;
+  }
+
+  /*Makes the list view into a single column*/
+  article#directoryContainer.directory-view.list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  
+  /* Zebra striping for list view */
+  .directory-view.list .member-card-list:nth-child(even) {
+    background-color: #0040ff;
+  }
+  
+  /* Hide image for list view */
+  .directory-view.list .member-card-list img {
+    display: none;
+  }
+  
+  /* Font sizes for list view */
+  .directory-view.list .member-card-list h2 {
+    font-size: 1.6rem;
+    width: fit-content;
+  }
+  
+  .directory-view.list .member-card-list p {
+    font-weight: 600;
+    font-size: 20px;
+    color:#FFFDD0;
+    font-weight: lighter;
+  }
+
+  section.member-card.member-card-list.member-card p {
+    font-weight: 600;
+    font-size: 20px;
+    color:#FFFDD0;
+    font-weight: lighter;
+  }
+
 }
 
 /*=============================================================================*/
@@ -446,4 +556,77 @@ h1, h2, h3 {
         width: 45%;
         margin-left: 7px;
     }
+
+    /* ===========================Code for Directory Page ==============================*/
+      /* Common styles for member cards in both grid and list views */
+.member-card-grid, .member-card-list {
+    padding: 0.5rem;
+    box-shadow: 0 0 10px aqua;
+  }
+
+  .member-card-grid, .member-card-list  a{
+    color:#0040ff;
+  }
+
+  /* Styles for background of container both grid and list*/
+  .directory-view section {
+    background: rgb(26, 25, 25);
+    border: 1px solid Aqua;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Styles for grid view */
+  .directory-view.grid .member-card-grid {
+    text-align: center;
+    box-shadow: 0 0 15px aqua;
+  }
+  
+  /* Styles for list view */
+  .directory-view.list .member-card-list {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+    border: 1px solid#0040ff;
+    box-shadow: 0 0 15px #0040ff;
+    width: 100%;
+  }
+
+  /*Makes the list view into a single column*/
+  article#directoryContainer.directory-view.list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  
+  /* Zebra striping for list view */
+  .directory-view.list .member-card-list:nth-child(even) {
+    background-color: #0040ff;
+  }
+  
+  /* Hide image for list view */
+  .directory-view.list .member-card-list img {
+    display: none;
+  }
+  
+  /* Font sizes for list view */
+  .directory-view.list .member-card-list h2 {
+    font-size: 1.6rem;
+    width: fit-content;
+  }
+  
+  .directory-view.list .member-card-list p {
+    font-weight: 600;
+    font-size: 20px;
+    color:#FFFDD0;
+    font-weight: lighter;
+  }
+
+  section.member-card.member-card-list.member-card p {
+    font-weight: 600;
+    font-size: 20px;
+    color:#FFFDD0;
+    font-weight: lighter;
+  }
 }

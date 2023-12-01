@@ -691,10 +691,18 @@ main {
 
 /* Styles for grid and list views */
 .directory-view section {
-  background: #fff;
-  border: 1px solid #ddd;
+  background: rgb(26, 25, 25);
+  border: 1px solid  #DBB740;
   padding: 1rem;
   margin-bottom: 1rem;
+}
+
+/* Directory view layout  resembles prophets project*/
+.directory-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  padding: 1rem;
 }
 
 /* Grid view layout */
@@ -717,5 +725,5 @@ main {
 
 /* Zebra striping for list view */
 .list-view section:nth-child(odd) {
-  background: #f9f9f9;
+  background: #ff0000;
 }
