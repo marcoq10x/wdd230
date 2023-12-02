@@ -680,24 +680,30 @@ main {
   margin-bottom: 1rem;
 }
 
+
+/* both Grid and List buttons*/
 .menu button {
   padding: 0.5rem 1rem;
   margin: 0 0.5rem;
   cursor: pointer;
-  background: #333;
-  color: #fff;
+  background:#0040ff;
+  color: #ffffff;
   border: none;
+  border-radius: 50px;
+  box-shadow: 0 0 10px #0040ff;
 }
 
-/* Styles for grid and list views */
-.directory-view section {
-  background: rgb(26, 25, 25);
-  border: 1px solid  #DBB740;
-  padding: 1rem;
-  margin-bottom: 1rem;
+/*Grid button hover halo blue*/
+button#grid:hover {
+  box-shadow: 0 0 20px #0040ff;
 }
 
-/* Directory view layout  resembles prophets project*/
+/*list button hover halo blue*/
+button#list:hover {
+  box-shadow: 0 0 20px #0040ff;
+}
+
+/* Directory view layout  resembles prophets project (Very Important grid #)*/
 .directory-view {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -721,9 +727,5 @@ main {
 .list-view img {
   width: 100px;
   margin-right: 1rem;
-}
-
-/* Zebra striping for list view */
-.list-view section:nth-child(odd) {
-  background: #ff0000;
+  color:#DBB740;
 }

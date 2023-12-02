@@ -288,6 +288,10 @@ h1, h2, h3 {
   .directory-view.list .member-card-list:nth-child(even) {
     background-color: #0040ff;
   }
+
+  .directory-view.list .member-card-list:nth-child(even) a {
+    color: #ffffff; /* This will make the text white */
+}
   
   /* Hide image for list view */
   .directory-view.list .member-card-list img {
@@ -298,6 +302,8 @@ h1, h2, h3 {
   .directory-view.list .member-card-list h2 {
     font-size: 1.5rem;
     width: fit-content;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
   }
   
   /*modifies the font color and font size of the address and phone # in the grid view*/
@@ -306,7 +312,17 @@ h1, h2, h3 {
     font-size: 15px;
     color:#FFFDD0;
     font-weight: lighter;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
   }
+
+  .directory-view.grid section img {
+    height: 75px;
+    max-width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0 0 30px Aqua;
+    margin-right: 25px;
+   }
 
 }
 
@@ -442,6 +458,7 @@ h1, h2, h3 {
     padding: 0.25rem;
     border: 1px solid#0040ff;
     box-shadow: 0 0 15px #0040ff;
+
   }
 
   /*Makes the list view into a single column*/
@@ -455,6 +472,10 @@ h1, h2, h3 {
   .directory-view.list .member-card-list:nth-child(even) {
     background-color: #0040ff;
   }
+
+  .directory-view.list .member-card-list:nth-child(even) a {
+    color: #ffffff; /* This will make the text white */
+}
   
   /* Hide image for list view */
   .directory-view.list .member-card-list img {
@@ -463,13 +484,13 @@ h1, h2, h3 {
   
   /* Font sizes for list view */
   .directory-view.list .member-card-list h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     width: fit-content;
   }
   
   .directory-view.list .member-card-list p {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     color:#FFFDD0;
     font-weight: lighter;
   }
@@ -479,7 +500,17 @@ h1, h2, h3 {
     font-size: 20px;
     color:#FFFDD0;
     font-weight: lighter;
+    margin-left: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
   }
+  .directory-view.grid section img {
+    height: 75px;
+    max-width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0 0 30px Aqua;
+    margin-right: 25px;
+   }
 
 }
 
@@ -568,65 +599,68 @@ h1, h2, h3 {
     color:#0040ff;
   }
 
-  /* Styles for background of container both grid and list*/
-  .directory-view section {
-    background: rgb(26, 25, 25);
-    border: 1px solid Aqua;
-    padding: 1rem;
-    margin-bottom: 1rem;
-  }
   
-  /* Styles for grid view */
-  .directory-view.grid .member-card-grid {
-    text-align: center;
-    box-shadow: 0 0 15px aqua;
-  }
-  
-  /* Styles for list view */
-  .directory-view.list .member-card-list {
-    display: grid;
-    grid-template-columns: 1.5fr 1.5fr 1fr;
-    margin: 0;
-    padding: 0.25rem;
-    border: 1px solid#0040ff;
-    box-shadow: 0 0 15px #0040ff;
-    width: 100%;
-  }
-
   /*Makes the list view into a single column*/
   article#directoryContainer.directory-view.list {
     display: grid;
     grid-template-columns: 1fr;
   }
 
+    /*Makes the list view into a single column*/
+    article#directoryContainer.directory-view.grid {
+        grid-gap: 20px;
+        padding: 0px;
+
+      }
   
   /* Zebra striping for list view */
   .directory-view.list .member-card-list:nth-child(even) {
     background-color: #0040ff;
   }
-  
-  /* Hide image for list view */
-  .directory-view.list .member-card-list img {
-    display: none;
-  }
-  
-  /* Font sizes for list view */
-  .directory-view.list .member-card-list h2 {
-    font-size: 1.6rem;
-    width: fit-content;
-  }
-  
-  .directory-view.list .member-card-list p {
-    font-weight: 600;
-    font-size: 20px;
-    color:#FFFDD0;
-    font-weight: lighter;
-  }
 
-  section.member-card.member-card-list.member-card p {
-    font-weight: 600;
-    font-size: 20px;
-    color:#FFFDD0;
-    font-weight: lighter;
-  }
-}
+  /*Changes the color of the "Visit website" in the list view*/
+  .directory-view.list .member-card-list:nth-child(even) a {
+    color: #ffffff; /* This will make the text white */
+    margin-left: 15px;
+   }
+
+   /*Changes the color of the "Visit website" in the list view Zebra Blue (odd)*/
+    .directory-view.list .member-card-list a{
+        margin-left: 15px;
+    }
+
+  
+    /* Hide image for list view */
+    .directory-view.list .member-card-list img {
+        display: none;
+     }
+  
+     /* Font sizes for list view */
+     .directory-view.list .member-card-list h2 {
+        font-size: 1.6rem;
+        width: fit-content;
+        margin-left: 15px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+  
+     /*Color and size of paragraph font inside cards, grid view*/
+     section.member-card.member-card-list.member-card p {
+        font-weight: 600;
+        font-size: 20px;
+        color:#FFFDD0;
+        font-weight: lighter;
+         margin-left: 60px;
+         padding-bottom: 0px;
+         margin-bottom: 0px;
+    }
+
+     /*Color, shadow and positioning of Images inside cards, grid view*/
+    .directory-view.grid section img {
+        height: 75px;
+        max-width: 100%;
+        border: 1px solid rgb(0, 0, 0);
+      box-shadow: 0 0 30px Aqua;
+        margin-right: 25px;
+    }
+}    
