@@ -339,7 +339,6 @@ h1, h2, h3 {
 
 /* modifies Grid entire card color, align the items center like the picture, for List does the samething with its items */
 section.member-card {
-    display:flexbox;
     box-shadow: 0 0 15px aqua;
     align-items: center;
     justify-content: center;
@@ -561,7 +560,6 @@ section.member-card a {
 
   /* modifies Grid entire card color, align the items center like the picture, for List does the samething with its items */
   section.member-card {
-    display:flexbox;
     box-shadow: 0 0 15px aqua;
     align-items: center;
      justify-content: center
@@ -734,7 +732,6 @@ section.member-card a {
 
     /* modifies Grid entire card color, align the items center like the picture, for List does the samething with its items */
     section.member-card {
-        display:flexbox;
         box-shadow: 0 0 15px aqua;
         align-items: center;
          justify-content: center;
