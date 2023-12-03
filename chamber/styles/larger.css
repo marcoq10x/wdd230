@@ -256,6 +256,19 @@ h1, h2, h3 {
     box-shadow: 0 0 10px aqua;
   }
 
+  /* both Grid and List buttons*/
+.menu button {
+    padding: 0.5rem 1rem;
+    margin: 20px 10px 0px 10px;
+    cursor: pointer;
+    background:#0040ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 0 10px #0040ff;
+  }
+  
+
   /* Styles for background of container both grid and list*/
   .directory-view section {
     background: rgb(26, 25, 25);
@@ -272,12 +285,13 @@ h1, h2, h3 {
 
   .member-card-grid, .member-card-list  a{
     color:#0040ff;
+    margin: 0px 0px 0px 0px; /* Be careful to NOT add margin to sides of the card */
   }
   
   /* Styles for list view */
   .directory-view.list .member-card-list {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr;
     margin: 0;
     padding: 0.25rem;
     border: 1px solid#0040ff;
@@ -303,7 +317,7 @@ h1, h2, h3 {
     font-size: 1.5rem;
     width: fit-content;
     padding-bottom: 0px;
-    margin-bottom: 0px;
+    margin: 0px 0px 40px 0px;
   }
   
   /*modifies the font color and font size of the address and phone # in the grid view*/
@@ -313,15 +327,36 @@ h1, h2, h3 {
     color:#FFFDD0;
     font-weight: lighter;
     padding-bottom: 0px;
-    margin-bottom: 0px;
+    margin: 0px 0px 0px 0px;
   }
 
+  /*modifies the font color, positioning and font size of the"Visit Website" link in the list view*/
+  section.member-card a {
+    color: #6186f7;
+   margin-top: 20px;
+    text-align: center;/*centers the "Visit Website" link*/
+}
+
+/* modifies Grid entire card color, align the items center like the picture, for List does the samething with its items */
+section.member-card {
+    display:flexbox;
+    box-shadow: 0 0 15px aqua;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Controls logos conditions*/
   .directory-view.grid section img {
     height: 75px;
     max-width: 100%;
     border: 1px solid rgb(0, 0, 0);
     box-shadow: 0 0 30px Aqua;
-    margin-right: 25px;
+    align-items: center;
+    justify-content: center;
+   }
+
+   hr {
+    display: none;
    }
 
 }
@@ -486,15 +521,27 @@ h1, h2, h3 {
   .directory-view.list .member-card-list h2 {
     font-size: 1.5rem;
     width: fit-content;
+    margin: 0px 0px 0px 15px;
+    padding-bottom: 0px;
+    align-items: center;
   }
+
+    /* Changes the position, size of h2, color of h2*/
+    section.member-card h2 {
+        font-size: 1.2rem;
+        overflow: scroll; /* This will add a scrollbar if the text is too long */
+    }
   
+    /* Changes the position, size of h2, color of h2*/
   .directory-view.list .member-card-list p {
     font-weight: 600;
     font-size: 18px;
     color:#FFFDD0;
     font-weight: lighter;
+    margin: 0px 0px 0px 0px;
   }
 
+     /*Color and size of paragraph font inside cards, grid view*/
   section.member-card.member-card-list.member-card p {
     font-weight: 600;
     font-size: 20px;
@@ -504,12 +551,29 @@ h1, h2, h3 {
     padding-bottom: 0px;
     margin-bottom: 0px;
   }
+
+/*modifies the font color, positioning and font size of the"Visit Website" link in the list view*/
+section.member-card a {
+    color: #6186f7;
+    margin-left: 15px;
+    text-align: left; /* Aligns the link to the left */
+ }
+
+  /* modifies Grid entire card color, align the items center like the picture, for List does the samething with its items */
+  section.member-card {
+    display:flexbox;
+    box-shadow: 0 0 15px aqua;
+    align-items: center;
+     justify-content: center
+}
+
+ /*Color, shadow and positioning of Images inside cards, grid view*/
   .directory-view.grid section img {
     height: 75px;
     max-width: 100%;
     border: 1px solid rgb(0, 0, 0);
     box-shadow: 0 0 30px Aqua;
-    margin-right: 25px;
+    margin: 0px 0px 0px 0px;
    }
 
 }
@@ -633,15 +697,21 @@ h1, h2, h3 {
     /* Hide image for list view */
     .directory-view.list .member-card-list img {
         display: none;
-     }
+    }
   
-     /* Font sizes for list view */
-     .directory-view.list .member-card-list h2 {
-        font-size: 1.6rem;
+       /* Changes the position, size of h2, color of h2*/
+    .directory-view.list .member-card-list h2 {
+        font-size: 1.5rem;
         width: fit-content;
-        margin-left: 15px;
+        margin: 0px 0px 0px 15px;
         padding-bottom: 0px;
-        margin-bottom: 0px;
+        align-items: center;
+    }
+
+    /* Changes the position, size of h2, color of h2*/
+    section.member-card h2 {
+        font-size: 1.5rem;
+        overflow: scroll; /* This will add a scrollbar if the text is too long */
     }
   
      /*Color and size of paragraph font inside cards, grid view*/
@@ -650,9 +720,24 @@ h1, h2, h3 {
         font-size: 20px;
         color:#FFFDD0;
         font-weight: lighter;
-         margin-left: 60px;
+         margin-left: 0px;
          padding-bottom: 0px;
          margin-bottom: 0px;
+    }
+
+    /*modifies the font color, positioning and font size of the"Visit Website" link in the list view*/
+    section.member-card a {
+        color: #6186f7;
+        margin-left: 0px;
+        text-align: left; /* Aligns the link to the left */
+    }
+
+    /* modifies Grid entire card color, align the items center like the picture, for List does the samething with its items */
+    section.member-card {
+        display:flexbox;
+        box-shadow: 0 0 15px aqua;
+        align-items: center;
+         justify-content: center;
     }
 
      /*Color, shadow and positioning of Images inside cards, grid view*/
@@ -660,7 +745,7 @@ h1, h2, h3 {
         height: 75px;
         max-width: 100%;
         border: 1px solid rgb(0, 0, 0);
-      box-shadow: 0 0 30px Aqua;
-        margin-right: 25px;
+        box-shadow: 0 0 30px Aqua;
+        margin-right: 0px;
     }
 }    

@@ -671,7 +671,12 @@ body, html {
   /*===================Code for Directory Page===================*/
 /* Main content styles */
 main {
-  padding: 1rem;
+  padding: 10px;
+}
+
+/*modifies the main area or entire grid area*/
+#directoryContainer {
+  padding: 10px;
 }
 
 /* Directory menu for grid/list toggle */
@@ -729,3 +734,41 @@ button#list:hover {
   margin-right: 1rem;
   color:#DBB740;
 }
+
+/* Directory Card Consistent Layout */
+.directory-view .member-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distributes space evenly inside the card */
+  padding: 1rem;
+  height: auto; /* Adjust to a fixed height if necessary for alignment */
+}
+
+.directory-view .member-card h2 {
+  height: 2rem; /* Adjust height as necessary */
+  overflow: hidden; /* Prevents long text from breaking layout */
+  margin-bottom: 0.5rem; /* Space between title and address */
+}
+
+.directory-view .member-card p {
+  margin-bottom: 0.5rem; /* Consistent space for all paragraphs */
+  text-align: center;
+}
+
+.directory-view .member-card img {
+  width: 75px; 
+  height: 4rem; 
+  object-fit: contain; /* Maintains aspect ratio of the image */
+  margin-bottom: 0.5rem; /* Space between image and link */
+  align-items: center; /* Centers the image */
+  justify-content: center; /* Centers the image */
+  align-content: center; /* Centers the image */
+}
+
+.directory-view .member-card a {
+  align-self: center; /* Centers the button/link */
+  margin-top: auto; /* Pushes the link/button to the bottom of the card */
+  
+}
+
+

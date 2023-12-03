@@ -129,6 +129,12 @@ function displayMembers(members) {
         let card = document.createElement('section');
         card.className = 'member-card'; 
 
+   // Image element for the member's logo. This is our JavaScript in case we want to use it to display pictures(comment).
+        let image = document.createElement('img');
+        image.src = member.icon; // Set the source of the image.
+        image.alt = 'Logo of ' + member.name; // Provide alt text for accessibility.
+        card.appendChild(image);
+
         // Create an element for the member's name and add it to the card.
         let name = document.createElement('h2');
         name.textContent = member.name; // Set the text content to the member's name.
@@ -143,11 +149,7 @@ function displayMembers(members) {
         phone.textContent = member.phone;
         card.appendChild(phone);
         
-        // Image element for the member's logo. This is our JavaScript in case we want to use it to display pictures(comment).
-        let image = document.createElement('img');
-        image.src = member.icon; // Set the source of the image.
-        image.alt = 'Logo of ' + member.name; // Provide alt text for accessibility.
-        card.appendChild(image);
+     
 
 
         // Create a link element for the member's website.
