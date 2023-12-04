@@ -8,11 +8,11 @@ const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&
 
 async function apiFetch() {
     try {
-        const response = await fetch(url); // Use the URL you've constructed
+        const response = await fetch(url); // Use the URL constructed
         if (response.ok) {
             const data = await response.json();
-            console.log(data); // This is for testing, to see if data is being fetched correctly
-            displayResults(data); // Uncomment this when ready to display the results
+            console.log(data); // This is for testing if data is being fetched correctly
+            displayResults(data); // Uncomment this  to display the results
         } else {
             throw Error(await response.text());
         }
