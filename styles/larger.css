@@ -49,7 +49,19 @@
     
     .container {
     padding: 15px;
+    align-items: center;
     }
+
+
+    .hero img{
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-shadow: 0 0 50px black;
+    }
+
+    
     iframe {
     width: 100%;
     height: 300px;
@@ -61,13 +73,15 @@
 }
 /* Media query for larger screens */
 @media (min-width: 481px) { /* width can be adjusted as per design's breakpoints */
-
+    h1 {
+        font-size: 2em; /* Increase font size for large screens */
+    }
 
     .container img {
         aspect-ratio: 4/3;
         width: 200px;
         height: 150px;
-        margin-left: 200px;
+        margin-left: 170px;
     }
 
     /*in larger view it displays the Navigation Menu horizontally and evenly spaced*/
@@ -129,6 +143,10 @@
 
     h1, h2, h3 {
         margin: 20px 0; /* Increase margin for headings for better spacing on large screens */
+    }
+
+    h1 {
+        font-size: 3em; /* Increase font size for large screens */
     }
 
     nav a {

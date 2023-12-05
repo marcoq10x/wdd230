@@ -96,6 +96,10 @@ h2 {
     padding: 1em;
     background-color:aqua;
     box-shadow: 0 0 50px black;
+    border-color: #000000;
+    border-style: double;
+    border-width: 10px;
+    width: auto;
     }
 
     header .container {
@@ -111,7 +115,8 @@ h2 {
 /* responsive Hero Image using srcset San Diego Temple */
     .hero img{
         margin-left: 0;  
-        width: 100%;
+        width: 900px;
+        max-width: 100%;
         height: 100%;
         justify-content: center;
         align-items: center;
@@ -161,6 +166,32 @@ h2 {
         text-align: center;
         border-radius: 5px;
     }
+
+/*double border style for card on the left */
+    section.card {
+        border-color: #000000;
+        border-style: double;
+        border-width: 10px;
+    }
+
+    /* Makes the temperature move from side to side in the card on the right*/
+    .card2 {
+        border: 1px solid black; 
+        border-radius: 10px;
+        flex: 0.3; /* Takes up 30% width */
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+      }
+
+      /* double border style for card2 */
+      section.card2 {
+        border-color: #000000;
+        border-style: double;
+        border-width: 10px;
+      }
     
     .card2 h3{
         background-color: aqua;
@@ -168,14 +199,45 @@ h2 {
         padding: 10px;
         border-radius: 5px;
         text-align: center;
+        justify-content: center;
+        border-color: #000000;
+        border-style: solid;
+        border-width: 2px;
     }
 
     .card2 p {
+        font-size: 1.5rem;
         text-align: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        font-weight: bold;
     }
-    u :hover {
-        color: rgb(255, 0, 225);
-        text-decoration: underline;
+
+    span#current-temp {
+        font-size: 3em;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        margin: 0px 0px 0px 0px;
+        box-shadow: rgb(25, 0, 255) 0px 0px 50px;
+        border-radius: 40%;
+    }
+
+    img#weather-icon {
+        width: 120px;
+        height: 120px;
+        margin: 10px 0px 0px 0px;
+        box-shadow: rgb(8, 0, 255) 0px 0px 50px;
+        border-radius: 50%;
+    }
+
+    figcaption {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        margin: 20px 0px 0px 0px;
+        border-radius: 40%;
     }
 
     footer .container {
@@ -222,7 +284,12 @@ main {
     gap: 1rem;
     margin-bottom: 20px; /* Margin below cards */
     margin-top: 20px;
-    
+    box-shadow: 0 0 0 0px black;
+}
+
+
+div.cards-container {
+    box-shadow:20 0 0px black;
 }
 
 section {
@@ -235,6 +302,7 @@ section {
 section.card a {
     color:black;
     font-size: large;
+    
 }
 
 /* Hover and shadow effect on Lesson Links*/
@@ -248,11 +316,7 @@ section.card a:hover {
     border: 1px solid black; 
   }
   
-.card2 {
-    border: 1px solid black; 
-    border-radius: 10px;
-    flex: 0.3; /* Takes up 30% width */
-  }
+
 
   /*targets number of visits class */
   .label {
