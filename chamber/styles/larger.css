@@ -124,6 +124,10 @@ h1, h2, h3 {
         margin-bottom: 10px;
     }
 
+    .card a {
+        color:#6186f7; /* Change card link color */
+    }
+
     img#logo2 {
         width: 90px;
         Height: 90px;
