@@ -36,6 +36,10 @@
 
     div.card {
         border-color: Aqua;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     footer {
@@ -118,6 +122,11 @@ h1, h2, h3 {
     .card {
         flex: 1;
         margin-bottom: 10px;
+    }
+
+    img#logo2 {
+        width: 90px;
+        Height: 90px;
     }
 
 /*==================================discover page=================================*/
@@ -300,7 +309,7 @@ h1, h2, h3 {
   
   /* Zebra striping for list view */
   .directory-view.list .member-card-list:nth-child(even) {
-    background-color: #0040ff;
+    background: radial-gradient(#0040ff, black);
   }
 
   .directory-view.list .member-card-list:nth-child(even) a {
@@ -358,6 +367,68 @@ section.member-card {
     display: none;
    }
 
+   /* ============================Weather API week 10==============================*/
+
+   #forecast-container {
+    display: block;
+    justify-content: center;
+  }
+
+  /* Modifies the circlesto make them perfect and give a shadow*/
+  .forecast-card {
+    width: 94%; /* Adjust this to fit design */
+    height: auto;
+    aspect-ratio: 1; /*maintain the aspect ratio to be a circle */
+    border-color: aqua;
+    box-shadow: 0 0 50px aqua;
+    align-items: center;
+  }
+
+  .forecast-card h3 {
+   font-size: 1.6rem;
+   margin: 0px 0px;
+  }
+
+  span {
+    font-size: 1.5rem;
+  }
+
+  /*modifies the looks of the Image*/
+div.forecast-card img  {
+    width: auto;
+    height: 135px;
+    box-shadow: 0 0 50px aqua;
+  } 
+
+  img#weather-icon {
+    box-shadow: 0 0 50px aqua;
+    align-items: center;
+    justify-content: center;
+  }
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;}
+
+  /*modifies the looks of the conditions description*/
+figcaption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0px 0px 0px;
+    border-radius: 40%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+  }
+  
+
+
 }
 
 /*=============================================================================*/
@@ -381,6 +452,10 @@ section.member-card {
         margin: 20px 0; /* Increase margin for headings for better spacing on large screens */
         box-shadow: 0 0 50px #20201e;
         border-radius: 10px;
+    }
+
+    .card a {
+        color:#6186f7; /* Change card link color */
     }
 
 /* ===========================Discover Page Code=======================*/
@@ -504,7 +579,7 @@ section.member-card {
   
   /* Zebra striping for list view */
   .directory-view.list .member-card-list:nth-child(even) {
-    background-color: #0040ff;
+    background: radial-gradient(#0040ff, black);
   }
 
   .directory-view.list .member-card-list:nth-child(even) a {
@@ -589,6 +664,10 @@ section.member-card a {
         font-size: 18px; /* Increasing the base font size for better readability on large screens */
     }
 
+    main  {
+        padding: 0px;
+    }
+
     h1, h2, h3 {
         margin: 20px 0; /* Increase margin for headings for better spacing on large screens */
         box-shadow: 0 0 50px #20201e;
@@ -601,11 +680,16 @@ section.member-card a {
     }
 
     .cards {
-        gap: 30px; /* Increase gap between cards */
+        gap: 10px; /* Increase gap between cards */
     }
 
     .card {
         padding: 20px; /* Increase padding inside cards */
+        margin: 5px;
+    }
+
+    .card a {
+        color:#6186f7; /* Change card link color */
     }
 
 
@@ -677,7 +761,7 @@ section.member-card a {
   
   /* Zebra striping for list view */
   .directory-view.list .member-card-list:nth-child(even) {
-    background-color: #0040ff;
+    background: radial-gradient(#0040ff, black);
   }
 
   /*Changes the color of the "Visit website" in the list view*/

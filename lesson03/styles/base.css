@@ -34,6 +34,9 @@ body {
   font-size: 18px;
   text-align: center;
   font-family: var(--paragraph-font);
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
 }
 
 img {
@@ -72,12 +75,13 @@ p {
   color: var(--paragraph-color-on-white);
   padding: 1em;
 }
-
 .colors {
-  width: 100%;
-  min-width: 350px;
-  margin: 30px auto;
+  width: 1200px;
+  margin: auto;
   text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
 }
 
 .colors th {
@@ -121,6 +125,9 @@ nav {
 }
 
 nav a {
+  display:block;
+  width: auto;
+  max-width: 1200px;
   padding:1em;
   min-width: 120px;
   text-decoration: none;
@@ -129,7 +136,8 @@ nav a {
 }
 
 nav a:link, nav a:visited {
-  color: var(--nav-link-color);
+  color:#DBB740;
+  width: auto;
 }
 
 nav a:hover {

@@ -149,9 +149,7 @@ function displayMembers(members) {
         phone.textContent = member.phone;
         card.appendChild(phone);
         
-     
-
-
+    
         // Create a link element for the member's website.
         let website = document.createElement('a');
         website.href = member.url; // Set the hyperlink reference.
@@ -195,3 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchMembers();
     toggleGridView(); // Set default view to grid on page load
 });
+
+
+
+

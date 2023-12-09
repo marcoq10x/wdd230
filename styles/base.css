@@ -165,6 +165,9 @@ h2 {
         padding: 10px;
         text-align: center;
         border-radius: 5px;
+        border-color: #000000;
+        border-style: solid;
+        border-width: 2px;
     }
 
 /*double border style for card on the left */
@@ -215,28 +218,33 @@ h2 {
         font-weight: bold;
     }
 
-    span#current-temp {
-        font-size: 3em;
+    .card2 span#current-temp {
+        font-size: 2.5em;
         font-weight: bold;
         color: rgb(0, 0, 0);
-        margin: 0px 0px 0px 0px;
+        margin: 0px 0px 40px 0px;
         box-shadow: rgb(25, 0, 255) 0px 0px 50px;
-        border-radius: 40%;
+        border-radius: 50px;
     }
 
+
     img#weather-icon {
-        width: 120px;
-        height: 120px;
-        margin: 10px 0px 0px 0px;
+        width: 100px;
+        height: 100px;
+        margin: 0px 0px 0px 0px;
         box-shadow: rgb(8, 0, 255) 0px 0px 50px;
         border-radius: 50%;
+    }
+
+    figure {
+        margin: 0px 0px 0px 0px;
     }
 
     figcaption {
         font-size: 1.2em;
         font-weight: bold;
         color: rgb(0, 0, 0);
-        margin: 20px 0px 0px 0px;
+        margin: 10px 0px 0px 0px;
         border-radius: 40%;
     }
 
@@ -290,6 +298,7 @@ main {
 
 div.cards-container {
     box-shadow:20 0 0px black;
+    gap: 10px;
 }
 
 section {
@@ -335,14 +344,14 @@ section.card a:hover {
     margin: 0px 0;
   }
 
-  iframe {
-    box-shadow: 0 0 50px black;
-  }
-
   .card, .card2 {
     border: none; /* Remove border for mobile to keep it simple */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* A subtle shadow instead */
 }
+
+iframe {
+    box-shadow: 0 0 50px black;
+  }
 
 
 

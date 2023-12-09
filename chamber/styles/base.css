@@ -114,6 +114,10 @@ header, main, footer {
  .dark-mode .thank-you-container a {
     color:#FFFDD0;
  }
+
+ .dark-mode .forecast-card h3{
+  color:#FFFDD0;
+ }
   
     /*JOIN NOW button  */
   .hero-label {
@@ -307,17 +311,18 @@ header {
 /* Main content styles */
 main {
     box-shadow: 0 0 50px black;
+    padding: 0px;
 }
 
 
 .cards {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     justify-content: space-between; /*distributes the space evenly between the columns */
     background-color:#000000;
     margin-bottom: 20px;
     text-align: center;
-    padding: 0 10px;
+    padding: 0 0px;
     box-shadow: 0 0 50px black;
 }
 
@@ -696,11 +701,11 @@ main {
   padding: 0.5rem 1rem;
   margin: 0 0.5rem;
   cursor: pointer;
-  background:#0040ff;
+  background: radial-gradient(#161818, #0040ff);
   color: #ffffff;
   border: none;
   border-radius: 50px;
-  box-shadow: 0 0 10px #0040ff;
+  box-shadow: 0 0 20px #0040ff;
 }
 
 /*Grid button hover halo blue*/
@@ -713,7 +718,7 @@ button#list:hover {
   box-shadow: 0 0 20px #0040ff;
 }
 
-/*hides the h3 heading*/
+/*hides the h3 heading overflow*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -786,7 +791,219 @@ button#list:hover {
 .directory-view .member-card a {
   align-self: center; /* Centers the button/link */
   margin-top: auto; /* Pushes the link/button to the bottom of the card */
+}
+/*===================Code for week 10 API  and Event Banner===================*/
+/* Event Banner pops on top of the page covering the Navigation bar */
+.event-banner {
+  position: relative;
+  font-family: 'Gloock', serif;
+  align-items: center;
+  top: -100px; /* Start off-screen */
+  left: 0;
+  width: auto;
+  background: radial-gradient(#161818, rgb(100, 90, 233)); /* Mixture of colors*/
+  color: white;
+  padding: 17px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  text-align: center;
+  animation: slideDown 0.5s forwards 0.5s; /* Animation starts after 0.5s, lasts 0.5s */
+  z-index: 1000;
+}
+
+@keyframes slideDown {
+  to {
+      top: 0;
+  }
+}
+
+/* Decorates the "x" that closes the banner*/
+.close-banner {
+  position: absolute;
+  right: 8px;
+  top: 20%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 1.5rem #ffffff; /* Optional, adds a glow effect */
+  border-radius: 50%;
+}
+
+/* These declarations will modify the looks of the 3 day forecast....I never want to deal with this mess again!*/
+#forecast-container {
+  display: flex;
+ 
+  justify-content: space-between;
+}
+
+/* */
+.forecast-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #0040ff;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #000000;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  box-shadow: #0040ff 0px 0px 50px;
+}
+
+
+.forecast-card h3 {
+  color: #DBB740;
   
+}
+
+.forecast-card img {
+  display: block;
+  margin: 0 auto 5px;
+  
+}
+
+img#weather-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0px 0px 0px 0px;
+  box-shadow:  #0040ff 0px 0px 50px;
+  border-radius: 50%;
+}
+
+/*modifies the looks of the Image*/
+div.forecast-card img  {
+  width: auto;
+  height: 100px;
+  margin: 0px 0px 0px 0px;
+  box-shadow: #0040ff 0px 0px 50px;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+} 
+
+/*modifies the looks of the conditions description*/
+figcaption {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 10px 0px 0px 0px;
+  border-radius: 40%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
+
+/*Causes CSS animation in card on the left*/
+.card:hover {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+/*CSS animnation for 3 day weather forecast*/
+.forecast-card:hover {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+
+.hero-label:hover {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+section.member-card:hover {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.menu button:hover {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+article.membership-level:hover {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/*===================================================*/
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px blue;
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 35px rgba(255, 255, 255, 0.2), 0 10px 10px rgba(6, 6, 255, 0.1);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transform: translatey(0px);
+  }
+}
+
+.card {
+  animation: float 6s ease-in-out infinite;
+  transition: transform 0.2s, box-shadow 0.2s;
+  will-change: transform, box-shadow;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 45px rgba(0,0,0,0.3), 0 15px 15px rgba(0,0,0,0.2);
+}
+
+div.forecast-card  {
+  animation: float 6s ease-in-out infinite;
+  transition: transform 0.2s, box-shadow 0.2s;
+  will-change: transform, box-shadow;
+}
+
+div.forecast-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 45px rgba(0,0,0,0.3), 0 15px 15px rgba(0,0,0,0.2);
+}
+
+section.member-card {
+  animation: float 6s ease-in-out infinite;
+  transition: transform 0.2s, box-shadow 0.2s;
+  will-change: transform, box-shadow;
+}
+
+section.member-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 45px rgba(0,0,0,0.3), 0 15px 15px rgba(0,0,0,0.2);
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.events-card, .spotlight-card {
+  /* Apply the animation to these specific cards */
+  animation: float 6s ease-in-out infinite;
+}
+
+.events-card:hover, .spotlight-card:hover {
+  /* Hover effect for these cards */
+  transform: translateY(-10px);
+  box-shadow: 0 30px 45px rgba(0,0,0,0.3), 0 15px 15px rgba(0,0,0,0.2);
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/* Floating effect for navigation links and social icons */
+#mainNav a, .social-icons a {
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: block; /* Necessary for the transform property to work */
+}
+
+#mainNav a:hover, .social-icons a:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 

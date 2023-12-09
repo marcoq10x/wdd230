@@ -44,6 +44,11 @@
                 <source srcset="/wdd230/chamber/images/LargeHeroM.webp" media="(max-width: 1000px)">
                 <img src="/wdd230/chamber/images/LargeHeroL.webp" alt="Large Hero Image" width="986" height="657">
             </picture>--> 
+            <div class="event-banner">
+                <p>🎉 Join us for our Meet and Greet event on Wednesday at 7:00 p.m.! 🫱🏻‍🫲🏼</p>
+                <button class="close-banner">𝕏</button>
+            </div>
+            
             <div id="mode">
                 😎
             </div>
@@ -64,26 +69,44 @@
         <section class="cards">
             <div class="card">
                 <h3>Weather Conditions</h3>
-                <!-- Fictitious content for Weather Conditions -->
-                <p>Temperature: <span id="temp-value">45</span>°F</p>
+                
+                <p>Temperature: <span id="temp-value">70</span>°F</p>
                 <p>Humidity: 65%</p>
-                <p>Wind Speed: <span id="wind-speed-value">5</span> mph</p>
+                <p>Wind Speed: <span id="wind-speed-value">7</span> mph</p>
                 <p>Wind Chill: <span id="wind-chill-value">N/A</span></p>
+                    <p>Current Temperature 
+                    <br><span id="current-temp"></span></p>
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
             </div>
             <div class="card">
                 <h3>Events</h3>
-                <!-- Fictitious content for Events -->
+                
                 <p>Beach Cleanup - Oct 25th</p>
                 <p>Music Festival - Nov 3rd</p>
                 <p>Local Market - Every Saturday</p>
+                <figure>
+                    <picture>
+                        <source srcset="/wdd230/chamber/images/sunset.webp" media="(max-width: 480px)">
+                        <img src="/wdd230/chamber/images/sunset.webp" alt="Sunset down in Palm Beach" loading="lazy" width="150" height="150">
+                    </picture>
+                </figure>
+                <figure>
+                    <picture>
+                        <source srcset="/wdd230/chamber/images/beachclean.webp" media="(max-width: 480px)">
+                        <img src="/wdd230/chamber/images/beachclean.webp" alt="Sunset down in Palm Beach" loading="lazy" width="150" height="150">
+                    </picture>
+                </figure>
             </div>
             <div class="card">
                 <h3>Company Spotlight Ad</h3>
-                <!-- Fictitious content for Company Spotlight Add -->
-                <p>Visit our Premium Member: BeachBum Rentals</p>
-                <p>Special offers for Chamber members!</p>
+                
+                <section class="company-spotlight-container"></section>
             </div>
         </section>
+        <div id="forecast-container"></div>
     </main>
     <footer>
         <div class="footer-content">
@@ -118,6 +141,8 @@
         </div>
         <script src="/wdd230/chamber/scripts/lastmod.js"></script>
         <script src="/wdd230/chamber/scripts/windchill.js"></script>
+        <script src="/wdd230/chamber/scripts/banner.js"></script>
+        <script src="/wdd230/chamber/scripts/spotlight.js"></script>
     </footer>
 </body>
 </html>
