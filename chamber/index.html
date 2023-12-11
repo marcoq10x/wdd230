@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="web page for the Palm Beach Chamber of Commerce | Connecting Local Businesses | Networking, Business Growth & Community Support"><!--Brief description of page 150-160 characters-->
     <!--open Graph Meta properties-->
-    <meta property="og:title" content="Welcome to Palm Beach Chamber of Commerce website | Connecting Local Businesses | Networking, Business Growth & Community Support">
-    <meta property="og:type" content="website">
+    <meta property="og:title" content="Palm Beach Chamber of Commerce Home Page">
+    <meta property="og:description" content="web page for the Palm Beach Chamber of Commerce | Connecting Local Businesses | Networking, Business Growth & Community Support">
     <meta property="og:image" content="https://media.architecturaldigest.com/photos/5aabea00d91fc303af5439c1/16:9/w_2240,c_limit/Fisher_0418.JPG">
     <meta property="og:url" content="https://marcoq10x.github.io/wdd230/">
+    <meta property="og:type" content="website">
     <meta name="author" content="Marco Quintero">
 
     <title>Palm Beach Chamber of Commerce</title>
-    <meta name="description" content="web page for the Palm Beach Chamber of Commerce | Connecting Local Businesses | Networking, Business Growth & Community Support">
+    
     <!--Font links-->
     <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Roboto+Serif:opsz,wght@8..144,300&display=swap" rel="stylesheet">
     <!-- CSS links -->
@@ -77,7 +80,7 @@
                     <p>Current Temperature 
                     <br><span id="current-temp"></span></p>
                     <figure>
-                        <img id="weather-icon" src="" alt="">
+                        <img id="weather-icon" src="path/to/placeholder/image" alt="Weather icon placeholder">
                         <figcaption></figcaption>
                     </figure>
             </div>
@@ -102,8 +105,9 @@
             </div>
             <div class="card">
                 <h3>Company Spotlight Ad</h3>
-                
-                <section class="company-spotlight-container"></section>
+                <div class="company-spotlight-container">
+                    <!-- Dynamic content goes here -->
+                </div>
             </div>
         </section>
         <div id="forecast-container"></div>
@@ -121,16 +125,16 @@
             </div>
             <div class="social-icons">
                 <a href="https://instagram.com" target="_blank">
-                    <img src="/wdd230/chamber/images/instagram.png" alt="Instagram icon" width="60" height="60" loading="lazy">
+                    <img src="/wdd230/chamber/images/instagram.webp" alt="Instagram icon" width="60" height="60" loading="lazy">
                 </a>
                 <a href="https://facebook.com">
-                    <img src="/wdd230/chamber/images/facebook.png" alt="Facebook icon" width="60" height="60" loading="lazy">
+                    <img src="/wdd230/chamber/images/facebook.webp" alt="Facebook icon" width="60" height="60" loading="lazy">
                 </a>        
                 <a href="https://linkedin.com">
-                    <img src="/wdd230/chamber/images/linkedin.png" alt="LinkedIn icon" width="60" height="60" loading="lazy">
+                    <img src="/wdd230/chamber/images/linkedin.webp" alt="LinkedIn icon" width="60" height="60" loading="lazy">
                 </a>
                 <a href="https://youtube.com">
-                    <img src="/wdd230/chamber/images/youtube.png" alt="YouTube icon" width="60" height="60" loading="lazy">
+                    <img src="/wdd230/chamber/images/youtube.webp" alt="YouTube icon" width="60" height="60" loading="lazy">
                 </a>
             </div>
         </div>
@@ -140,9 +144,10 @@
             <p style="color:#FFFDD0;">Last Updated: <span id="lastModified"></span></p>
         </div>
         <script src="/wdd230/chamber/scripts/lastmod.js"></script>
-        <script src="/wdd230/chamber/scripts/windchill.js"></script>
+        
         <script src="/wdd230/chamber/scripts/banner.js"></script>
         <script src="/wdd230/chamber/scripts/spotlight.js"></script>
     </footer>
+    <script src="/wdd230/chamber/scripts/windchill.js"></script>
 </body>
 </html>

@@ -382,7 +382,7 @@ section.member-card {
   .forecast-card {
     width: 94%; /* Adjust this to fit design */
     height: auto;
-    aspect-ratio: 1; /*maintain the aspect ratio to be a circle */
+    aspect-ratio: 1 / 1; /* Corrected to maintain a 1:1 aspect ratio */
     border-color: aqua;
     box-shadow: 0 0 50px aqua;
     align-items: center;
