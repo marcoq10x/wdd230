@@ -1,0 +1,838 @@
+/*larger.css for Scoots stores Media Queries for different views*/
+
+/* Mobile View */
+@media only screen and (max-width: 480px) {
+    
+    /* Adjustments for the nav menu */
+    nav {
+        flex-direction: column;
+    }
+
+    /*makes border of nav menu Aqua*/
+    #mainNav {
+        border-color: aqua;
+    }
+
+    img {
+        float:left;
+    }
+
+    /*Navigation links menu*/
+    .navigation li a {
+        display: block;
+        text-align: center;
+        font-family: 'Gloock', serif;
+        text-decoration: underline;
+        color: var(--nav-link-color);
+        transition: color 0.3s ease;
+        font-size: 20px;
+    }
+    
+    /*Navigation links*/
+    ul.navigation.open {
+        padding-right: 90px;
+        margin-right: 20px;
+    }
+
+    div.card {
+        border-color: Aqua;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer {
+        border-color: Aqua;
+    }
+
+    footer hr{
+        border-color: Aqua;
+    }
+
+
+    .footer-content img {
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        border-bottom: 10px;
+        padding-bottom: 10px;
+        margin-left: 10px;
+    }
+
+    img#logo {
+        width: 90px;
+        Height: 90px;
+    }
+
+    .contact {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .social-icons img {
+        padding-top: 10px;
+        margin-right: 2px;
+    }
+    #hamburger {
+        display: block;
+    }
+
+    nav.active a {
+        display: block; /* shows the links when the menu is toggled */
+    }
+
+    /*hero section */
+    .hero-text {
+        font-size: 2em; /* font size for better view on small devices */
+    }
+
+/*Navigation Menu*/
+    #mainNav {
+        position: absolute; /* Resets the positioning */
+        background-color: rgba(0, 0, 0, 0.7); /*background to be fully opaque on mobile */
+        top: 0px; /* Resets the top positioning */
+        display: block;
+    }
+    
+h1 {
+    font-size: 20px;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h1, h2, h3 {
+    margin: 10px 0; /* Increase margin for headings for better spacing on large screens */
+    box-shadow: 0 0 50px #20201e;
+    border-radius: 10px;
+}
+   
+    /* Adjustments for the card layout in main section */
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 1;
+        margin-bottom: 10px;
+    }
+
+    .card a {
+        color:#6186f7; /* Change card link color */
+    }
+
+    img#logo2 {
+        width: 90px;
+        Height: 90px;
+    }
+
+/*==================================discover page=================================*/
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        padding-top: 0;
+        display: block; /* Stack sidebar and gallery vertically */
+    }
+
+    .photo-gallery {
+        justify-content: center; /* Centers the gallery in the single column */
+    }
+
+    .sidebar {
+        order: -1; /* Moves the sidebar to the top */
+        flex-basis: 100px;
+    }
+
+    
+      .sidebar,
+      .photo-gallery {
+        /* Ensure that sidebar and gallery take full width */
+        width: 100%;
+        order: 0; /* Reset order */
+    }
+
+    main, .sidebar, .photo-gallery, .grid-container {
+        margin: 0;
+        padding: 0;
+        width: 100%; /* Ensures content does not overflow */
+    }
+
+    .sidebar section, .photo-gallery figure {
+        margin-bottom: 20px; /* Add space between sections */
+    }
+
+    .sidebar h1 {
+        font-size: 1.5em;
+        width: 100%;
+        align-items: center;
+        justify-content:center;
+        padding: 0%;
+    }
+
+    .sidebar h2, .sidebar p, .sidebar ul, .sidebar li {
+        text-align: center; /* Center text in the sidebar */
+        margin-left: 0; /* Reset any left margins */
+    }
+
+    .photo-gallery figure {
+        margin: auto; /* Center figures in the gallery */
+    }
+
+    .photo-gallery img {
+        display: block; /* Prevent inline-block default spacing */
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 400px; /* Max width for images */
+        margin-top: 10px; /* Center align images */
+    }
+
+    div.visit-message {
+        align-items: center;
+        justify-content:center;
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0px -20px 10px;
+        text-align: center;
+     }
+
+     .demographics {
+        margin-top: 40px;
+        text-align: center;
+     }
+    
+     .events {
+        margin-top: 20px;
+        text-align: center;
+     }
+    
+     .attractions {
+        margin-top: 40px;
+        text-align: center;
+     }
+/* ==================================Code for Join Page ==============================*/
+      form#joinForm.form-container {
+        border-color: aqua;
+     }
+
+     aside.membership-benefits {
+        border-color: aqua;
+     }
+
+     /* ===========================Code for thank You page (Join Page ammendment)=======================*/
+      /*Black background on thank you container*/
+    .thank-you-container {
+        padding: 40px;
+        background-color:#000000;
+        border-color: aqua;
+    }
+   
+    /*hover over the "Thank you!" and displays an Aqua shadow*/
+    .thank-you-container h1:hover {
+        box-shadow: 0 0 50px Aqua;
+    }
+
+    /*Thank You background completely black*/
+    .thank-you-container h1 {
+        background-color: black;
+    }
+
+    .thank-you-container p {
+        box-shadow: 0 0 40px black;
+        border-radius: 10px;
+    }
+
+    /*Black shadow around the "Back to Join Page" button*/
+    .thank-you-container a:hover {
+        box-shadow: 0 0 70px #0040ff;
+    }
+
+    form#joinForm.form-container {
+        background-color: black;
+        box-shadow: 0 0 50px #20201e;
+    }
+    
+    aside.membership-benefits {
+        background-color: black;
+        box-shadow: 0 0 50px #20201e;
+    }
+
+/* ============================Code for Directory Page ==============================*/
+    /* Common styles for member cards in both grid and list views */
+.member-card-grid, .member-card-list {
+    padding: 0.5rem;
+    box-shadow: 0 0 10px aqua;
+  }
+
+  /* both Grid and List buttons*/
+.menu button {
+    padding: 0.5rem 1rem;
+    margin: 20px 10px 0px 10px;
+    cursor: pointer;
+    background:#0040ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 0 10px #0040ff;
+  }
+  
+
+  /* Styles for background of container both grid and list*/
+  .directory-view section {
+    background: rgb(26, 25, 25);
+    border: 1px solid Aqua;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Styles for grid view */
+  .directory-view.grid .member-card-grid {
+    text-align: center;
+    box-shadow: 0 0 15px aqua;
+  }
+
+  .member-card-grid, .member-card-list  a{
+    color:#0040ff;
+    margin: 0px 0px 0px 0px; /* Be careful to NOT add margin to sides of the card */
+  }
+  
+  /* Styles for list view */
+  .directory-view.list .member-card-list {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+    border: 1px solid#0040ff;
+    box-shadow: 0 0 15px #0040ff;
+  }
+  
+  /* Zebra striping for list view */
+  .directory-view.list .member-card-list:nth-child(even) {
+    background: radial-gradient(#0040ff, black);
+  }
+
+  .directory-view.list .member-card-list:nth-child(even) a {
+    color: #ffffff; /* This will make the text white */
+}
+  
+  /* Hide image for list view */
+  .directory-view.list .member-card-list img {
+    display: none;
+  }
+  
+  /* Font sizes for list view */
+  .directory-view.list .member-card-list h2 {
+    font-size: 1.5rem;
+    width: fit-content;
+    padding-bottom: 0px;
+    margin: 0px 0px 40px 0px;
+  }
+  
+  /*modifies the font color and font size of the address and phone # in the grid view*/
+  section.member-card.member-card-list.member-card p {
+    font-weight: 600;
+    font-size: 15px;
+    color:#FFFDD0;
+    font-weight: lighter;
+    padding-bottom: 0px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  /*modifies the font color, positioning and font size of the"Visit Website" link in the list view*/
+  section.member-card a {
+    color: #6186f7;
+   margin-top: 20px;
+    text-align: center;/*centers the "Visit Website" link*/
+}
+
+/* modifies Grid entire card color, align the items center like the picture, for List does the samething with its items */
+section.member-card {
+    box-shadow: 0 0 15px aqua;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Controls logos conditions*/
+  .directory-view.grid section img {
+    height: 75px;
+    max-width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0 0 30px Aqua;
+    align-items: center;
+    justify-content: center;
+   }
+
+   hr {
+    display: none;
+   }
+
+   /* ============================Weather API week 10==============================*/
+
+   #forecast-container {
+    display: block;
+    justify-content: center;
+  }
+
+  /* Modifies the circlesto make them perfect and give a shadow*/
+  .forecast-card {
+    width: 94%; /* Adjust this to fit design */
+    height: auto;
+    aspect-ratio: 1 / 1; /* Corrected to maintain a 1:1 aspect ratio */
+    border-color: aqua;
+    box-shadow: 0 0 50px aqua;
+    align-items: center;
+  }
+
+  .forecast-card h3 {
+   font-size: 1.6rem;
+   margin: 0px 0px;
+  }
+
+  span {
+    font-size: 1.5rem;
+  }
+
+  /*modifies the looks of the Image*/
+div.forecast-card img  {
+    width: auto;
+    height: 135px;
+    box-shadow: 0 0 50px aqua;
+  } 
+
+  img#weather-icon {
+    box-shadow: 0 0 50px aqua;
+    align-items: center;
+    justify-content: center;
+  }
+
+  figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;}
+
+  /*modifies the looks of the conditions description*/
+figcaption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px 0px 0px 0px;
+    border-radius: 40%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+  }
+  
+
+
+}
+
+/*∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆*/
+/*=============================================================================*/
+
+/* Media query */
+@media (min-width: 481px) {
+    #hamburger {
+        display: none;  /* Hamburger hidden beyond 480px */
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    h1, h2, h3 {
+        margin: 20px 0; /* Increase margin for headings for better spacing on large screens */
+        box-shadow: 0 0 50px #20201e;
+        border-radius: 10px;
+        color: Black;
+    }
+
+    .card a {
+        color:#6186f7; /* Change card link color */
+    }
+
+/* ===========================Discover Page Code=======================*/
+
+    /* Base styles for hover effect on images */
+    .photo-gallery img {
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .photo-gallery img:hover {
+        box-shadow: 0 0 50px Aqua;
+    }
+
+    .sidebar h1 {
+        font-size: 1.5em;
+       margin-top: 0px;
+       margin-left: 25px;
+       margin-bottom: 200px;
+        width: 100%;
+        align-items: center;
+        justify-content:center;
+    }
+    
+    div.visit-message {
+        position:inherit;
+        align-items: center;
+        justify-content:center;
+        width: 100%;
+        padding: 10px;
+        margin: 0px 0px 0px 18px;
+        text-align: center;
+        margin-bottom: 200px;
+        border-radius: 50%;
+     }
+
+     form#joinForm.form-container {
+        background-color: black;
+        box-shadow: 0 0 50px #20201e;
+        width: 45%;
+        margin-right: 7px;
+    }
+    
+    aside.membership-benefits {
+        background-color: black;
+        box-shadow: 0 0 50px #20201e;
+        width: 45%;
+        margin-left: 7px;
+    }
+
+     /* ===========================Code for thank You page (Join Page ammendment)=======================*/
+
+    /*Black background on thank you container*/
+    .thank-you-container {
+        padding: 40px;
+        background-color:#000000;
+    }
+
+    /*hover over the "Thank you!" and displays an Aqua shadow*/
+    .thank-you-container h1:hover {
+        box-shadow: 0 0 50px Aqua;
+    }
+
+    /*Thank You background completely black*/
+    .thank-you-container h1 {
+        background-color: black;
+    }
+
+    .thank-you-container p {
+        box-shadow: 0 0 40px black;
+        border-radius: 10px;
+    }
+
+    /*Blue shadow around the "Back to Join Page" button*/
+    .thank-you-container a:hover {
+        box-shadow: 0 0 70px #0040ff;
+    }
+
+/* ===========================Code for Directory Page ==============================*/
+
+     /*styles for member cards in both grid and list views */
+.member-card-grid, .member-card-list {
+    padding: 0.5rem;
+    box-shadow: 0 0 10px aqua;
+  }
+
+  .member-card-grid, .member-card-list  a{
+    color:#0040ff;
+  }
+
+  /* Styles for background of container both grid and list*/
+  .directory-view section {
+    background: rgb(26, 25, 25);
+    border: 1px solid Aqua;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Styles for grid view */
+  .directory-view.grid .member-card-grid {
+    text-align: center;
+    box-shadow: 0 0 15px aqua;
+  }
+  
+  /* Styles for list view */
+  .directory-view.list .member-card-list {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+    border: 1px solid#0040ff;
+    box-shadow: 0 0 15px #0040ff;
+
+  }
+
+  /*Makes the list view into a single column*/
+  article#directoryContainer.directory-view.list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  
+  /* Zebra striping for list view */
+  .directory-view.list .member-card-list:nth-child(even) {
+    background: radial-gradient(#0040ff, black);
+  }
+
+  .directory-view.list .member-card-list:nth-child(even) a {
+    color: #ffffff; /* This will make the text white */
+}
+  
+  /* Hide image for list view */
+  .directory-view.list .member-card-list img {
+    display: none;
+  }
+  
+  /* Font sizes for list view */
+  .directory-view.list .member-card-list h2 {
+    font-size: 1.5rem;
+    width: fit-content;
+    margin: 0px 0px 0px 15px;
+    padding-bottom: 0px;
+    align-items: center;
+  }
+
+    /* Changes the position, size of h2, color of h2*/
+    section.member-card h2 {
+        font-size: 1.2rem;
+        overflow: scroll; /* This will add a scrollbar if the text is too long */
+    }
+  
+    /* Changes the position, size of h2, color of h2*/
+  .directory-view.list .member-card-list p {
+    font-weight: 600;
+    font-size: 18px;
+    color:#FFFDD0;
+    font-weight: lighter;
+    margin: 0px 0px 0px 0px;
+  }
+
+     /*Color and size of paragraph font inside cards, grid view*/
+  section.member-card.member-card-list.member-card p {
+    font-weight: 600;
+    font-size: 20px;
+    color:#FFFDD0;
+    font-weight: lighter;
+    margin-left: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+/*modifies the font color, positioning and font size of the"Visit Website" link in the list view*/
+section.member-card a {
+    color: #6186f7;
+    margin-left: 15px;
+    text-align: left; /* Aligns the link to the left */
+ }
+
+  /* modifies Grid entire card color, align the items center like the picture, for List does the samething with its items */
+  section.member-card {
+    box-shadow: 0 0 15px aqua;
+    align-items: center;
+     justify-content: center
+}
+
+ /*Color, shadow and positioning of Images inside cards, grid view*/
+  .directory-view.grid section img {
+    height: 75px;
+    max-width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0 0 30px Aqua;
+    margin: 0px 0px 0px 0px;
+   }
+
+}
+/*∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆∆*/
+/*=============================================================================*/
+
+/* Large View */
+@media only screen and (min-width: 1001px) {
+
+    .hero {
+        height: 600px;  /*Adjust height of hero */
+    }
+    /* better appearance on larger screens */
+    body {
+        font-size: 18px; /* Increasing the base font size for better readability on large screens */
+    }
+
+    main  {
+        padding: 0px;
+    }
+
+    h1, h2, h3 {
+        margin: 20px 0; /* Increase margin for headings for better spacing on large screens */
+        box-shadow: 0 0 50px #20201e;
+        border-radius: 10px;
+    }
+
+    nav a {
+        font-size: 30px; /* Increase nav link size for large screens */
+        border-radius: 5px;
+    }
+
+    .cards {
+        gap: 10px; /* Increase gap between cards */
+    }
+
+    .card {
+        padding: 20px; /* Increase padding inside cards */
+        margin: 5px;
+    }
+
+    .card a {
+        color:#6186f7; /* Change card link color */
+    }
+
+
+    /* ===========================Code for thank You page (Join Page ammendment)=======================*/
+    /*Black background on thank you container*/
+    .thank-you-container {
+        padding: 40px;
+        background-color:#000000;
+    }
+    
+    /*hover over the "Thank you!" and displays an Aqua shadow*/
+    .thank-you-container h1:hover {
+        box-shadow: 0 0 50px Aqua;
+    }
+
+    /*Thank You background completely black*/
+    .thank-you-container h1 {
+        background-color: black;
+    }
+
+    .thank-you-container p {
+        box-shadow: 0 0 40px black;
+        border-radius: 10px;
+    }
+
+    /*Blue shadow around the "Back to Join Page" button*/
+    .thank-you-container a:hover {
+        box-shadow: 0 0 70px #0040ff;
+    }
+
+    form#joinForm.form-container {
+        background-color: black;
+        box-shadow: 0 0 50px #20201e;
+        width: 45%;
+        margin-right: 7px;
+    }
+    
+    aside.membership-benefits {
+        background-color: black;
+        box-shadow: 0 0 50px #20201e;
+        width: 45%;
+        margin-left: 7px;
+    }
+
+    /* ===========================Code for Directory Page ==============================*/
+      /* Common styles for member cards in both grid and list views */
+.member-card-grid, .member-card-list {
+    padding: 0.5rem;
+    box-shadow: 0 0 10px aqua;
+  }
+
+  .member-card-grid, .member-card-list  a{
+    color:#0040ff;
+  }
+
+  
+  /*Makes the list view into a single column*/
+  article#directoryContainer.directory-view.list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+    /*Makes the list view into a single column*/
+    article#directoryContainer.directory-view.grid {
+        grid-gap: 20px;
+        padding: 0px;
+
+      }
+  
+  /* Zebra striping for list view */
+  .directory-view.list .member-card-list:nth-child(even) {
+    background: radial-gradient(#0040ff, black);
+  }
+
+  /*Changes the color of the "Visit website" in the list view*/
+  .directory-view.list .member-card-list:nth-child(even) a {
+    color: #ffffff; /* This will make the text white */
+    margin-left: 15px;
+   }
+
+   /*Changes the color of the "Visit website" in the list view Zebra Blue (odd)*/
+    .directory-view.list .member-card-list a{
+        margin-left: 15px;
+    }
+
+  
+    /* Hide image for list view */
+    .directory-view.list .member-card-list img {
+        display: none;
+    }
+  
+       /* Changes the position, size of h2, color of h2*/
+    .directory-view.list .member-card-list h2 {
+        font-size: 1.5rem;
+        width: fit-content;
+        margin: 0px 0px 0px 15px;
+        padding-bottom: 0px;
+        align-items: center;
+    }
+
+    /* Changes the position, size of h2, color of h2*/
+    section.member-card h2 {
+        font-size: 1.5rem;
+        overflow: scroll; /* This will add a scrollbar if the text is too long */
+    }
+  
+     /*Color and size of paragraph font inside cards, grid view*/
+     section.member-card.member-card-list.member-card p {
+        font-weight: 600;
+        font-size: 20px;
+        color:#FFFDD0;
+        font-weight: lighter;
+         margin-left: 0px;
+         padding-bottom: 0px;
+         margin-bottom: 0px;
+    }
+
+    /*modifies the font color, positioning and font size of the"Visit Website" link in the list view*/
+    section.member-card a {
+        color: #6186f7;
+        margin-left: 0px;
+        text-align: left; /* Aligns the link to the left */
+    }
+
+    /* modifies Grid entire card color, align the items center like the picture, for List does the samething with its items */
+    section.member-card {
+        box-shadow: 0 0 15px aqua;
+        align-items: center;
+         justify-content: center;
+    }
+
+     /*Color, shadow and positioning of Images inside cards, grid view*/
+    .directory-view.grid section img {
+        height: 75px;
+        max-width: 100%;
+        border: 1px solid rgb(0, 0, 0);
+        box-shadow: 0 0 30px Aqua;
+        margin-right: 0px;
+    }
+}    

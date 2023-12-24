@@ -1,0 +1,1271 @@
+/* base.css  */
+
+/* Variables for colors */
+:root {
+    --nav-link-color: #000000;
+    --headline-color-on-white: #064E83;
+    --nav-background-color: black;
+    --nav-hover-link-color: #FFFDD0;
+    --nav-hover-background-color: #064E83;
+    --headline-color-on-color: #DBB740;
+    --paragraph-color-on-white: rgb(0, 0, 0);
+    --paragraph-color-on-color: #000000;
+    --paragraph-background-color: rgb(251, 251, 255);
+}
+
+/* General Reset and Typography */
+body {
+    font-family: 'Roboto Serif', serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-color: #ffffff !important;    /* Color of the background of entire page*/
+    color: var(--paragraph-color-on-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*center the content if its width is less than the viewport width */
+}
+
+header, main, footer {
+    max-width: 1000px;
+    width: 100%; /* ensures they take up the full available width up to 1000px */
+    box-sizing: border-box; /* This will make sure any padding or border doesn't add to the total width */
+}
+
+main {
+    margin-top: 400px;
+}
+
+#mode {
+	position: absolute;
+	top: 5.4rem;
+	right: 1rem;
+	font-size: 3rem;
+    margin-top: 10px;
+	cursor: pointer;
+}
+
+.dark-mode #mainNav {
+    border-color: #FFFDD0;
+}
+
+.dark-mode .navigation li a {
+    color: #FFFDD0;
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3 {
+    color: #FFFDD0;
+    background-color: #000000;
+  }
+  
+  .dark-mode .card {
+    background-color: black !important;
+    border-color: #FFFDD0;
+  }
+  
+  .dark-mode .cards {
+    background-color: black;
+  }
+
+  .dark-mode .card-content {
+    background-color: #FFFDD0 !important;
+  }
+  
+  .dark-mode hr {
+    border-color: #FFFDD0;
+  }
+
+  .dark-mode footer {
+    border-color: #FFFDD0;
+  }
+
+  .dark-mode div.visit-message {
+    color: #FFFDD0;
+    background-color: #85acff;
+  }
+
+  .dark-mode aside.membership-benefits {
+    border-color: #FFFDD0;
+  }
+
+  .dark-mode aside.membership-benefits h3 {
+    color:#FFFDD0;
+  }
+
+  .dark-mode form#joinForm.form-container {
+    border-color: #FFFDD0;
+ }
+
+ .dark-mode form#joinForm.form-container label {
+    color: #FFFDD0;
+ }
+
+ .dark-mode form#joinForm.form-container legend {
+    color:#FFFDD0;
+ }
+
+ .dark-mode form#joinForm.form-container .submit-button {
+    color:#FFFDD0;
+ }
+ 
+ .dark-mode .thank-you-container {
+    border-color:#FFFDD0;
+ }
+
+ .dark-mode .thank-you-container h1 {
+    color: #FFFDD0;
+ }
+
+ .dark-mode .thank-you-container a {
+    color:#FFFDD0;
+ }
+
+ .dark-mode .forecast-card h3{
+  color:#FFFDD0;
+ }
+  
+    /* MAKE YOUR RESERVATION button  */
+  .hero-label {
+    position: absolute;
+    bottom: -380px; 
+    right: 10px; 
+    background: linear-gradient(235deg,#772aff,#010615,#2196F3);
+    border: 1px solid rgba(0,0,0,.75);
+    padding: 1rem;
+    box-shadow: 0 0 3rem #fff; /* Optional, adds a glow effect */
+    opacity: 0.; /*Transparency */
+  }
+  
+  .hero-label p {
+    margin: 0;
+    padding: .15rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: 'Gloock', serif;
+    color: #DBB740
+  }
+
+  /*gets rid of underline on link */
+  .hero-label a {
+    text-decoration: none;
+  }
+  
+  h1 {
+    margin-top: 300px;
+  }
+
+
+h1, h2, h3 {
+    font-family: 'Gloock', serif;
+    margin-top: 0;
+    color: var(--headline-color-on-white);
+    text-align: center;
+}
+
+h1, h2 {
+    color:#1b1915;
+    box-shadow: 0 0 50px black;
+    margin-top: 20px; /* Or adjust as needed to give space above */
+    z-index: 1; /* Ensure these are below the gallery */
+}
+
+h3 {
+    font-size: 20px;
+    color: #DBB740;
+}
+
+/* Header styles */
+header {
+    position: relative;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hero img {
+    width: 100%;
+    height: 140%;
+    box-shadow: 0 0 50px black;
+}
+
+.hero-container {
+    position: relative;
+}
+
+/*Navigation Menu*/
+#mainNav {
+    position: relative; /* position set to relative so 3D picture gallery can go down to the middle*/
+    top: 0px; /* Adjust as needed to position where you want on the hero image */
+    left: 0;
+    right: 0;
+    z-index: 10; /* Makes sure the navigation is always on top */
+    display: flex;
+    align-items: center;
+    border-color: #000000;
+    border-width: 6px;
+    border-style:inset;
+    background: linear-gradient(235deg,#fffb00,#2196F3,#ff0019);
+    margin-bottom: 300px;
+}
+
+#mainNav img {
+    float: left;
+    border-radius: 50px;
+}
+
+.nav img {
+    width: 120px;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav li {
+    gap: 50px;
+
+}
+
+.nav a:hover {
+    background-color: var(--nav-hover-background-color);
+}
+
+.hero-text {
+    font-family: 'Gloock', serif;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 6em;
+    background: radial-gradient(circle at center, red, blue, orange);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Fallback for non-WebKit browsers */
+  -webkit-text-fill-color: transparent; /* For WebKit browsers */
+    background-color: transparent;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.hero {
+    background-size: cover;       /* Cover the full view of the container */
+    background-repeat: no-repeat; /* No repeat of the image */
+    background-position: center;  /* Center the background image */
+    height: 400px;          /*mobile view and medium view Hero image appears*/   
+    width: 100%;                  /* Take full width of its container */
+}
+
+/*Hamburger menu*/
+#hamburger {
+    display: block;
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 3px 7px 6px;
+    background-color: #064E83;
+    color: #DBB740;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#hamburger::before {
+    content: "≡";
+}
+
+#hamburger.open::before {
+    content: "𝕏";
+}
+
+/* Navigation links espacio */
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    flex: 1; /* Make each list item take up equal space */
+}
+ 
+/*Hides the Navigation menu on mobile view*/
+.navigation li {
+    display: none;
+}
+
+/*Navigation links menu*/
+.navigation li a {
+    display: block;
+    text-align: center;
+    font-family: 'Gloock', serif;
+    text-decoration: underline;
+    color: var(--nav-link-color);
+    transition: color 0.3s ease;
+    font-size: 30px;
+}
+
+
+/*Navigation links hover background*/
+.navigation li a:hover {
+    background-color: #064E83;
+    font-weight: 700;
+}
+
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+}
+
+/* Main content styles */
+main {
+    box-shadow: 0 0 50px black;
+    padding: 0px;
+}
+
+
+
+.container {
+    --d: 25s; /* duration */
+  
+    display: grid;
+    grid-template-columns: repeat(3, 300px); /* number of visible elements + width */
+    overflow: hidden;
+    -webkit-mask: linear-gradient(90deg, #0000, #000 5% 95%, #0000);
+  }
+  
+  .container > div {
+    grid-area: 1/1;
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    align-content: center;
+    gap: 10px;
+    background: linear-gradient(235deg,#772aff,#02ff35,#2196F3)padding-box;
+    border-inline: 10px solid #0000;
+    animation: r var(--d) linear infinite;
+  }
+  
+  .container > div img {
+    width: 100%;
+    grid-row: span 2;
+  }
+  
+  .container > div * {
+    margin: 0;
+  }
+  
+  .container > div h3 {
+    margin-top: auto;
+  }
+  
+  /* Manually calculated animation delays */
+  .container > div:nth-child(1) { animation-delay: calc(-1 * var(--d) * 0/6); }
+  .container > div:nth-child(2) { animation-delay: calc(-1 * var(--d) * 1/6); }
+  .container > div:nth-child(3) { animation-delay: calc(-1 * var(--d) * 2/6); }
+  .container > div:nth-child(4) { animation-delay: calc(-1 * var(--d) * 3/6); }
+  .container > div:nth-child(5) { animation-delay: calc(-1 * var(--d) * 4/6); }
+  .container > div:nth-child(6) { animation-delay: calc(-1 * var(--d) * 5/6); }
+  
+  @keyframes r {
+    16.666666667% { transform: translate(-100%); } /* 100/6 */
+    16.676666667% { transform: translate(500%); } /* (6-1)*100/6, with a small increment for continuous animation */
+  }
+  
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    font-family: 'Roboto Serif', serif;
+    background: black;
+  }
+  
+
+
+
+
+
+.cards {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between; /*distributes the space evenly between the columns */
+    background-color:#ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0 0px;
+    box-shadow: 0 0 50px black;
+}
+
+.card {
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border-color: #DBB740;
+    border-style: double;
+    margin: 0 10px; /* Add a bit of margin for spacing */
+    box-sizing: border-box; /* padding and border are included in the total width */
+}
+
+
+.card p {
+    color: var(--paragraph-color-on-color);
+    background-color: var(--paragraph-background-color);
+    padding: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #ffffff;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 0 50px black;
+    border-color: #000000;
+    border-width: 3px;
+    border-style: solid;
+    background: linear-gradient(235deg,#fffb00,#2196F3,#ff0019);
+}
+
+.footer-content, .footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*edits ContactUs info*/
+footer p{
+    margin: 0 0px;
+    font-size: 14px;
+}
+
+.footer-content img, .social-icons img {
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #000000;
+    border-width: 3px;
+    margin: 20px 0;
+}
+
+.contact {
+    margin-left: 20px;
+}
+
+div.footer-info{
+    gap: 20px;
+}
+
+/*===================Code for Discover Page===================*/
+
+/* Styles for the sidebar content */
+.sidebar h1 {
+    font-size: 1em;
+    margin-top: 2em;
+    width: 100%;
+    align-items: center;
+    justify-content:center;
+}
+
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    width: 100%;
+    margin-left: 15px;
+}
+
+/* Styling Demographics*/
+.sidebar p, .sidebar ul {
+    font-size: 1em;
+    margin-bottom: 1em;
+    padding-top: 50px;
+    font-size: 22px;
+    margin-left: 15px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This will distribute space evenly */
+    height: 100%; /* Make sure the sidebar takes full height */
+    font-size: 22px;
+}
+
+.sidebar ul li strong {
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+/* Base styles for mobile view - single column layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /*more space to photo gallery*/
+    gap: 20px; /* Space between sidebar and main content */
+    padding-top: 20px;
+    align-items: start;
+    width: auto;
+}
+
+.sidebar,
+.photo-gallery {
+        /* Ensure that sidebar and gallery take full width */
+        width: 100%;
+        
+ }
+
+ .photo-gallery {
+    display: flex;
+    justify-content: flex-end; /* Aligns the gallery to the far right */
+    flex-wrap: wrap; /* Allows images to wrap to the next line */
+    margin-left: 40px;
+ }
+
+
+ .sidebar {
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around; /* This will stretch the sidebar content to fill the space */
+    height: 85%;   
+    width: 140%;
+    flex: 1;
+ } 
+
+  img {
+    margin-left: 0px;
+ }
+
+  figcaption {font-size: smaller;}
+
+  /* visit message background, font color, font type*/
+ .visit-message {
+    margin-bottom: 300px; /* Adjust as needed */
+    background-color:rgba(0, 0, 0, 0.7); /*background color*/
+    color: Aqua;   /*font color*/
+    font-family: 'Gloock', serif; /*font*/
+    width:fit-content;
+    margin-bottom: 10px;
+ }
+
+ /*Position, padding, background style border radius*/
+ div.visit-message {
+    position:inherit;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    padding: 10px;
+    margin: 0px 0px 0px 18px;
+    text-align: center;
+    margin-bottom: 320px;
+    border-radius: 50%;
+ }
+
+ .demographics {
+    margin-top: 50px;
+    text-align: center;
+ }
+
+ .events {
+    margin-top: 200px;
+    text-align: center;
+ }
+
+ .attractions {
+    margin-top: 400px;
+    text-align: center;
+ }
+
+
+ /*===================Code for Join Page===================*/
+
+ /* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #000000;
+  }
+  
+  /* Form Container */
+  .form-container {
+    background: #20201e;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 2rem auto;
+    width: 80%;/*affects width of form (specially mobile view)*/
+    max-width: 800px;
+    border-color: #DBB740;
+    border-style: double;
+  }
+  
+  /* Field Styles */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"],
+  button.submit-button {
+    width: 70%;
+    padding: 12px 20px;
+    border: none;
+    background-color: #172047;
+    color: #DBB740;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-family: 'Gloock', serif;
+    align-items: center;
+    justify-content:center;
+    margin-left: 50px;
+  }
+  
+  input[type="submit"]:hover,
+  button.submit-button:hover {
+    background-color:#0040ff;
+    box-shadow: 0 0 70px #0040ff;
+  }
+  
+  /* Membership Benefits */
+  .membership-benefits {
+    background:#20201e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 800px;
+    border-color: #DBB740;
+    border-style: double;
+  }
+  
+  .membership-level {
+    padding: 10px;
+    border-left: 4px solid #064E83;
+    margin-bottom: 1rem;
+  }
+  
+  /* Specific Membership Styles */
+  .np-membership { border-color: Aqua; }
+  .bronze-membership { border-color: #9c560f; }
+  .silver-membership { border-color: #c0c0c0; }
+  .gold-membership { border-color: #DBB740; }
+  
+  /* Responsive Layout */
+  @media (min-width: 481px) {
+    .membership-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+  
+    .form-container,
+    .membership-benefits {
+      width: 45%;
+    }
+  }
+  
+  /* Typography */
+  h1, h2, h3, label, legend {
+    color: #DBB740;
+    font-family: 'Gloock', serif;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 0;
+    
+  }
+  
+  legend {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  /* Utility Classes */
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /*===================Code for thank You page (Joint Page ammendment)===================*/
+
+  body, html {
+    background: #000000
+  }
+  
+  
+  /* Thank You Page Styling */
+  .thank-you-container {
+    text-align: center;
+    padding: 2rem;
+    background: #20201e;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 100%;
+    border-color: #DBB740;
+    border-style: double;
+    margin: 20px 20px 20px 20px;
+  }
+  
+  .thank-you-container h1 {
+    color: #DBB740;
+    margin-bottom: 1rem;
+    background-color: #1d1d1e;
+  }
+  
+  .thank-you-container p {
+    color: #FFFDD0;
+    margin-bottom: 2rem;
+  }
+  
+  .thank-you-container a {
+    background-color: #064E83;
+    color: #DBB740;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 300ms;
+  }
+  
+  .thank-you-container a:hover {
+    background-color: #0040ff;
+  }
+
+  /*===================Code for Directory Page===================*/
+/* Main content styles */
+main {
+  padding: 10px;
+}
+
+/*modifies the main area or entire grid area*/
+#directoryContainer {
+  padding: 10px;
+}
+
+/* Directory menu for grid/list toggle */
+.menu {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+/* both Grid and List buttons*/
+.menu button {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  background: radial-gradient(#161818, #0040ff);
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 0 20px #0040ff;
+}
+
+/*Grid button hover halo blue*/
+button#grid:hover {
+  box-shadow: 0 0 20px #0040ff;
+}
+
+/*list button hover halo blue*/
+button#list:hover {
+  box-shadow: 0 0 20px #0040ff;
+}
+
+/*hides the h3 heading overflow*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+
+/* Directory view layout  resembles prophets project (Very Important grid #)*/
+.directory-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+/* Grid view layout */
+.grid-view {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+/* List view layout */
+.list-view section {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.list-view img {
+  width: 100px;
+  margin-right: 1rem;
+  color:#DBB740;
+}
+
+/* Directory Card Consistent Layout */
+.directory-view .member-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distributes space evenly inside the card */
+  padding: 1rem;
+  height: auto; /* Adjust to a fixed height if necessary for alignment */
+}
+
+.directory-view .member-card h2 {
+  height: 2rem; /* Adjust height as necessary */
+  overflow: hidden; /* Prevents long text from breaking layout */
+  margin-bottom: 0.5rem; /* Space between title and address */
+}
+
+.directory-view .member-card p {
+  margin-bottom: 0.5rem; /* Consistent space for all paragraphs */
+  text-align: center;
+}
+
+.directory-view .member-card img {
+  width: 75px; 
+  height: 4rem; 
+  object-fit: contain; /* Maintains aspect ratio of the image */
+  margin-bottom: 0.5rem; /* Space between image and link */
+  align-items: center; /* Centers the image */
+  justify-content: center; /* Centers the image */
+  align-content: center; /* Centers the image */
+}
+
+.directory-view .member-card a {
+  align-self: center; /* Centers the button/link */
+  margin-top: auto; /* Pushes the link/button to the bottom of the card */
+}
+/*===================Code for week 10 API  and Event Banner===================*/
+/* Event Banner pops on top of the page covering the Navigation bar */
+.event-banner {
+  position: relative;
+  font-family: 'Gloock', serif;
+  align-items: center;
+  top: -100px; /* Start off-screen */
+  left: 0;
+  width: auto;
+  background: radial-gradient(#161818, rgb(100, 90, 233)); /* Mixture of colors*/
+  color: white;
+  padding: 17px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  text-align: center;
+  animation: slideDown 0.5s forwards 0.5s; /* Animation starts after 0.5s, lasts 0.5s */
+  z-index: 1000;
+}
+
+@keyframes slideDown {
+  to {
+      top: 0;
+  }
+}
+
+/* Decorates the "x" that closes the banner*/
+.close-banner {
+  position: absolute;
+  right: 8px;
+  top: 20%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 1.5rem #ffffff; /* Optional, adds a glow effect */
+  border-radius: 50%;
+}
+
+/* These declarations will modify the looks of the 3 day forecast....I never want to deal with this mess again!*/
+#forecast-container {
+  display: flex;
+ 
+  justify-content: space-between;
+}
+
+/* */
+.forecast-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #0040ff;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #000000;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  box-shadow: #0040ff 0px 0px 50px;
+}
+
+
+.forecast-card h3 {
+  color: #DBB740;
+  
+}
+
+.forecast-card img {
+  display: block;
+  margin: 0 auto 5px;
+  
+}
+
+img#weather-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0px 0px 0px 0px;
+  box-shadow:  #0040ff 0px 0px 50px;
+  border-radius: 50%;
+}
+
+/*modifies the looks of the Image*/
+div.forecast-card img  {
+  width: auto;
+  height: 100px;
+  margin: 0px 0px 0px 0px;
+  box-shadow: #0040ff 0px 0px 50px;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+} 
+
+/*modifies the looks of the conditions description*/
+figcaption {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 10px 0px 0px 0px;
+  border-radius: 40%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
+
+/*Causes CSS animation in card on the left*/
+.card:hover {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+/*CSS animnation for 3 day weather forecast*/
+.forecast-card:hover {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+
+.hero-label:hover {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+section.member-card:hover {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.menu button:hover {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+article.membership-level:hover {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/*===================================================*/
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px blue;
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 35px rgba(255, 255, 255, 0.2), 0 10px 10px rgba(6, 6, 255, 0.1);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transform: translatey(0px);
+  }
+}
+
+.card {
+  animation: float 6s ease-in-out infinite;
+  transition: transform 0.2s, box-shadow 0.2s;
+  will-change: transform, box-shadow;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 45px rgba(0,0,0,0.3), 0 15px 15px rgba(0,0,0,0.2);
+}
+
+div.forecast-card  {
+  animation: float 6s ease-in-out infinite;
+  transition: transform 0.2s, box-shadow 0.2s;
+  will-change: transform, box-shadow;
+}
+
+div.forecast-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 45px rgba(0,0,0,0.3), 0 15px 15px rgba(0,0,0,0.2);
+}
+
+section.member-card {
+  animation: float 6s ease-in-out infinite;
+  transition: transform 0.2s, box-shadow 0.2s;
+  will-change: transform, box-shadow;
+}
+
+section.member-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 45px rgba(0,0,0,0.3), 0 15px 15px rgba(0,0,0,0.2);
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.events-card, .spotlight-card {
+  /* Apply the animation to these specific cards */
+  animation: float 6s ease-in-out infinite;
+}
+
+.events-card:hover, .spotlight-card:hover {
+  /* Hover effect for these cards */
+  transform: translateY(-10px);
+  box-shadow: 0 30px 45px rgba(0,0,0,0.3), 0 15px 15px rgba(0,0,0,0.2);
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+/* Floating effect for navigation links and social icons */
+#mainNav a, .social-icons a {
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: block; /* Necessary for the transform property to work */
+}
+
+#mainNav a:hover, .social-icons a:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.portal-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .portal-card {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card-front,
+  .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .card-front {
+    background-color: rgb(6, 64, 255);
+    z-index: 1;
+  }
+  
+  .card-back {
+    background-image: linear-gradient(to right, #0000ff 0%, #ff0000 50%, #00ff00 100%);
+    color: rgb(81, 255, 0);
+    transform: rotateY(180deg);
+  }
+  
+  .portal-container:hover .card-front {
+    animation: portal-open 2s ease-in-out;
+  }
+  
+  @keyframes portal-open {
+    0% {
+      transform: translateZ(0);
+    }
+    100% {
+      transform: translateZ(-500px) scale(0.5);
+      opacity: 0;
+    }
+  }
+  /*================================================================*/
+
+  /* Container for the three columns */
+.column-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Individual column styles */
+  .column {
+    width: 30%;
+    height: 300px;
+    background-color: rgb(255, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    animation: pulse 1s ease-in-out infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Add a hover effect to the columns */
+  .column:hover {
+    animation: pulse-hover 1s ease-in-out infinite;
+  }
+  
+  @keyframes pulse-hover {
+    0% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  
+  /* Add a click effect to the columns */
+  .column:active {
+    animation: pulse-click 1s ease-in-out infinite;
+  }
+  
+  @keyframes pulse-click {
+    0% {
+      transform: scale(1.2);
+    }
+    50% {
+      transform: scale(1.3);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+
+
+  
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    animation: slid 120s linear infinite; /* Controls how fast the 3D pic gallery rotates and moves*/
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;   /* Centers the gallery */
+    z-index: 5; /* Below the nav but above other content */
+  }
+  
+  .box span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(375px);
+  }
+  .box span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1px;
+    object-fit: cover;
+    transition: 2s;
+  }
+  .box span:hover img {
+    transform: translateY(-50px) scale(1.7);
+  }
+  @keyframes slid {
+    0% {
+      transform: perspective(1000px) rotatex(0deg) rotatey(35deg);
+    }
+    100% {
+      transform: perspective(1000px)  rotatex(360deg) rotatey(35deg)rotateY(360deg);
+    }
+  }
+
+
+
+  
+  
