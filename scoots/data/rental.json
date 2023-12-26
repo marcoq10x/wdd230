@@ -1,0 +1,68 @@
+{
+    "members": [
+      {
+        "name": "Sunrise Suites",
+        "address": "100 Ocean View Ave, Palm Beach, FL",
+        "phone": "(561) 100-1234",
+        "url": "https://www.sunriseoceansuites.com",
+        "icon": "/wdd230/chamber/images/sunrise.webp",
+        "membershipLevel": "Gold",
+        "additionalInfo": "Luxury accommodation with ocean views."
+      },
+      {
+        "name": "Palm Tech Innovations",
+        "address": "400 Technology Drive, Palm Beach, FL",
+        "phone": "(561) 200-5678",
+        "url": "https://www.palmtech.net",
+        "icon": "/wdd230/chamber/images/palmtech.webp",
+        "membershipLevel": "Gold",
+        "additionalInfo": "Cutting-edge tech company specializing in AI."
+      },
+      {
+        "name": "Beachside Bistro",
+        "address": "250 Seaside Lane, Palm Beach, FL",
+        "phone": "(561) 300-1357",
+        "url": "https://www.beachbistro.com",
+        "icon": "/wdd230/chamber/images/bistro3.webp",
+        "membershipLevel": "Bronze",
+        "additionalInfo": "Cozy seaside dining with a locally sourced menu."
+      },
+      {
+        "name": "AquaMarine Adventures",
+        "address": "58 Marina Way, Palm Beach, FL",
+        "phone": "(561) 400-8912",
+        "url": "https://aquamarineadventures.com",
+        "icon": "/wdd230/chamber/images/aquamarine.webp",
+        "membershipLevel": "Gold",
+        "additionalInfo": "Providing thrilling sea adventures and tours."
+      },
+      {
+        "name": "Palm Wellness Spa",
+        "address": "32 Spa Boulevard, Palm Beach, FL",
+        "phone": "(561) 500-3246",
+        "url": "https://www.palmwellness.com",
+        "icon": "/wdd230/chamber/images/palmwell.webp",
+        "membershipLevel": "Silver",
+        "additionalInfo": "A tranquil retreat for mind and body rejuvenation."
+      },
+      {
+        "name": "Green Palm Conservancy",
+         "address": "22 Greenway Plaza, Palm Beach, FL",
+        "phone": "(561) 800-9090",
+        "url": "https://www.nature.org/en-us/newsroom/florida-palm-beach-resilient-island/",
+        "icon": "/wdd230/chamber/images/greenpalm.webp",
+        "membershipLevel": "Non-Profit Membership",
+         "additionalInfo": "Dedicated to preserving and enhancing Palm Beach's natural beauty."
+      },
+      {
+        "name": "Oceanic Banking Corp",
+        "address": "101 Finance Center, Palm Beach, FL",
+        "phone": "(561) 700-7521",
+        "url": "https://www.oceanbank.com",
+        "icon": "/wdd230/chamber/images/oceanic.webp",
+        "membershipLevel": "Gold",
+        "additionalInfo": "Comprehensive financial services with personal care."
+      }
+    ]
+  }
+  

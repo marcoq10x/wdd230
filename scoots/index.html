@@ -21,12 +21,15 @@
     <link rel="icon" href="/wdd230/scoots/images/faviconS.ico">
     <link rel="stylesheet" href="/wdd230/scoots/styles/normalize.css">
     <link rel="stylesheet" href="/wdd230/scoots/styles/base.css">
-    <link rel="stylesheet" href="/wdd230/scoots/styles/medium.css">
     <link rel="stylesheet" href="/wdd230/scoots/styles/larger.css">
 </head>
 <body>  
     <header>
-        
+        <div id="temp-banner" class="temp-banner">
+            <p>High Temperature Today: <span id="temp-max-value">--</span>°F</p>
+            <button class="close-temp-banner">𝕏</button>
+        </div>
+
         <nav id="mainNav">
             <button id="hamburger" onclick="toggleMenu()"></button>
             <a href="index.html">
@@ -40,14 +43,14 @@
             </ul>
         </nav>
         <div class="box">
-            <span style="--i:1;"><img src="/wdd230/scoots/images/Cozumel.webp" alt= ""></span>
-            <span style="--i:2;"><img src="/wdd230/scoots/images/metro.webp" alt=""></span>
-            <span style="--i:3;"><img src="/wdd230/scoots/images/morada.webp" alt=""></span>
-            <span style="--i:4;"><img src="/wdd230/scoots/images/dio.webp" alt=""></span>
-            <span style="--i:5;"><img src="/wdd230/scoots/images/mar.webp" alt=""></span>
-            <span style="--i:6;"><img src="/wdd230/scoots/images/pcx.webp" alt=""></span>
-            <span style="--i:7;"><img src="/wdd230/scoots/images/ATV.webp" alt=""></span>
-            <span style="--i:8;"><img src="/wdd230/scoots/images/2door.webp" alt=""></span>
+            <span style="--i:1;"><img src="/wdd230/scoots/images/Cozumel.webp" width=300 height=300 alt= "Cozumel Sign" loading="lazy"></span>
+            <span style="--i:2;"><img src="/wdd230/scoots/images/metro.webp" width=300 height=300 alt="Honda Metro Scooter" loading="lazy"></span>
+            <span style="--i:3;"><img src="/wdd230/scoots/images/morada.webp" width=300 height=300 alt="Cozumel at Sunset" loading="lazy"></span>
+            <span style="--i:4;"><img src="/wdd230/scoots/images/dio.webp" width=300 height=300 alt="Honda Dio Scooter" loading="lazy"></span>
+            <span style="--i:5;"><img src="/wdd230/scoots/images/mar.webp" width=300 height=300 alt=" Ocean of Cozumel" loading="lazy"></span>
+            <span style="--i:6;"><img src="/wdd230/scoots/images/pcx.webp" width=300 height=300 alt="Honda PCX150 Scooter" loading="lazy"></span>
+            <span style="--i:7;"><img src="/wdd230/scoots/images/ATV.webp" width=300 height=300 alt="Honda Pioneer ATV" loading="lazy"></span>
+            <span style="--i:8;"><img src="/wdd230/scoots/images/2door.webp" width=300 height=300 alt="Jeep Wrangler 2 door" loading="lazy"></span>
         </div>
             
         <!--<div class="hero"> THIS IS THE PICS SLIDER just use the <div line in other page for slider-->
@@ -57,16 +60,17 @@
                 <source srcset="/wdd230/chamber/images/LargeHeroM.webp" media="(max-width: 1000px)">
                 <img src="/wdd230/chamber/images/LargeHeroL.webp" alt="Large Hero Image" width="986" height="657">
             </picture>--> 
-            <div class="event-banner">
+
+            <!-- <div class="event-banner">
                 <p>🎉 Join us for our Meet and Greet event on Wednesday at 7:00 p.m.! 🫱🏻‍🫲🏼</p>
                 <button class="close-banner">𝕏</button>
-            </div>
+            </div> -->
             
             <div id="mode">
                 😎
             </div>
             <div class="hero-label"> 
-            <a href="join.html">
+            <a href="reservations.html">
                 <p>Make Your Reservation!</p>
             </a>
               </div>
@@ -82,34 +86,58 @@
 
         <div class="container">
             <div>
-                <img src="/wdd230/scoots/images/metro.webp" alt="">
+                <img src="/wdd230/scoots/images/metro.webp" width=60 height=190 alt="Honda Metro Scooter" loading="lazy">
               <h3>Honda Metro Scooter</h3>
-              <p>Lorem ipsum dolor sit amet, consec tetur adipi scing elit. </p>
+              <p>Max 1 person<br>
+                Reservation <br>
+                half day $20 | Full day $30 <br>
+                Walk-in <br>
+                half day $25 | Full day $35</p>
             </div>
             <div>
-                <img src="/wdd230/scoots/images/dio.webp" alt="">
+                <img src="/wdd230/scoots/images/dio.webp" width=60 height=190 alt="Honda Dio Scooter"loading="lazy">
               <h3>Honda Dio Scooter</h3>
-              <p>Lorem ipsum dolor sit amet, consec tetur adipi scing elit. </p>
+              <p>Max 2 persons<br>
+                Reservation <br>
+                half day $30 | Full day $40 <br>
+                Walk-in <br>
+                half day $35 | Full day $45</p>
             </div>
             <div>
-                <img src="/wdd230/scoots/images/pcx.webp" alt="">
+                <img src="/wdd230/scoots/images/pcx.webp" width=60 height=190 alt="Honda PCX150 Scooter"loading="lazy">
               <h3>Honda PCX150 Scooter</h3>
-              <p>Lorem ipsum dolor sit amet, consec tetur adipi scing elit. </p>
+              <p>Max 2 persons<br>
+                Reservation <br>
+                half day $40 | Full day $50 <br>
+                Walk-in <br>
+                half day $45 | Full day $55</p>
             </div>
             <div>
-                <img src="/wdd230/scoots/images/ATV.webp" alt="">
+                <img src="/wdd230/scoots/images/ATV.webp"width=60 height=190  alt="Honda Pioneer ATV"loading="lazy">
               <h3>Honda Pioneer ATV</h3>
-              <p>Lorem ipsum dolor sit amet, consec tetur adipi scing elit. </p>
+              <p>Max 4 persons<br>
+                Reservation <br>
+                half day $50 | Full day $70 <br>
+                Walk-in <br>
+                half day $60 | Full day $80</p>
             </div>
             <div>
-                <img src="/wdd230/scoots/images/2door.webp" alt="">
+                <img src="/wdd230/scoots/images/2door.webp" width=60 height=190 alt="Jeep Wrangler 2 door"loading="lazy">
               <h3>Jeep Wrangler 2 door</h3>
-              <p>Lorem ipsum dolor sit amet, consec tetur adipi scing elit. </p>
+              <p>Max 4 persons<br>
+                Reservation <br>
+                half day $60 | Full day $85 <br>
+                Walk-in <br>
+                half day $70 | Full day $90</p>
             </div>
             <div>
-                <img src="/wdd230/scoots/images/4door.webp" alt="">
+                <img src="/wdd230/scoots/images/4door.webp" width=60 height=190 alt="Jeep Wrangler 4 door"loading="lazy">
               <h3>Jeep Wrangler 4 door A/C</h3>
-              <p>Lorem ipsum dolor sit amet, consec tetur adipi scing elit. </p>
+              <p>Max 5 persons<br>
+                Reservation <br>
+                half day $70 | Full day $100 <br>
+                Walk-in <br>
+                half day $85 | Full day $125</p>
             </div>
           </div>  
           
@@ -125,7 +153,7 @@
                     <p>Current Temperature 
                     <br><span id="current-temp"></span></p>
                     <figure>
-                        <img id="weather-icon" src="path/to/placeholder/image" alt="Weather icon placeholder">
+                        <img id="weather-icon" src="path/to/placeholder/image" alt="Weather icon placeholder" loading="lazy">
                         <figcaption></figcaption>
                     </figure>
             </div>
@@ -166,7 +194,7 @@
                 <p>Contact Us.</p>
                 <p>Centro Downtown, Ave. Juarez & 15 Ave</p>
                 <p>77600 Cozumel, Q.R., Mexico</p>
-                <p>(561)777-7777</p>
+                <p>Phone: +52 987 117 1401</p>
             </div>
             <div class="social-icons">
                 <a href="https://instagram.com" target="_blank">
@@ -185,8 +213,8 @@
         </div>
     <hr>
         <div class="footer-info">
-            <p>Copyright © <span id="currentYear"></span> .:|:. Palm Beach Chamber .:|:. WDD 230 Project .:|:. Marco Quintero </p>
-            <p style="color:#FFFDD0;">Last Updated: <span id="lastModified"></span></p>
+            <p>Copyright © <span id="currentYear"></span> .:|:. Scoots .:|:. WDD 230 Project .:|:. Marco Quintero </p>
+            <p style="color:#000000;">Last Updated: <span id="lastModified"></span></p>
         </div>
         <script src="/wdd230/chamber/scripts/lastmod.js"></script>
         

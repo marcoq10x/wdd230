@@ -17,7 +17,7 @@ let currentImageIndex = 0;
 const heroImages = [
     "/wdd230/chamber/images/clockL.webp",
     "/wdd230/chamber/images/umbrellaL.webp",
-    "/wdd230/chamber/images/oceanL.webp",
+    "/wdd230/chamber/images/oceanL.webp", 
     "/wdd230/chamber/images/terraceL.webp"
 ];
 

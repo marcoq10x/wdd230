@@ -314,6 +314,7 @@ header {
 .navigation li a:hover {
     background-color: #064E83;
     font-weight: 700;
+    box-shadow: 0 0 1.5rem #ffffff; /* Optional, adds a glow effect */
 }
 
 .open li {
@@ -334,10 +335,9 @@ main {
 
 
 .container {
-    --d: 25s; /* duration */
-  
+    --d: 35s; /* duration */
     display: grid;
-    grid-template-columns: repeat(3, 300px); /* number of visible elements + width */
+    grid-template-columns: repeat(3, 500px); /* number of visible elements + width */
     overflow: hidden;
     -webkit-mask: linear-gradient(90deg, #0000, #000 5% 95%, #0000);
   }
@@ -365,6 +365,11 @@ main {
   .container > div h3 {
     margin-top: auto;
   }
+
+  /* .container  p {
+    width:100%;
+    grid-column: span 2;
+  } */
   
   /* Manually calculated animation delays */
   .container > div:nth-child(1) { animation-delay: calc(-1 * var(--d) * 0/6); }
@@ -1241,7 +1246,7 @@ section.member-card:hover {
     height: 100%;
     transform-origin: center;
     transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 45deg)) translateZ(375px);
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(375px); /*Controls how wide the Gallery opens upp*/
   }
   .box span img {
     position: absolute;
@@ -1254,7 +1259,7 @@ section.member-card:hover {
     transition: 2s;
   }
   .box span:hover img {
-    transform: translateY(-50px) scale(1.7);
+    transform: translateY(-50px) scale(1.5);
   }
   @keyframes slid {
     0% {
@@ -1264,6 +1269,44 @@ section.member-card:hover {
       transform: perspective(1000px)  rotatex(360deg) rotatey(35deg)rotateY(360deg);
     }
   }
+
+
+  .temp-banner {
+    position: relative;
+    font-family: 'Gloock', serif;
+    width: -100%;
+    left: 0;
+    width: auto;
+    background: radial-gradient(rgb(0, 162, 255), #161818, rgb(100, 90, 233)); /* Change the color to differentiate from event-banner */
+    color: white;
+    padding: 17px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    text-align: center;
+    animation: slideDown 0.5s forwards 0.5s; /* Animation starts after 0.5s, lasts 0.5s */
+    z-index: 1000; /* Make sure it's on top */
+  }
+
+  @keyframes slideDown {
+    to {
+        top: 0;
+    }
+  }
+  
+  /* Style for the "x" that closes the temperature banner */
+  .close-temp-banner {
+    position: absolute;
+    right: 8px;
+    top: 20%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 1.5rem #ffffff; /* Optional, adds a glow effect */
+    border-radius: 50%;
+  }
+  
 
 
 
