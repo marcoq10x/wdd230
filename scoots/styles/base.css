@@ -1284,6 +1284,7 @@ section.member-card:hover {
     text-align: center;
     animation: slideDown 0.5s forwards 0.5s; /* Animation starts after 0.5s, lasts 0.5s */
     z-index: 1000; /* Make sure it's on top */
+    display: block;
   }
 
   @keyframes slideDown {
