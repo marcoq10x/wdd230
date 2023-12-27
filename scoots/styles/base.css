@@ -1299,6 +1299,114 @@ section.member-card:hover {
     box-shadow: 0 0 1.5rem #ffffff; /* Optional, adds a glow effect */
     border-radius: 50%;
   }
+
+
+
+
+
+
+  /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Table Styles */
+table {
+    width: 90%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+th {
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+    color: white;
+    font-size: 16px;
+}
+
+/* Second row of headers style */
+table thead th:nth-child(n+3):nth-child(-n+6) {
+    background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Table */
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody, tr, td {
+        display: block;
+        width: 100%;
+    }
+
+    td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    tr {
+        margin-bottom: 15px;
+    }
+}
+
+/* Add some padding on smaller screens for aesthetics */
+@media screen and (max-width: 400px) {
+    body {
+        padding: 10px;
+    }
+}
+
   
 
 

@@ -197,3 +197,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+
+
+// Assuming the JSON data is stored locally in a file named 'rental.json'
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('rental.json')
+        .then(response => response.json())
+        .then(data => {
+            populateTable(data);
+        })
+        .catch(error => console.error('Error:', error));
+});
+
+function populateTable(data) {
+    const tableBody = document.getElementById('rentalPricingTable').getElementsByTagName('tbody')[0];
+    data.forEach(item => {
+        let row = tableBody.insertRow();
+        row.innerHTML = `
+            <td>${item.RentalType}</td>
+            <td>${item.MaxPersons}</td>
+            <td>$${item.Reservation.HalfDay}</td>
+            <td>$${item.Reservation.FullDay}</td>
+            <td>$${item.WalkIn.HalfDay}</td>
+            <td>$${item.WalkIn.FullDay}</td>
+        `;
+    });
+}
+
+function capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+
+
+
+

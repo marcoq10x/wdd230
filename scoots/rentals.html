@@ -13,7 +13,7 @@
     <meta property="og:type" content="website">
     <meta name="author" content="Marco Quintero">
 
-    <title>Scoots Motor Scooter Rental</title>
+    <title>Scoots Rental Pricing</title>
     
     <!--Font links-->
     <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Roboto+Serif:opsz,wght@8..144,300&display=swap" rel="stylesheet">
@@ -66,7 +66,7 @@
                 😎
             </div>
             <div class="hero-label"> 
-            <a href="join.html">
+            <a href="reservations.html">
                 <p>Make Your Reservation!</p>
             </a>
               </div>
@@ -77,14 +77,29 @@
         
     </header>
     <main>
-        <div class="menu">
-            <button id="grid">𓊂 Grid</button>
-            <button id="list">📝 List</button>
-        </div>
-        <hr>
-        <article class="directory-view grid" id="directoryContainer">
-            <h2 class="visually-hidden">Directory Listings</h2>
-        </article>
+        <table id="rentalPricingTable">
+            <thead>
+                <tr>
+                    <th>Rental Type</th>
+                    <th>Max. Persons</th>
+                    <th colspan="2">Reservation</th>
+                    <th colspan="2">Walk-In</th>
+                </tr>
+                <tr>
+                    <!-- Placeholder for the second row of headers -->
+                    <th></th>
+                    <th></th>
+                    <th>Half Day (3 hrs)</th>
+                    <th>Full Day</th>
+                    <th>Half Day (3 hrs)</th>
+                    <th>Full Day</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data rows will be inserted here by JavaScript -->
+            </tbody>
+        </table>
+        <script src="script.js"></script>
     </main>
     <footer>
         <div class="footer-content">
@@ -117,7 +132,7 @@
             <p>Copyright © <span id="currentYear"></span> .:|:. Palm Beach Chamber .:|:. WDD 230 Project .:|:. Marco Quintero </p>
             <p style="color:#FFFDD0;">Last Updated: <span id="lastModified"></span></p>
         </div>
-        <script src="/wdd230/chamber/scripts/lastmod.js"></script>
+        <script src="/wdd230/scoots/scripts/lastmod.js"></script>
         
         <script src="/wdd230/chamber/scripts/banner.js"></script>
         <script src="/wdd230/chamber/scripts/spotlight.js"></script>
