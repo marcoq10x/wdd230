@@ -64,7 +64,7 @@ main {
   }
   
   .dark-mode .cards {
-    background-color: black;
+    background-color: black !important;
   }
 
   .dark-mode .card-content {
@@ -134,6 +134,7 @@ main {
     padding: 1rem;
     box-shadow: 0 0 3rem #fff; /* Optional, adds a glow effect */
     opacity: 0.; /*Transparency */
+    border-radius: 50%;
   }
   
   .hero-label p {
@@ -164,14 +165,14 @@ h1, h2, h3 {
 
 h1, h2 {
     color:#1b1915;
-    box-shadow: 0 0 50px black;
+    box-shadow: 0 0 50px rgb(23, 15, 255);
     margin-top: 20px; /* Or adjust as needed to give space above */
     z-index: 1; /* Ensure these are below the gallery */
 }
 
 h3 {
     font-size: 20px;
-    color: #DBB740;
+    color: #000000;
 }
 
 /* Header styles */
@@ -179,27 +180,9 @@ header {
     position: relative;
 }
 
-.hero {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.hero img {
-    width: 100%;
-    height: 140%;
-    box-shadow: 0 0 50px black;
-}
-
-.hero-container {
-    position: relative;
-}
-
 /*Navigation Menu*/
 #mainNav {
+    width: auto;
     position: relative; /* position set to relative so 3D picture gallery can go down to the middle*/
     top: 0px; /* Adjust as needed to position where you want on the hero image */
     left: 0;
@@ -212,6 +195,7 @@ header {
     border-style:inset;
     background: linear-gradient(235deg,#fffb00,#2196F3,#ff0019);
     margin-bottom: 300px;
+    box-shadow: 0 0 50px black;
 }
 
 #mainNav img {
@@ -270,8 +254,8 @@ header {
     font-size: 1.5rem;
     border: 1px solid rgba(0, 0, 0, 0.3);
     padding: 3px 7px 6px;
-    background-color: #064E83;
-    color: #DBB740;
+    background-color: #000000;
+    color: #6eb7ff;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -312,9 +296,9 @@ header {
 
 /*Navigation links hover background*/
 .navigation li a:hover {
-    background-color: #064E83;
+    background: linear-gradient( rgb(39, 179, 230),blue);
     font-weight: 700;
-    box-shadow: 0 0 1.5rem #ffffff; /* Optional, adds a glow effect */
+    box-shadow: 0 0 2rem #ffffff !important; /* Optional, adds a glow effect */
 }
 
 .open li {
@@ -335,7 +319,7 @@ main {
 
 
 .container {
-    --d: 35s; /* duration */
+    --d: 55s; /* duration */
     display: grid;
     grid-template-columns: repeat(3, 500px); /* number of visible elements + width */
     overflow: hidden;
@@ -392,41 +376,52 @@ main {
     font-family: 'Roboto Serif', serif;
     background: black;
   }
-  
 
-
-
-
-
-.cards {
+  #weather-container {
     display: flex;
-    gap: 10px;
-    justify-content: space-between; /*distributes the space evenly between the columns */
-    background-color:#ffffff;
-    margin-bottom: 20px;
-    text-align: center;
-    padding: 0 0px;
-    box-shadow: 0 0 50px black;
+    justify-content: space-around;
+    margin: 20px;
 }
 
-.card {
-    flex: 1;
+.weather-card {
+    align-items: center;
     background-color: rgb(255, 255, 255);
-    padding: 15px;
+    border: 1px solid #ddd;
+    padding: 20px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    border-color: #DBB740;
+    width: 300px; /* or whatever width you prefer */
+    height: 300px;
+    text-align: center;
+    border-color: #6360ca;
     border-style: double;
+    border-radius: 50%;
     margin: 0 10px; /* Add a bit of margin for spacing */
-    box-sizing: border-box; /* padding and border are included in the total width */
+    overflow: hidden; /* Ensures that nothing spills outside the circle */
+    justify-content: center;
+    flex-direction: column;
 }
 
-
-.card p {
-    color: var(--paragraph-color-on-color);
-    background-color: var(--paragraph-background-color);
-    padding: 10px;
+.weather-card h2 {
+    margin: 0; /* Remove default margin */
+    padding: 10px; /* Adjust as necessary */
+    font-size: 1.5rem; /* Adjust as necessary */
+    text-align: center;
+    white-space: normal; /* Allows text to wrap */
+    width: 90%; /* Prevents text from touching the edge */
 }
+
+.weather-card img {
+    width: 50px ; 
+    height: auto;
+}
+
+#next-day-icon {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 50px rgb(112, 18, 228);
+    border-radius: 50%;
+}
+
 
 /* Footer styles */
 footer {
@@ -999,9 +994,7 @@ figcaption {
 }
 
 
-.hero-label:hover {
-  animation: fadeIn 1s ease-in-out forwards;
-}
+
 
 section.member-card:hover {
   animation: fadeIn 1s ease-in-out forwards;
@@ -1023,26 +1016,26 @@ article.membership-level:hover {
 /*===================================================*/
 @keyframes float {
   0% {
-    box-shadow: 0 5px 15px blue;
+    box-shadow: 0 5px 15px rgb(13, 255, 0);
     transform: translatey(0px);
   }
   50% {
-    box-shadow: 0 25px 35px rgba(255, 255, 255, 0.2), 0 10px 10px rgba(6, 6, 255, 0.1);
+    box-shadow: 0 25px 35px rgba(0, 81, 255, 0.2), 0 10px 10px rgba(88, 151, 246, 0.1);
     transform: translatey(-20px);
   }
   100% {
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
     transform: translatey(0px);
   }
 }
 
-.card {
+.weather-card {
   animation: float 6s ease-in-out infinite;
   transition: transform 0.2s, box-shadow 0.2s;
   will-change: transform, box-shadow;
 }
 
-.card:hover {
+.weather-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 30px 45px rgba(0,0,0,0.3), 0 15px 15px rgba(0,0,0,0.2);
 }
@@ -1274,11 +1267,10 @@ section.member-card:hover {
   .temp-banner {
     position: relative;
     font-family: 'Gloock', serif;
-    width: -100%;
-    left: 0;
     width: auto;
-    background: radial-gradient(rgb(0, 162, 255), #161818, rgb(100, 90, 233)); /* Change the color to differentiate from event-banner */
-    color: white;
+    left: 0;
+    background: radial-gradient(yellow, red,rgb(0, 162, 255),  rgb(100, 90, 233)); /* Change the color to differentiate from event-banner */
+    color: rgb(0, 0, 0);
     padding: 17px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     text-align: center;

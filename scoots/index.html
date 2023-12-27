@@ -26,8 +26,8 @@
 <body>  
     <header>
         <div id="temp-banner" class="temp-banner">
-            <p>High Temperature Today: <span id="temp-max-value">--</span>°F</p>
-            <button class="close-temp-banner">𝕏</button>
+            <p>High Temperature Today: <span id="temp-max-value">--</span></p>
+            <button class="close-temp-banner">x</button>
         </div>
 
         <nav id="mainNav">
@@ -60,12 +60,6 @@
                 <source srcset="/wdd230/chamber/images/LargeHeroM.webp" media="(max-width: 1000px)">
                 <img src="/wdd230/chamber/images/LargeHeroL.webp" alt="Large Hero Image" width="986" height="657">
             </picture>--> 
-
-            <!-- <div class="event-banner">
-                <p>🎉 Join us for our Meet and Greet event on Wednesday at 7:00 p.m.! 🫱🏻‍🫲🏼</p>
-                <button class="close-banner">𝕏</button>
-            </div> -->
-            
             <div id="mode">
                 😎
             </div>
@@ -78,9 +72,9 @@
                 <p>Scoots 🛵</p>
             </div>
         </div>
-        
     </header>
     <main>
+
         <h1>~Scoots Motor Scooter Rental~</h1>
         <h2>Bienvenidos</h2>
 
@@ -140,51 +134,25 @@
                 half day $85 | Full day $125</p>
             </div>
           </div>  
-          
 
-        <section class="cards">
-            <div class="card">
-                <h3>Weather Conditions</h3>
-                
-                <p>Temperature: <span id="temp-value">70</span>°F</p>
-                <p>Humidity: 65%</p>
-                <p>Wind Speed: <span id="wind-speed-value">7</span> mph</p>
-                <p>Wind Chill: <span id="wind-chill-value">N/A</span></p>
-                    <p>Current Temperature 
-                    <br><span id="current-temp"></span></p>
-                    <figure>
-                        <img id="weather-icon" src="path/to/placeholder/image" alt="Weather icon placeholder" loading="lazy">
-                        <figcaption></figcaption>
-                    </figure>
+        <section id="weather-container">
+            <div id="current-weather-card" class="weather-card">
+                <h2>Current Weather</h2>
+                <p id="current-temp">--°F</p>
+                <p id="current-humidity">--%</p>
+                <img id="weather-icon" src="" alt="Weather icon" />
+                <figcaption></figcaption>
             </div>
-            <div class="card">
-                <h3>Events</h3>
-                
-                <p>Beach Cleanup - Oct 25th</p>
-                <p>Music Festival - Nov 3rd</p>
-                <p>Local Market - Every Saturday</p>
-                <figure>
-                    <picture>
-                        <source srcset="/wdd230/chamber/images/sunset.webp" media="(max-width: 480px)">
-                        <img src="/wdd230/chamber/images/sunset.webp" alt="Sunset down in Palm Beach" loading="lazy" width="150" height="150">
-                    </picture>
-                </figure>
-                <figure>
-                    <picture>
-                        <source srcset="/wdd230/chamber/images/beachclean.webp" media="(max-width: 480px)">
-                        <img src="/wdd230/chamber/images/beachclean.webp" alt="Sunset down in Palm Beach" loading="lazy" width="150" height="150">
-                    </picture>
-                </figure>
-            </div>
-            <div class="card">
-                <h3>Company Spotlight Ad</h3>
-                <div class="company-spotlight-container">
-                    <!-- Dynamic content goes here -->
-                </div>
+            <div id="next-day-forecast-card" class="weather-card">
+                <h2>Next Day Forecast</h2>
+                <p id="next-day-temp">--°F</p>
+                <p id="next-day-humidity">--%</p>
+                <img id="next-day-icon" src="" alt="Next day weather icon">
+                <figcaption id="next-day-caption"></figcaption>
             </div>
         </section>
-        <div id="forecast-container"></div>
     </main>
+
     <footer>
         <div class="footer-content">
             <a href="index.html">
@@ -216,11 +184,10 @@
             <p>Copyright © <span id="currentYear"></span> .:|:. Scoots .:|:. WDD 230 Project .:|:. Marco Quintero </p>
             <p style="color:#000000;">Last Updated: <span id="lastModified"></span></p>
         </div>
-        <script src="/wdd230/chamber/scripts/lastmod.js"></script>
-        
-        <script src="/wdd230/chamber/scripts/banner.js"></script>
-        <script src="/wdd230/chamber/scripts/spotlight.js"></script>
+        <script src="/wdd230/scoots/scripts/lastmod.js"></script>
+        <script src="/wdd230/scoots/scripts/banner.js"></script>
+        <script src="/wdd230/scoots/scripts/spotlight.js"></script>
     </footer>
-    <script src="/wdd230/chamber/scripts/windchill.js"></script>
+    <script src="/wdd230/scoots/scripts/weather.js"></script>
 </body>
 </html>
