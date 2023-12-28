@@ -25,7 +25,7 @@ function calculateWindChill(temperature, windSpeed) {
   
 
 
-//==========================Weather API week 10==========================================================
+//==========================Weather API week 10 Home Page left column in MAIN==========================================================
 // Weather feature in our Chamber of Commerce of PB page with API in CARD 1 left side
 // Select HTML elements in the document
 const currentTemp = document.querySelector('#current-temp');

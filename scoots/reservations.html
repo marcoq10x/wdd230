@@ -21,7 +21,6 @@
     <link rel="icon" href="/wdd230/scoots/images/faviconS.ico">
     <link rel="stylesheet" href="/wdd230/scoots/styles/normalize.css">
     <link rel="stylesheet" href="/wdd230/scoots/styles/base.css">
-    <link rel="stylesheet" href="/wdd230/scoots/styles/medium.css">
     <link rel="stylesheet" href="/wdd230/scoots/styles/larger.css">
 </head>
 <body>  
@@ -49,19 +48,7 @@
             <span style="--i:7;"><img src="/wdd230/scoots/images/ATV.webp" alt=""></span>
             <span style="--i:8;"><img src="/wdd230/scoots/images/2door.webp" alt=""></span>
         </div>
-            
-        <!--<div class="hero"> THIS IS THE PICS SLIDER just use the <div line in other page for slider-->
-            <!--
-            <picture>
-                <source srcset="/wdd230/chamber/images/LargeHeroS.webp" media="(max-width: 480px)">
-                <source srcset="/wdd230/chamber/images/LargeHeroM.webp" media="(max-width: 1000px)">
-                <img src="/wdd230/chamber/images/LargeHeroL.webp" alt="Large Hero Image" width="986" height="657">
-            </picture>--> 
-            <div class="event-banner">
-                <p>🎉 Join us for our Meet and Greet event on Wednesday at 7:00 p.m.! 🫱🏻‍🫲🏼</p>
-                <button class="close-banner">𝕏</button>
-            </div>
-            
+                
             <div id="mode">
                 😎
             </div>
@@ -74,10 +61,77 @@
                 <p>Scoots 🛵</p>
             </div>
         </div>
-        
     </header>
     <main>
+            <section class="rental-agreement">
+                <h1>Rental Agreement Information</h1>
+                <h2>Please review the rental agreement terms before proceeding with your reservation:</h2>
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid driver's license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years of age is allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo is accepted.</li>
+                    <li>Rentals may be returned to either physical location.</li>
+                </ul>
+            </section>
         
+            <div class="membership-container">
+    <form id="reservationForm" class="form-container" method="post" action="submit-reservation">
+        <fieldset>
+            <legend>Reserve Your Ride</legend>
+
+            <label for="firstName">First Name*</label>
+            <input type="text" id="firstName" name="firstName" required>
+            
+            <label for="lastName">Last Name*</label>
+            <input type="text" id="lastName" name="lastName" required>
+            
+            <label for="date">Date*</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="period">Rental Period*</label>
+            <select id="period" name="period" required>
+                <option value="" disabled selected>Select Rental Period</option>
+                <option value="half-day">Half Day (3 hrs)</option>
+                <option value="full-day">Full Day</option>
+            </select>
+
+            <label for="rentalType">Rental Type*</label>
+            <select id="rentalType" name="rentalType" required>
+                <option value="" disabled selected>Select Rental Type</option>
+                <option value="metro-scooter">Honda Metro Scooter</option>
+                <option value="dio-scooter">Honda Dio Scooter</option>
+                <option value="pcx150-scooter">Honda PCX150 Scooter</option>
+                <option value="pioneer-atv">Honda Pioneer ATV</option>
+                <option value="jeep-wrangler-4door">Jeep Wrangler - 4 door with A/C</option>
+                <option value="jeep-wrangler-2door">Jeep Wrangler - 2 door</option>
+            </select>
+
+            <label for="number">Number of Vehicles*</label>
+            <input type="number" id="number" name="number" min="1" required>
+
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+            
+            <label for="phone">Mobile Phone*</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="stateCountry">Home State/Country*</label>
+            <input type="text" id="stateCountry" name="stateCountry" required>
+
+            <label for="specialAccommodations">Special Accommodations/Comments</label>
+            <textarea id="specialAccommodations" name="specialAccommodations"></textarea>
+            
+            <button type="submit" class="submit-button">Submit Reservation</button>
+        </fieldset>
+    </form>
+</div>
+            </section>
     </main>
     <footer>
         <div class="footer-content">
@@ -88,7 +142,7 @@
                 <p>Contact Us.</p>
                 <p>Centro Downtown, Ave. Juarez & 15 Ave</p>
                 <p>77600 Cozumel, Q.R., Mexico</p>
-                <p>(561)777-7777</p>
+                <p>Phone: +52 987 117 1401</p>
             </div>
             <div class="social-icons">
                 <a href="https://instagram.com" target="_blank">
@@ -107,14 +161,12 @@
         </div>
     <hr>
         <div class="footer-info">
-            <p>Copyright © <span id="currentYear"></span> .:|:. Palm Beach Chamber .:|:. WDD 230 Project .:|:. Marco Quintero </p>
-            <p style="color:#FFFDD0;">Last Updated: <span id="lastModified"></span></p>
+            <p>Copyright © <span id="currentYear"></span> .:|:. Scoots .:|:. WDD 230 Project .:|:. Marco Quintero </p>
+            <p style="color:#000000;">Last Updated: <span id="lastModified"></span></p>
         </div>
-        <script src="/wdd230/chamber/scripts/lastmod.js"></script>
-        
-        <script src="/wdd230/chamber/scripts/banner.js"></script>
-        <script src="/wdd230/chamber/scripts/spotlight.js"></script>
+        <script src="/wdd230/scoots/scripts/lastmod.js"></script>
+        <script src="/wdd230/scoots/scripts/banner.js"></script>
     </footer>
-    <script src="/wdd230/chamber/scripts/windchill.js"></script>
+    <script src="/wdd230/scoots/scripts/weather.js"></script>
 </body>
 </html>

@@ -1,5 +1,4 @@
-//JavaScript for Chamber of Commerce of Palm Beach
-
+//JavaScript for Scoots Page
 // Last Modification Function
 document.addEventListener("DOMContentLoaded", function() {
     // Populate copyright year
@@ -10,26 +9,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const lastModified = document.lastModified;
     document.getElementById("lastModified").textContent = lastModified;
 });
-
-
-// Hero Image Slideshow Function
-let currentImageIndex = 0;
-const heroImages = [
-    "/wdd230/chamber/images/clockL.webp",
-    "/wdd230/chamber/images/umbrellaL.webp",
-    "/wdd230/chamber/images/oceanL.webp", 
-    "/wdd230/chamber/images/terraceL.webp"
-];
-
-function changeHeroImage() {
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        hero.style.backgroundImage = `url(${heroImages[currentImageIndex]})`;
-        currentImageIndex = (currentImageIndex + 1) % heroImages.length;
-    }
-}
-
-setInterval(changeHeroImage, 3000); // Change image every 3 seconds
 
 
 
@@ -200,34 +179,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// Assuming the JSON data is stored locally in a file named 'rental.json'
-document.addEventListener('DOMContentLoaded', () => {
-    fetch('rental.json')
-        .then(response => response.json())
-        .then(data => {
-            populateTable(data);
-        })
-        .catch(error => console.error('Error:', error));
-});
-
-function populateTable(data) {
-    const tableBody = document.getElementById('rentalPricingTable').getElementsByTagName('tbody')[0];
-    data.forEach(item => {
-        let row = tableBody.insertRow();
-        row.innerHTML = `
-            <td>${item.RentalType}</td>
-            <td>${item.MaxPersons}</td>
-            <td>$${item.Reservation.HalfDay}</td>
-            <td>$${item.Reservation.FullDay}</td>
-            <td>$${item.WalkIn.HalfDay}</td>
-            <td>$${item.WalkIn.FullDay}</td>
-        `;
-    });
-}
-
-function capitalize(str) {
-    return str.charAt(0).toUpperCase() + str.slice(1);
-}
 
 
 

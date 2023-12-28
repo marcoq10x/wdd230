@@ -1,7 +1,4 @@
-//==========================Weather API week 10==========================================================
-// Weather feature in our Chamber of Commerce of PB page with API in CARD 1 left side
-// Select HTML elements in the document
-// Select HTML elements in the document
+//==========================Scoots Weather API Home Page==========================================================
 
 // Select HTML elements in the document
 const currentTemp = document.querySelector('#current-temp');
@@ -37,7 +34,7 @@ async function apiFetch() {
     }
 }
 
-// Function to display current weather results in HTML
+// Display current weather results in HTML
 function displayCurrentWeather(data) {
     currentTemp.innerHTML = `Current Temp: ${data.main.temp.toFixed(0)}&deg;F`;
     currentHumidity.innerHTML = `Humidity: ${data.main.humidity}%`;
@@ -47,7 +44,7 @@ function displayCurrentWeather(data) {
     currentCaption.textContent = capitalize(data.weather[0].description);
 }
 
-// Function to display next day's forecast
+// Display next day's forecast
 function displayNextDayForecast(data) {
     const nextDayForecast = data.list.filter(forecast => {
         const date = new Date(forecast.dt_txt);

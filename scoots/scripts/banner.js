@@ -1,4 +1,4 @@
-//Banner displaying Max_temp
+//Banner displaying Max_temp Scoots home page
 
 document.addEventListener('DOMContentLoaded', function() {
     const tempBanner = document.getElementById('temp-banner');
