@@ -68,7 +68,7 @@ function capitalize(str) {
 }
 
 
-//==========================3 Day Forecast code week 10==========================================================
+//==========================3 Day Forecast code week 10 Home Page 3 circles==========================================================
 // ATTENTION: for the following code I used the help of AI due to the fact that I couldn'tfigure out how to do it.
 //3 Day Forecast Function and code. What a real heachache this was!
 

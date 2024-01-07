@@ -1,4 +1,4 @@
-// JavaScript for the Table in the Rentals Page 
+// JavaScript  Scoots  Table in the Rentals Page 
 document.addEventListener('DOMContentLoaded', function() {
     fetch('/wdd230/scoots/data/rental.json') // Adjust the path if necessary
       .then(response => {

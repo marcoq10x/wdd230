@@ -502,7 +502,7 @@ figcaption {
     /*Black background on thank you container*/
     .thank-you-container {
         padding: 40px;
-        background-color:#000000;
+        background: linear-gradient(235deg,#fffb00,#2196F3,#ff0019);
     }
 
     /*hover over the "Thank you!" and displays an Aqua shadow*/
@@ -657,6 +657,8 @@ section.member-card a {
     main  {
         padding: 0px;
     }
+
+
 
     h1, h2, h3 {
         margin: 20px 0; /* Increase margin for headings for better spacing on large screens */

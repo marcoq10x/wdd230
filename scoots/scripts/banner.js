@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeTempButton = document.querySelector('.close-temp-banner');
 
     // Fetch the weather data from OpenWeatherMap API
-    fetch('https://api.openweathermap.org/data/2.5/weather?lat=26.67&lon=80.26&units=imperial&appid=0f4ae5904674da05d482b5ef14addb3e')
+    fetch('https://api.openweathermap.org/data/2.5/weather?lat=20.51&lon=-86.95&units=imperial&appid=0f4ae5904674da05d482b5ef14addb3e')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');

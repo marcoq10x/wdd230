@@ -1,4 +1,4 @@
-//==========================Scoots Weather API Home Page==========================================================
+//==========================Scoots Weather API Home Page 2 circle cards==========================================================
 
 // Select HTML elements in the document
 const currentTemp = document.querySelector('#current-temp');

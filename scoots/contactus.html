@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="web page for Scoots. A motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea"><!--Brief description of page 150-160 characters-->
+    <meta name="description" content="Reservations web page for Scoots. A motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea"><!--Brief description of page 150-160 characters-->
     <!--open Graph Meta properties-->
-    <meta property="og:title" content="Scoots motor scooter rental Home Page">
+    <meta property="og:title" content="Scoots motor scooter rental Reservations Page">
     <meta property="og:description" content="web page for Scoots. A motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea">
     <meta property="og:image" content="https://www.traveltomtom.net/media/cached-resp-images/images/nieuwe_indeling/artikels/mexico/scooter_rental_cozumel/renting_a_scooter_in_cozumel_768.webp?version=58654424d0fa383a5d0edb7462173fd6">
     <meta property="og:url" content="https://marcoq10x.github.io/wdd230/">
     <meta property="og:type" content="website">
     <meta name="author" content="Marco Quintero">
 
-    <title>Scoots Motor Scooter Rental</title>
+    <title>Scoots Motor Scooter Rental Reservations Page</title>
     
     <!--Font links-->
     <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Roboto+Serif:opsz,wght@8..144,300&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
     <link rel="icon" href="/wdd230/scoots/images/faviconS.ico">
     <link rel="stylesheet" href="/wdd230/scoots/styles/normalize.css">
     <link rel="stylesheet" href="/wdd230/scoots/styles/base.css">
-    <link rel="stylesheet" href="/wdd230/scoots/styles/medium.css">
+     
     <link rel="stylesheet" href="/wdd230/scoots/styles/larger.css">
 </head>
 <body>  
@@ -57,10 +57,7 @@
                 <source srcset="/wdd230/chamber/images/LargeHeroM.webp" media="(max-width: 1000px)">
                 <img src="/wdd230/chamber/images/LargeHeroL.webp" alt="Large Hero Image" width="986" height="657">
             </picture>--> 
-            <div class="event-banner">
-                <p>🎉 Join us for our Meet and Greet event on Wednesday at 7:00 p.m.! 🫱🏻‍🫲🏼</p>
-                <button class="close-banner">𝕏</button>
-            </div>
+           
             
             <div id="mode">
                 😎
@@ -77,6 +74,47 @@
         
     </header>
     <main>
+        <section id="contact-info">
+            <h2>Contact Us</h2>
+            <p>For any inquiries or to make a reservation, please contact us at:</p>
+            <div class="location">
+                <h3>Centro Downtown Location</h3>
+                <p>Ave. Juarez & 15 Ave, Centro Downtown</p>
+                <p>77600 Cozumel, Q.R., Mexico</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.928861177186!2d-86.94980118874822!3d20.50914230534267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cdd705951f%3A0x8407edbfd36da0d3!2sAv%20Lic%20Benito%20Ju%C3%A1rez%20%26%2015%20Avenida%20Nte.%2C%20Centro%2C%2077600%20Cozumel%2C%20Q.R.%2C%20Mexico!5e0!3m2!1sen!2sus!4v1703797633520!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="location">
+                <h3>Terminal Puerta Maya Location</h3>
+                <p>Carretera costera sur km 4 mas 230 #1300 local 3</p>
+                <p>Cozumel, Q.R., Mexico</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3737.5699156136884!2d-86.97370678874877!3d20.48285050622465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCarretera%20costera%20sur%20km%204%20mas%20230%20%231300%20local%203%2C%20Cozumel%2C%20Q.R.%2C%20Mexico!5e0!3m2!1sen!2sus!4v1703797703426!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <div class="membership-container">
+            <form id="contactForm" class="form-container" method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Contact Us</legend>
+        
+                    <label for="firstName">First Name*</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                    
+                    <label for="lastName">Last Name*</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                    
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                    
+                    <label for="phone">Mobile Phone*</label>
+                    <input type="tel" id="phone" name="phone" required>
+        
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="message"></textarea>
+                    
+                    <button type="submit" class="submit-button">Send Message</button>
+                </fieldset>
+            </form>
+        </div>
+        
         
     </main>
     <footer>
@@ -88,7 +126,7 @@
                 <p>Contact Us.</p>
                 <p>Centro Downtown, Ave. Juarez & 15 Ave</p>
                 <p>77600 Cozumel, Q.R., Mexico</p>
-                <p>(561)777-7777</p>
+                <p>Phone: +52 987 117 1401</p>
             </div>
             <div class="social-icons">
                 <a href="https://instagram.com" target="_blank">
@@ -107,8 +145,8 @@
         </div>
     <hr>
         <div class="footer-info">
-            <p>Copyright © <span id="currentYear"></span> .:|:. Palm Beach Chamber .:|:. WDD 230 Project .:|:. Marco Quintero </p>
-            <p style="color:#FFFDD0;">Last Updated: <span id="lastModified"></span></p>
+            <p>Copyright © <span id="currentYear"></span> .:|:. Scoots .:|:. WDD 230 Project .:|:. Marco Quintero </p>
+            <p style="color:#000000;">Last Updated: <span id="lastModified"></span></p>
         </div>
         <script src="/wdd230/chamber/scripts/lastmod.js"></script>
         
